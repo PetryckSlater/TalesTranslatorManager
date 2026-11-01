@@ -1,0 +1,12 @@
+{
+  "name": "tales-of-immortal-translator",
+  "version": "1.0.0",
+  "description": "Pipeline automatizado de atualização e tradução para Tales of Immortal (PT-BR)",
+  "scripts": {
+    "sync": "node tools/scripts/sync.js",
+    "build": "node tools/scripts/build.js",
+    "translate": "node tools/scripts/translate.js",
+    "start": "node tools/scripts/server.js",
+    "ui": "node tools/scripts/server.js"
+  }
+}

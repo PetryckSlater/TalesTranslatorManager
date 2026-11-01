@@ -1,0 +1,25 @@
+# ==============================================================
+# SEGURANÇA: Pasta Privada do Mod da Oficina Steam (Oficial)
+# Nunca enviar para o GitHub para evitar conflito de Workshop ID!
+# ==============================================================
+ModProject_VMCUi0/
+ModProject_*/
+*.cache
+
+# Arquivos de Backup e Compactados
+*.rar
+*.zip
+*.7z
+*.tar.gz
+tools/data/backups/
+*.tmp
+
+# Logs e Arquivos de Sistema
+*.log
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log*

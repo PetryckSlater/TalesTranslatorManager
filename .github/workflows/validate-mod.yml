@@ -1,0 +1,33 @@
+name: Validar Mod e Tradução
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Testar Compilação do Mod
+        run: |
+          node tools/scripts/build.js
+
+      - name: Validar Integridade dos Arquivos JSON
+        run: |
+          node -e "
+            const fs = require('fs');
+            const l = JSON.parse(fs.readFileSync('ModProject_VMCUi0/ModProject/ModExcel/LocalText.json', 'utf8'));
+            const r = JSON.parse(fs.readFileSync('ModProject_VMCUi0/ModProject/ModExcel/RoleLogLocal.json', 'utf8'));
+            console.log('Validação concluída: LocalText=' + l.length + ', RoleLog=' + r.length);
+          "
