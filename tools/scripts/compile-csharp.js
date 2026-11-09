@@ -155,6 +155,13 @@ namespace MOD_VMCUi0
     const out = execSync(cmd).toString();
     fs.copyFileSync(targetDllPrivate, targetDllRelease);
     fs.copyFileSync(targetDllPrivate, targetDllPublic);
+
+    const debugDllDir = path.join(config.rootDir, 'ModProject_VMCUi0', 'debug', 'Mod_VMCUi0', 'ModCode', 'dll');
+    if (fs.existsSync(path.join(config.rootDir, 'ModProject_VMCUi0', 'debug', 'Mod_VMCUi0'))) {
+      if (!fs.existsSync(debugDllDir)) fs.mkdirSync(debugDllDir, { recursive: true });
+      fs.copyFileSync(targetDllPrivate, path.join(debugDllDir, 'MOD_VMCUi0.dll'));
+    }
+
     console.log(`  ✓ MOD_VMCUi0.dll gerada com sucesso (${(fs.statSync(targetDllPrivate).size / 1024).toFixed(1)} KB).`);
     return true;
   } catch (err) {
