@@ -8,5 +8,8 @@
     "translate": "node tools/scripts/translate.js",
     "start": "node tools/scripts/server.js",
     "ui": "node tools/scripts/server.js"
+  },
+  "dependencies": {
+    "bing-translate-api": "^4.3.0"
   }
 }

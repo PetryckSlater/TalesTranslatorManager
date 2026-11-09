@@ -68,10 +68,11 @@ async function translateText(sourceText, glossary = null, targetLang = 'pt') {
       }
     }
 
-    if (!translated) return sourceText;
+    if (!translated) throw new Error('Tradução retornou vazia');
     return restoreAll(translated, tags);
   } catch (err) {
-    return restoreAll(masked, tags);
+    console.error(`[translateText Falha]: ${err.message}`);
+    throw err;
   }
 }
 
