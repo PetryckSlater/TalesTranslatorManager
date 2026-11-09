@@ -157973,23 +157973,29 @@
     "diffRoleAttrTitle": {
       "id": "22573",
       "key": "diffRoleAttrTitle",
-      "pt": "Estatísticas iniciais",
+      "pt": "Atributos Iniciais",
       "ch": "初始属性",
-      "tc": "初始屬性"
+      "tc": "初始屬性",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.172Z"
     },
     "diffFeatureTitle": {
       "id": "22574",
       "key": "diffFeatureTitle",
-      "pt": "Destino (Natural)",
+      "pt": "Destinos Iniciais",
       "ch": "先天气运",
-      "tc": "先天氣運"
+      "tc": "先天氣運",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffFishTitle": {
       "id": "22575",
       "key": "diffFishTitle",
-      "pt": "Pontos Bagua Jade",
+      "pt": "Pontos Bagua",
       "ch": "双鱼佩点数",
-      "tc": "雙魚佩點數"
+      "tc": "雙魚佩點數",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "difUnitTitle": {
       "id": "22576",
@@ -158001,23 +158007,29 @@
     "diffUnitHpTitle": {
       "id": "22577",
       "key": "diffUnitHpTitle",
-      "pt": "Vida de monstro",
+      "pt": "Vida Monstros",
       "ch": "怪物体力",
-      "tc": "怪物體力"
+      "tc": "怪物體力",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnitDmgTitle": {
       "id": "22578",
       "key": "diffUnitDmgTitle",
-      "pt": "Dano de monstro",
+      "pt": "Dano Monstros",
       "ch": "怪物伤害",
-      "tc": "怪物傷害"
+      "tc": "怪物傷害",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnitNumTitle": {
       "id": "22579",
       "key": "diffUnitNumTitle",
-      "pt": "Quantidade de monstro",
+      "pt": "Qtd. Monstros",
       "ch": "怪物数量",
-      "tc": "怪物數量"
+      "tc": "怪物數量",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "difDieTitle": {
       "id": "22580",
@@ -158134,23 +158146,29 @@
     "diffPrice1": {
       "id": "22596",
       "key": "diffPrice1",
-      "pt": " Baixo",
+      "pt": "Baixo",
       "ch": "适宜",
-      "tc": "適宜"
+      "tc": "適宜",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffRoleAttr1": {
       "id": "22597",
       "key": "diffRoleAttr1",
-      "pt": " Padrão",
+      "pt": "Padrão",
       "ch": "标准",
-      "tc": "標準"
+      "tc": "標準",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffFeature1": {
       "id": "22598",
       "key": "diffFeature1",
-      "pt": " Padrão",
+      "pt": "Padrão",
       "ch": "标准",
-      "tc": "標準"
+      "tc": "標準",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnitHp1": {
       "id": "22599",
@@ -158176,9 +158194,11 @@
     "diffPunish1": {
       "id": "22602",
       "key": "diffPunish1",
-      "pt": "A reconstrução corporal leva <r>{0} min</r> Depois que seu personagem morre.",
+      "pt": "Reconstrução corporal: <r>{0} min</r> ao morrer.",
       "ch": "死亡后将需要<r>{0}分钟</r>的时间重塑肉身！",
-      "tc": "死亡後將需要<r>{0}分鐘</r>的時間重塑肉身！"
+      "tc": "死亡後將需要<r>{0}分鐘</r>的時間重塑肉身！",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffName2": {
       "id": "22603",
@@ -158190,23 +158210,29 @@
     "diffGas2": {
       "id": "22604",
       "key": "diffGas2",
-      "pt": " Média",
+      "pt": "Média",
       "ch": "一般",
-      "tc": "一般"
+      "tc": "一般",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffHerb2": {
       "id": "22605",
       "key": "diffHerb2",
-      "pt": " Média",
+      "pt": "Média",
       "ch": "一般",
-      "tc": "一般"
+      "tc": "一般",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffMine2": {
       "id": "22606",
       "key": "diffMine2",
-      "pt": " Média",
+      "pt": "Média",
       "ch": "一般",
-      "tc": "一般"
+      "tc": "一般",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffPrice2": {
       "id": "22607",
@@ -158218,16 +158244,20 @@
     "diffRoleAttr2": {
       "id": "22608",
       "key": "diffRoleAttr2",
-      "pt": " Baixo",
+      "pt": "Baixo",
       "ch": "低",
-      "tc": "低"
+      "tc": "低",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffFeature2": {
       "id": "22609",
       "key": "diffFeature2",
-      "pt": " Padrão",
+      "pt": "Padrão",
       "ch": "标准",
-      "tc": "標準"
+      "tc": "標準",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnitHp2": {
       "id": "22610",
@@ -158253,9 +158283,11 @@
     "diffPunish2": {
       "id": "22613",
       "key": "diffPunish2",
-      "pt": "A reconstrução corporal leva <r>{0} min</r> Depois que seu personagem morre.",
+      "pt": "Reconstrução corporal: <r>{0} min</r> ao morrer.",
       "ch": "死亡后将需要<r>{0}分钟</r>的时间重塑肉身！",
-      "tc": "死亡後將需要<r>{0}分鐘</r>的時間重塑肉身！"
+      "tc": "死亡後將需要<r>{0}分鐘</r>的時間重塑肉身！",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnlockDesc2": {
       "id": "22614",
@@ -158274,72 +158306,92 @@
     "diffGas3": {
       "id": "22616",
       "key": "diffGas3",
-      "pt": " Baixo",
+      "pt": "Baixo",
       "ch": "稀薄",
-      "tc": "稀薄"
+      "tc": "稀薄",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffHerb3": {
       "id": "22617",
       "key": "diffHerb3",
-      "pt": " Baixo",
+      "pt": "Baixo",
       "ch": "稀少",
-      "tc": "稀少"
+      "tc": "稀少",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffMine3": {
       "id": "22618",
       "key": "diffMine3",
-      "pt": " Baixo",
+      "pt": "Baixo",
       "ch": "稀少",
-      "tc": "稀少"
+      "tc": "稀少",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffPrice3": {
       "id": "22619",
       "key": "diffPrice3",
-      "pt": " Muito alto",
+      "pt": "Muito Alto",
       "ch": "较高",
-      "tc": "較高"
+      "tc": "較高",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffRoleAttr3": {
       "id": "22620",
       "key": "diffRoleAttr3",
-      "pt": " Baixo",
+      "pt": "Baixo",
       "ch": "低",
-      "tc": "低"
+      "tc": "低",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffFeature3": {
       "id": "22621",
       "key": "diffFeature3",
-      "pt": " Padrão",
+      "pt": "Padrão",
       "ch": "标准",
-      "tc": "標準"
+      "tc": "標準",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnitHp3": {
       "id": "22622",
       "key": "diffUnitHp3",
-      "pt": " Muito alto",
+      "pt": "Muito Alto",
       "ch": "较高",
-      "tc": "較高"
+      "tc": "較高",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnitDmg3": {
       "id": "22623",
       "key": "diffUnitDmg3",
-      "pt": " Muito alto",
+      "pt": "Muito Alto",
       "ch": "较高",
-      "tc": "較高"
+      "tc": "較高",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnitNum3": {
       "id": "22624",
       "key": "diffUnitNum3",
-      "pt": " Muito alto",
+      "pt": "Muito Alto",
       "ch": "较多",
-      "tc": "較多"
+      "tc": "較多",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffPunish3": {
       "id": "22625",
       "key": "diffPunish3",
-      "pt": "Seu salvamento será <r>excluído permanentemente</r> Se você morrer antes de chegar{0}!\nSe você morrer depois de atingir {1}, A reconstrução corporal levará <r>{2} min</r>.\n",
+      "pt": "Morte antes de {0}: <r>Save deletado!</r>\nApós {1}: Reconstrução em <r>{2} min</r>.",
       "ch": "{0}境之前死亡将<r>永久删档！</r>\n{1}境之后死亡将需要<r>{2}分钟</r>的时间重塑肉身！",
-      "tc": "{0}境之前死亡將<r>永久刪檔！</r>\n{1}境之後死亡將需要<r>{2}分鐘</r>的時間重塑肉身！"
+      "tc": "{0}境之前死亡將<r>永久刪檔！</r>\n{1}境之後死亡將需要<r>{2}分鐘</r>的時間重塑肉身！",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnlockDesc3": {
       "id": "22626",
@@ -158358,72 +158410,92 @@
     "diffGas4": {
       "id": "22628",
       "key": "diffGas4",
-      "pt": " Muito baixo",
+      "pt": "Muito Baixo",
       "ch": "贫瘠",
-      "tc": "貧瘠"
+      "tc": "貧瘠",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffHerb4": {
       "id": "22629",
       "key": "diffHerb4",
-      "pt": " Muito baixo",
+      "pt": "Muito Baixo",
       "ch": "贫乏",
-      "tc": "貧乏"
+      "tc": "貧乏",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffMine4": {
       "id": "22630",
       "key": "diffMine4",
-      "pt": " Muito baixo",
+      "pt": "Muito Baixo",
       "ch": "贫乏",
-      "tc": "貧乏"
+      "tc": "貧乏",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffPrice4": {
       "id": "22631",
       "key": "diffPrice4",
-      "pt": " Extremamente alto",
+      "pt": "Extr. Alto",
       "ch": "极高",
-      "tc": "極高"
+      "tc": "極高",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffRoleAttr4": {
       "id": "22632",
       "key": "diffRoleAttr4",
-      "pt": " Baixo",
+      "pt": "Baixo",
       "ch": "低",
-      "tc": "低"
+      "tc": "低",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffFeature4": {
       "id": "22633",
       "key": "diffFeature4",
-      "pt": " Padrão",
+      "pt": "Padrão",
       "ch": "标准",
-      "tc": "標準"
+      "tc": "標準",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnitHp4": {
       "id": "22634",
       "key": "diffUnitHp4",
-      "pt": " Extremamente alto",
+      "pt": "Extr. Alto",
       "ch": "极高",
-      "tc": "極高"
+      "tc": "極高",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnitDmg4": {
       "id": "22635",
       "key": "diffUnitDmg4",
-      "pt": " Extremamente alto",
+      "pt": "Extr. Alto",
       "ch": "极高",
-      "tc": "極高"
+      "tc": "極高",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnitNum4": {
       "id": "22636",
       "key": "diffUnitNum4",
-      "pt": " Extremamente alto",
+      "pt": "Extr. Alto",
       "ch": "极多",
-      "tc": "極多"
+      "tc": "極多",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffPunish4": {
       "id": "22637",
       "key": "diffPunish4",
-      "pt": "Seu salvamento será <r>excluído permanentemente</r> Se você morrer!",
+      "pt": "Morte: <r>Save excluído permanentemente!</r>",
       "ch": "死亡将<r>永久删档</r>！",
-      "tc": "死亡將<r>永久刪檔</r>！"
+      "tc": "死亡將<r>永久刪檔</r>！",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnlockDesc4": {
       "id": "22638",
@@ -158442,72 +158514,92 @@
     "diffGas5": {
       "id": "22640",
       "key": "diffGas5",
-      "pt": " Muito baixo",
+      "pt": "Muito Baixo",
       "ch": "贫瘠",
-      "tc": "貧瘠"
+      "tc": "貧瘠",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffHerb5": {
       "id": "22641",
       "key": "diffHerb5",
-      "pt": " Muito baixo",
+      "pt": "Muito Baixo",
       "ch": "贫乏",
-      "tc": "貧乏"
+      "tc": "貧乏",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffMine5": {
       "id": "22642",
       "key": "diffMine5",
-      "pt": " Muito baixo",
+      "pt": "Muito Baixo",
       "ch": "贫乏",
-      "tc": "貧乏"
+      "tc": "貧乏",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffPrice5": {
       "id": "22643",
       "key": "diffPrice5",
-      "pt": " Extremamente alto",
+      "pt": "Extr. Alto",
       "ch": "极高",
-      "tc": "極高"
+      "tc": "極高",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffRoleAttr5": {
       "id": "22644",
       "key": "diffRoleAttr5",
-      "pt": " Baixo",
+      "pt": "Baixo",
       "ch": "低",
-      "tc": "低"
+      "tc": "低",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffFeature5": {
       "id": "22645",
       "key": "diffFeature5",
-      "pt": " Padrão",
+      "pt": "Padrão",
       "ch": "标准",
-      "tc": "標準"
+      "tc": "標準",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnitHp5": {
       "id": "22646",
       "key": "diffUnitHp5",
-      "pt": " Extremamente alto",
+      "pt": "Extr. Alto",
       "ch": "极高",
-      "tc": "極高"
+      "tc": "極高",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnitDmg5": {
       "id": "22647",
       "key": "diffUnitDmg5",
-      "pt": " Extremamente alto",
+      "pt": "Extr. Alto",
       "ch": "极高",
-      "tc": "極高"
+      "tc": "極高",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnitNum5": {
       "id": "22648",
       "key": "diffUnitNum5",
-      "pt": " Extremamente alto",
+      "pt": "Extr. Alto",
       "ch": "极多",
-      "tc": "極多"
+      "tc": "極多",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffPunish5": {
       "id": "22649",
       "key": "diffPunish5",
-      "pt": "Seu salvamento será <r>excluído permanentemente</r> Se você morrer!\nEsse nível de dificuldade é extremamente desafiador. Não recomendamos para novos jogadores.",
+      "pt": "Morte: <r>Save excluído permanentemente!</r>\n<r>Modo extremo não recomendado para novatos.</r>",
       "ch": "死亡将<r>永久删档</r>！\n此模式极具挑战，不推荐新手尝试。",
-      "tc": "死亡將<r>永久刪檔</r>！\n此模式極具挑戰，不推薦新手嘗試。"
+      "tc": "死亡將<r>永久刪檔</r>！\n此模式極具挑戰，不推薦新手嘗試。",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "diffUnlockDesc5": {
       "id": "22650",
@@ -158540,9 +158632,11 @@
     "diffEnterTips5": {
       "id": "22654",
       "key": "diffEnterTips5",
-      "pt": "Esse nível de dificuldade é <r>extremamente desafiador</r>. Não recomendamos para novos jogadores.\n<r>Salvar e Carregar não funcionaram!</r>\n(Mesmo se você carregar uma defesa, quaisquer resultados que você recebeu nos seguintes recursos não serão alterados: reescrever Destiny, Leilão, Biblioteca Manual e Pavilhão Manual. Para equilibrar essa configuração, você terá 6 opções para escolher quando você reescreve Destiny.)\n<r>Monstros míticos!</r>\n(Tempo de elenco muito curto)\n<r>NPCs poderosos!</r>\n(Eles usarão habilidades de maior raridade. Para equilibrar essa configuração, você terá uma chance maior de encontrar manuais de alta raridade na biblioteca manual e no pavilhão manual.)\n<color=#00ffff>Monstros em algumas masmorras soltam itens duplos.</color>\n<color=#00ffff>(O Major Grande Monstros especiais solta manuais duplos! No máximo 9 Opções de Destiny de Reescrever pode aparecer durante uma inovação.)</color>",
+      "pt": "<size=13>Este modo é <r>extremamente difícil</r>. Não recomendado para novatos.\n<r>Sem Save/Load (SL)!</r>\n(Recarregar não altera: Destino, Leilão ou Pavilhões. Para compensar, terá 6 opções ao reescrever o Destino.)\n<r>Grandes Feras Furiosas!</r>\n(Intervalo de conjuração muito menor)\n<r>NPCs Muito Poderosos!</r>\n(Usam habilidades de maior raridade. Como compensação, os Pavilhões terão manuais superiores.)\n<color=#00ffff>Monstros em certas masmorras dropam dobro de itens.</color>\n<color=#00ffff>(Grandes Feras dropam manuais duplos! Até 9 opções de Destino no avanço.)</color></size>",
       "ch": "此模式<r>极具挑战</r>，不推荐新手玩家尝试。\n<r>无法SL！</r>\n（SL不会改变逆天改命、拍卖会、藏经阁/琅琊阁的结果）\n<r>大妖兽非常狂暴！</r>\n（施放技能的时间间隔更短）\n<r>NPC更加强大！</r>\n（使用的技能品质更高，作为补偿，此模式下的琅琊阁与藏经阁也会更容易出现高级的秘籍）\n<color=#00ffff>部分副本内的怪物可掉落双倍物品。</color>\n<color=#00ffff>（特殊大大妖兽秘籍会双倍产出！且突破境界时最多可出现9个逆天改命选项）</color>",
-      "tc": "此模式<r>極具挑戰</r>，不推薦新手玩家嘗試。\n<r>無法SL！</r>\n（SL不會改變逆天改命、拍賣會、藏經閣/琅琊閣的結果）\n<r>大妖兽非常狂暴！</r>\n（施放技能的時間間隔更短）\n<r>NPC更加強大！</r>\n（使用的技能品質更高，作為補償，此模式下的琅琊閣與藏經閣也會更容易出現高級的秘笈）"
+      "tc": "此模式<r>極具挑戰</r>，不推薦新手玩家嘗試。\n<r>無法SL！</r>\n（SL不會改變逆天改命、拍賣會、藏經閣/琅琊閣的結果）\n<r>大妖兽非常狂暴！</r>\n（施放技能的時間間隔更短）\n<r>NPC更加強大！</r>\n（使用的技能品質更高，作為補償，此模式下的琅琊閣與藏經閣也會更容易出現高級的秘笈）",
+      "author": "Take Over (Ajuste UI)",
+      "updatedAt": "2026-11-09T18:43:15.174Z"
     },
     "juqing_zhuanmuquhuo1": {
       "id": "22655",

@@ -28,7 +28,7 @@ function detectCategory(item) {
   if (key.startsWith('drama') || key.startsWith('dialogue')) return { id: 'drama', name: '🎭 Diálogos & História' };
   if (key.startsWith('item') || key.includes('prop') || key.includes('pill') || key.includes('elixir')) return { id: 'item', name: '🧪 Itens & Pílulas' };
   if (key.startsWith('skill') || key.startsWith('battle') || key.includes('wuxue') || key.includes('fate')) return { id: 'skill', name: '⚔️ Habilidades & Combate' };
-  if (key.startsWith('ui') || key.startsWith('common') || key.startsWith('shezhi') || key.includes('menu')) return { id: 'ui', name: '🖥️ Interface & Menus' };
+  if (key.startsWith('ui') || key.startsWith('common') || key.startsWith('shezhi') || key.includes('menu') || key.startsWith('diff') || key.startsWith('setting') || key.startsWith('btn')) return { id: 'ui', name: '🖥️ Interface & Menus' };
   if (key.startsWith('startgametip') || key.startsWith('patch') || key.includes('update')) return { id: 'patch', name: '📜 Notas de Atualização' };
   if (key.startsWith('task') || key.includes('quest') || key.startsWith('school')) return { id: 'quest', name: '📜 Missões & Seitas' };
   return { id: 'other', name: '📦 Outros' };
@@ -125,6 +125,15 @@ function getStats() {
     .sort((a, b) => b.count - a.count)
     .slice(0, 10);
 
+  let overflowCount = 0;
+  const uiPrefixes = ['ui_', 'btn_', 'diff', 'menu_', 'title_', 'tab_', 'panel_', 'battle_ui', 'rolecreate', 'setting_'];
+  for (const [key, val] of Object.entries(db.localText || {})) {
+    const lk = key.toLowerCase();
+    if (uiPrefixes.some(p => lk.startsWith(p)) && val.pt && (val.pt.length > 25 || (lk.includes('btn') && val.pt.length > 15))) {
+      overflowCount++;
+    }
+  }
+
   return {
     total,
     translated,
@@ -141,6 +150,7 @@ function getStats() {
     },
     pendingCount: pending.length,
     modifiedCount: modified.length,
+    overflowCount,
     leaderboard
   };
 }
@@ -190,6 +200,18 @@ function handleApi(req, res, parsedUrl) {
       for (const [id, val] of Object.entries(db.roleLog || {})) {
         items.push({ file: 'RoleLogLocal', identifier: id, id, keyID: val.keyID, ch: val.ch, pt: val.pt, author: val.author, updatedAt: val.updatedAt });
       }
+    } else if (type === 'overflow' && fs.existsSync(config.databaseFile)) {
+      const db = JSON.parse(fs.readFileSync(config.databaseFile, 'utf8'));
+      const uiPrefixes = ['ui_', 'btn_', 'diff', 'menu_', 'title_', 'tab_', 'panel_', 'battle_ui', 'rolecreate', 'setting_'];
+      for (const [key, val] of Object.entries(db.localText || {})) {
+        const lk = key.toLowerCase();
+        const isUI = uiPrefixes.some(p => lk.startsWith(p));
+        const pt = val.pt || '';
+        if (isUI && pt.trim() && (pt.length > 25 || (lk.includes('btn') && pt.length > 15))) {
+          items.push({ file: 'LocalText', identifier: key, id: val.id, key, ch: val.ch, en: val.en, pt: val.pt, author: val.author, updatedAt: val.updatedAt, len: pt.length });
+        }
+      }
+      items.sort((a, b) => b.len - a.len);
     }
 
     // Filtro por arquivo
@@ -514,6 +536,7 @@ const HTML_CONTENT = `<!DOCTYPE html>
       <button class="tab-btn active" onclick="switchTab('pending')">Novos Pendentes (<span id="tabCountPending">0</span>)</button>
       <button class="tab-btn" onclick="switchTab('modified')">Modificados no Jogo (<span id="tabCountModified">0</span>)</button>
       <button class="tab-btn" onclick="switchTab('database')">Banco Completo (Pesquisar)</button>
+      <button class="tab-btn" onclick="switchTab('overflow')">📏 Textos Longos / UI (<span id="tabCountOverflow">0</span>)</button>
     </div>
 
     <div class="filters-bar">
@@ -604,6 +627,9 @@ const HTML_CONTENT = `<!DOCTYPE html>
         document.getElementById('statModifiedDetail').innerText = data.modifiedCount + ' alterados';
         document.getElementById('tabCountPending').innerText = data.pendingCount;
         document.getElementById('tabCountModified').innerText = data.modifiedCount;
+        if (document.getElementById('tabCountOverflow')) {
+          document.getElementById('tabCountOverflow').innerText = data.overflowCount || 0;
+        }
 
         // Renderizar leaderboard
         let lHtml = '<div style="display: flex; flex-direction: column; gap: 8px;">';
@@ -690,7 +716,8 @@ const HTML_CONTENT = `<!DOCTYPE html>
                   <span class="item-id">\${key || id}</span>
                   \${key && id ? '<span style="font-size: 0.75rem; color: var(--text-muted);">(ID: ' + id + ')</span>' : ''}
                 </div>
-                <div>
+                <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                  \${currentPt && currentPt.length > 25 && cat.id === 'ui' ? \`<span style="background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; font-weight: 600;">📏 \${currentPt.length} chars (Risco de corte)</span>\` : ''}
                   \${isChOnly ? '<span style="color: var(--accent-gold); font-weight: 600; font-size: 0.8rem; background: rgba(251,191,36,0.1); padding: 2px 8px; border-radius: 4px; border: 1px solid rgba(251,191,36,0.3);">⚠️ Sem inglês oficial (Traduzindo do Chinês)</span>' : ''}
                   \${currentTab === 'modified' ? '<span style="color: var(--accent-gold); font-weight: 600; font-size: 0.8rem;">⚠️ Texto alterado no update</span>' : ''}
                 </div>

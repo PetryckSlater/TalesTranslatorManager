@@ -1,0 +1,2484 @@
+{
+  "buttonsLong": [
+    {
+      "key": "battle_fuhuoanniu2",
+      "pt": "Revive no mapa do mundo",
+      "ch": "大世界复活",
+      "en": "",
+      "len": 23
+    },
+    {
+      "key": "mod_juqinganniu1",
+      "pt": "Requisitos de aparência do botão de opção",
+      "ch": "选项按钮出现条件",
+      "en": "",
+      "len": 41
+    },
+    {
+      "key": "mod_juqinganniu2",
+      "pt": "Requisitos para o botão aparecer. O botão não aparecerá se o requisito não for atendido.",
+      "ch": "按钮出现的条件，条件不满足的按钮则不会出现。",
+      "en": "",
+      "len": 88
+    },
+    {
+      "key": "mod_juqinganniu3",
+      "pt": "Texto no botão de opção",
+      "ch": "选项按钮文本",
+      "en": "",
+      "len": 23
+    },
+    {
+      "key": "mod_juqinganniu4",
+      "pt": "Custo do item para tocar no botão de opção",
+      "ch": "点击选项按钮需要消耗的道具",
+      "en": "",
+      "len": 42
+    },
+    {
+      "key": "mod_juqinganniu5",
+      "pt": "Comando executado após tocar no botão de opção",
+      "ch": "点击选项按钮执行的命令",
+      "en": "",
+      "len": 46
+    },
+    {
+      "key": "mod_juqinganniu6",
+      "pt": "Próximo Plot para ir depois de tocar no botão de opção",
+      "ch": "点击选项按钮后跳转的下一个剧情",
+      "en": "",
+      "len": 54
+    },
+    {
+      "key": "ghostMontGame_protectionBtnText",
+      "pt": "Proteção de atualização",
+      "ch": "升级保护",
+      "en": "",
+      "len": 23
+    },
+    {
+      "key": "artifactShape_QuickBtn",
+      "pt": "Adicionar automaticamente",
+      "ch": "一键放入",
+      "en": "",
+      "len": 25
+    },
+    {
+      "key": "schoolRelocate_zzfj_btn",
+      "pt": "Construir Canoa Voadora",
+      "ch": "建造飞舟",
+      "en": "",
+      "len": 23
+    },
+    {
+      "key": "ui_zmdbjg_textBtnCloseExit",
+      "pt": "Sair do Torneio da Seita",
+      "ch": "离开宗门大比",
+      "en": "",
+      "len": 24
+    },
+    {
+      "key": "ui_mibaoge_textBtnSubmit",
+      "pt": "Ative o Trono de Lótus",
+      "ch": "催动莲台",
+      "en": "",
+      "len": 22
+    },
+    {
+      "key": "ui_zmdbjfs_battleTextBtnWatch",
+      "pt": "Marque para assistir",
+      "ch": "勾选观看",
+      "en": "",
+      "len": 20
+    },
+    {
+      "key": "ui_zmdbjfs_scoreTextBtnOk",
+      "pt": "Retirada do Torneio da Seita",
+      "ch": "退出宗门大比",
+      "en": "",
+      "len": 28
+    },
+    {
+      "key": "ui_zmdbjfs_scoreTextBtnOkPromoted",
+      "pt": "Entre na Partida de Desafio Aberto da Seita",
+      "ch": "进入擂台赛",
+      "en": "",
+      "len": 43
+    },
+    {
+      "key": "schoolMap_btnTipTitle1",
+      "pt": "Envie Discípulos para invadir este ponto de recurso. Incursões bem-sucedidas aumentam os recursos da seita.",
+      "ch": "派遣弟子掠夺该资源点，掠夺成功可增加宗门资源。",
+      "en": "",
+      "len": 107
+    },
+    {
+      "key": "schoolMap_btnTipTitle2",
+      "pt": "Inicie uma aquisição no ponto de recurso. Depois de ocupá-lo com sucesso, a Seita pode obter uma certa quantidade de recursos do recurso ponto todo mês.",
+      "ch": "对该资源点发动占领战，成功占领后，宗门每个月都可以从资源点中获得一定的资源。",
+      "en": "",
+      "len": 152
+    },
+    {
+      "key": "schoolMap_btnTipTitle3",
+      "pt": "Comece uma guerra de aniquilação contra outra seita e derrote-a para obter uma grande quantidade de recursos da seita adversária.",
+      "ch": "对该宗门发动灭宗战，战斗胜利后，我方可获得对方大量的资源。",
+      "en": "",
+      "len": 129
+    },
+    {
+      "key": "ui_zmdbphb_btnChestTitle1",
+      "pt": "Recompensa do Primeiro Lugar",
+      "ch": "头筹奖励",
+      "en": "",
+      "len": 28
+    },
+    {
+      "key": "ui_zmdbphb_btnChestTitle2",
+      "pt": "Recompensa do Segundo Lugar",
+      "ch": "次席奖励",
+      "en": "",
+      "len": 27
+    },
+    {
+      "key": "ui_zmdbphb_btnChestTitle3",
+      "pt": "Recompensa do último lugar",
+      "ch": "末席奖励",
+      "en": "",
+      "len": 26
+    },
+    {
+      "key": "uiTaoistRank_allBtn",
+      "pt": "Todos os títulos taoístas",
+      "ch": "全部道号",
+      "en": "",
+      "len": 25
+    },
+    {
+      "key": "ganwu_anniu3",
+      "pt": "Percepção da fonte Dao",
+      "ch": "道源感悟",
+      "en": "",
+      "len": 22
+    },
+    {
+      "key": "dlc_battleDieBtn",
+      "pt": "Acordo de batalha",
+      "ch": "战斗结算",
+      "en": "",
+      "len": 17
+    }
+  ],
+  "labelsLong": [
+    {
+      "key": "ui_promptwarning_PLM",
+      "pt": "Você não tem<r> {#role_feature_postnatal_name76211}</r> e não consegue resistir ao frio depois de entrar em {#fortuitous_event_name4601}. Entrar mesmo assim?",
+      "ch": "你没有<r>{#role_feature_postnatal_name76211}</r>，进入{#fortuitous_event_name4601}无法抵御寒气，是否仍要进入？",
+      "en": "",
+      "len": 157
+    },
+    {
+      "key": "setting_cuowutishi1",
+      "pt": "Esta ação só é permitida no mapa do mundo",
+      "ch": "必须在大地图中进行操作",
+      "en": "",
+      "len": 41
+    },
+    {
+      "key": "setting_cuowutishi2",
+      "pt": "Você não pode salvar o jogo enquanto estiver em seu estado atual",
+      "ch": "当前操作下不可保存存档",
+      "en": "",
+      "len": 64
+    },
+    {
+      "key": "setting_tuichutishi",
+      "pt": "O progresso do seu jogo não será salvo se você sair do jogo agora",
+      "ch": "退出游戏将不会储存游戏进度",
+      "en": "",
+      "len": 65
+    },
+    {
+      "key": "setting_baocuntishi",
+      "pt": "Salve as configurações atuais?",
+      "ch": "是否保存当前设置？",
+      "en": "",
+      "len": 30
+    },
+    {
+      "key": "setting_bukeshezhi",
+      "pt": "(Personalização não suportada)",
+      "ch": "（不可自定义）",
+      "en": "",
+      "len": 30
+    },
+    {
+      "key": "setting_jianweichongtu",
+      "pt": "Conflito de combinação de teclas detectado. Pressione uma tecla diferente.",
+      "ch": "键位冲突，请重新修改",
+      "en": "",
+      "len": 74
+    },
+    {
+      "key": "diffPunish1",
+      "pt": "Reconstrução corporal: <r>{0} min</r> ao morrer.",
+      "ch": "死亡后将需要<r>{0}分钟</r>的时间重塑肉身！",
+      "en": "",
+      "len": 48
+    },
+    {
+      "key": "diffPunish2",
+      "pt": "Reconstrução corporal: <r>{0} min</r> ao morrer.",
+      "ch": "死亡后将需要<r>{0}分钟</r>的时间重塑肉身！",
+      "en": "",
+      "len": 48
+    },
+    {
+      "key": "diffPunish4",
+      "pt": "Morte: <r>Save excluído permanentemente!</r>",
+      "ch": "死亡将<r>永久删档</r>！",
+      "en": "",
+      "len": 44
+    },
+    {
+      "key": "diff_xuanzenandu1",
+      "pt": "Selecione uma dificuldade desbloqueada!",
+      "ch": "请选择一个已解锁的难度",
+      "en": "",
+      "len": 39
+    },
+    {
+      "key": "diff_nandu5tishi",
+      "pt": "O modo Chaos é extremamente difícil. Pode ser frustrante, então pense duas vezes antes de escolher esse nível de dificuldade. Escolha o nível do Caos?",
+      "ch": "洪荒难度极大，可能会有一些不够良好的体验，请谨慎选择！\n确认选择洪荒难度吗？",
+      "en": "",
+      "len": 150
+    },
+    {
+      "key": "ui_game_qiehuanyuyan1",
+      "pt": "Idioma alterado. Ele entrará em vigor depois que você salvar as configurações e retornar ao menu principal ou reiniciar o jogo.",
+      "ch": "切换语言成功，保存设置后返回主界面或重启游戏生效。",
+      "en": "",
+      "len": 127
+    },
+    {
+      "key": "ui_game_qiehuanyuyan2",
+      "pt": "Idioma alterado. Ele entrará em vigor depois que você salvar as configurações e reiniciar o jogo.",
+      "ch": "切换语言成功，保存设置后重启游戏生效。",
+      "en": "",
+      "len": 97
+    },
+    {
+      "key": "ui_zmdblts_textAssignTitle",
+      "pt": "Designe um discípulo para lutar",
+      "ch": "指派弟子上场",
+      "en": "",
+      "len": 31
+    },
+    {
+      "key": "ui_zmdbjfs_contentIntro",
+      "pt": "A Sect Points Race é uma competição round robin contra outras seitas. Consiga <#791515>3 pontos</color> Para a vitória. Ambos os lados ganham <#791515>1 ponto cada</color> para um empate, e a derrota significa <#791515>nenhum ponto</color> . Ao final da Points Race, os <#791515>Top 3</color> em termos de pontos pode obter o <#791515>direito de participar</color> no Open Challenge Match e, eventualmente, competir pelos 3 primeiros lugares no Torneio da Seita.",
+      "ch": "宗门积分赛为分别与其它宗门逐一对战的循环赛，胜利<#791515>积3分</color>，平局双方<#791515>各积1分</color>，失败<#791515>不积分</color>。\n积分赛结束时，积分<#791515>前三名</color>可以获得擂台赛<#791515>出战资格</color>，最终角逐宗门大比的前三席位。",
+      "en": "",
+      "len": 462
+    },
+    {
+      "key": "ui_zmdbxr_contentCallPlayer",
+      "pt": "O Torneio da Seita será realizado em breve. Participar?",
+      "ch": "宗门大比即将举行，是否参加？",
+      "en": "",
+      "len": 55
+    },
+    {
+      "key": "ui_mibaoge_textTimes",
+      "pt": "Ative este descanso<color=#ff0000> {0}</color> mais vezes",
+      "ch": "此次休整还可催动<color=#ff0000>{0}</color>次",
+      "en": "",
+      "len": 57
+    },
+    {
+      "key": "ui_mibaoge_textRemainsTitle",
+      "pt": "Spirit Stones de propriedade:",
+      "ch": "持有灵石：",
+      "en": "",
+      "len": 29
+    },
+    {
+      "key": "ui_mibaoge_exitCheckContent",
+      "pt": "Você ainda pode ativar o Lotus Throne. Você quer sair?",
+      "ch": "还能催动莲花，是否退出？",
+      "en": "",
+      "len": 54
+    },
+    {
+      "key": "ui_mibaoge_overCheckContent",
+      "pt": "Ativações do Lotus Throne esgotadas",
+      "ch": "催动莲台次数已耗尽",
+      "en": "",
+      "len": 35
+    },
+    {
+      "key": "ui_mibaoge_noTimes",
+      "pt": "Ativações esgotadas para este descanso",
+      "ch": "此次休整催动次数已耗尽",
+      "en": "",
+      "len": 38
+    },
+    {
+      "key": "ui_zmdblts_givePropsRemainsContent",
+      "pt": "Nem todo o tesouro foi distribuído. O tesouro desaparecerá quando a partida de desafio aberto terminar.",
+      "ch": "秘宝还没全部赠与，擂台赛结束后秘宝将会消失。",
+      "en": "",
+      "len": 103
+    },
+    {
+      "key": "ui_zmdbjfs_battleTextRule",
+      "pt": "Condição de vitória: Vitória {1}/{0}",
+      "ch": "获胜条件：{0}局{1}胜",
+      "en": "",
+      "len": 36
+    },
+    {
+      "key": "UI_leitaisai_rule",
+      "pt": "1. A <#e92828>partida de desafio aberto</color> termina quando todos os Discípulos tiverem participado, ou quando nenhum outro Discípulo da Seita puder participar, e o grande concurso da Seita terminar. 2. <#e92828>Torneio da Seita</color> as classificações finais são baseadas na soma da pontuação da Points Race e da pontuação do Open Challenge Match para decidir os <#e6ac0e>três primeiros lugares</color> . 3. O Discípulo que <#e6ac0e>ganhou mais pontos pessoais</color> vai ser o <#ff7800>Campeão</color> .",
+      "ch": "1.<#e92828>擂台赛</color>所有弟子完成上擂或没有其他宗门弟子可以上擂时，结束本次宗门大赛。\n2.<#e92828>宗门大比</color>最终的排名是根据积分赛得分和擂台赛得分总和来决出<#e6ac0e>前三名</color>。\n3.个人<#e6ac0e>得分最高</color>的弟子会获得本次宗门大比的<#ff7800>魁首</color>。",
+      "en": "",
+      "len": 511
+    },
+    {
+      "key": "UI_mibaofenpei_textZhongShang",
+      "pt": "Gravemente ferido não pode lutar",
+      "ch": "重伤状态\n无法上场",
+      "en": "",
+      "len": 32
+    },
+    {
+      "key": "ui_zmdbjfs_scoreTextBtnOkPromoted",
+      "pt": "Entre na Partida de Desafio Aberto da Seita",
+      "ch": "进入擂台赛",
+      "en": "",
+      "len": 43
+    },
+    {
+      "key": "ui_zmdbjfs_4",
+      "pt": "A Seita adversária não tem mais Discípulos para colocar em jogo. Sua seita vence esta rodada.",
+      "ch": "对方宗门已无弟子可上场\n本局我方宗门获胜",
+      "en": "",
+      "len": 93
+    },
+    {
+      "key": "ui_zmdbjfs_5",
+      "pt": "Sua Seita não tem mais Discípulos para colocar em jogo. As seitas adversárias vencem esta rodada.",
+      "ch": "我方宗门已无弟子可上场\n本局对方宗门获胜",
+      "en": "",
+      "len": 97
+    },
+    {
+      "key": "ui_zmdbjfs_explain",
+      "pt": "Regras da Corrida de Pontos de Torneio da Seita: 1. A Corrida de Pontos de Torneio da Seita é um sistema round-robin onde você deve vencer três de cinco. O primeiro a conseguir três vitórias vencerá a rodada. 2. O vencedor da rodada anterior selecionará os Discípulos primeiro. Durante a partida, é permitido utilizar os itens da barra de itens e os tesouros obtidos no Tesouro.",
+      "ch": "宗门大比积分赛说明：\n1.宗门大比积分赛采用五局三胜循环赛制，先获得三胜方获得本轮胜利。\n2.上一局获胜方先选择出战弟子。对阵过程中允许使用道具栏上的道具和秘宝阁求取的秘宝。",
+      "en": "",
+      "len": 378
+    },
+    {
+      "key": "ui_zmdbjfs_6",
+      "pt": "Ambas as Seitas não têm mais Discípulos para colocar em jogo. A partida está empatada.",
+      "ch": "双方宗门已无弟子可上场，本局平局。",
+      "en": "",
+      "len": 86
+    },
+    {
+      "key": "ui_noHasSkill",
+      "pt": "Nenhuma habilidade aprendida!",
+      "ch": "没有学习任何技能！",
+      "en": "",
+      "len": 29
+    },
+    {
+      "key": "ui_taoistSelect_challenge",
+      "pt": "Selecione o título taoísta para desafiar",
+      "ch": "选择要挑战的道号",
+      "en": "",
+      "len": 40
+    },
+    {
+      "key": "ui_cantFindNpc",
+      "pt": "Incapaz de localizar a alma dessa pessoa!",
+      "ch": "无法定位此人元魂！",
+      "en": "",
+      "len": 41
+    },
+    {
+      "key": "ui_haotianyan_fuhuotishi",
+      "pt": "Olho da Providência Ativado - Proteção do Caminho Celestial",
+      "ch": "触发昊天眼天道庇佑",
+      "en": "",
+      "len": 59
+    },
+    {
+      "key": "ui_haotianyan_posui",
+      "pt": "Olho da Providência Despedaçado",
+      "ch": "昊天眼已破碎",
+      "en": "",
+      "len": 31
+    },
+    {
+      "key": "ui_haotianyan_shandang",
+      "pt": "Olho da Providência despedaçado. Salvar foi excluído!",
+      "ch": "昊天眼破碎，存档已删除！",
+      "en": "",
+      "len": 53
+    },
+    {
+      "key": "ui_townFight_daoxingetishi1",
+      "pt": "<g>O Taoist Mind Pavilion cresceu em tamanho e força, e o número de Taoist Fruits recompensado no Immortal Tournament aumentou consequentemente.</g>",
+      "ch": "<g>由于道心阁发展壮大，升仙大会中奖励的道心果有所增加</g>",
+      "en": "",
+      "len": 148
+    },
+    {
+      "key": "ui_townFight_daoxingetishi2",
+      "pt": "<r>O Taoist Mind Pavilion sofreu um revés e, consequentemente, o número de Taoist Fruits recompensado no Immortal Tournament foi reduzido.</g>",
+      "ch": "<r>由于道心阁发展受挫，升仙大会中奖励的道心果有所减少</g>",
+      "en": "",
+      "len": 142
+    },
+    {
+      "key": "ui_skill_shengjitishi",
+      "pt": "Ganhe Entendimento nas Skills da Besta, e elas vão ser desbloqueadas e aparecerão na lista. Desbloqueie e mate 5 Bestas do Reino superiores, e você pode clicar em Breakthrough para aumentar o Reino de Habilidade da Besta correspondente. Bestas do Reino Superior podem ser encontradas em cidades, masmorras da Missão da Seita ou em áreas do Reino superior, como a Torre Devoradora de Almas, o Reino Tao e assim por diante.",
+      "ch": "成功领悟其技能的妖兽，将会在列表中解锁显示。解锁并击杀5个更高境界的妖兽后，可点击按钮突破，使对应境界的妖兽技能境界提升一级。更高境界的妖兽可能会会于城镇、宗门任务副本，或更高境界的区域，以及噬魂塔、道界等处出没。",
+      "en": "",
+      "len": 421
+    },
+    {
+      "key": "ui_skill_kaiguangSkill",
+      "pt": "Desbloqueie e derrote {0} Realm Beast: {1}/{2}",
+      "ch": "解锁并击败{0}境的妖兽：{1}/{2}",
+      "en": "",
+      "len": 46
+    },
+    {
+      "key": "ui_skill_ganwujineng",
+      "pt": "Habilidade de Besta Compreendida",
+      "ch": "已领悟的妖兽技能",
+      "en": "",
+      "len": 32
+    },
+    {
+      "key": "ui_skill_jinengtishi",
+      "pt": "Você pode trocar as habilidades de outras Habilidades de Besta que você já compreendeu aqui.",
+      "ch": "可在此切换已领悟的其他妖兽技能",
+      "en": "",
+      "len": 92
+    },
+    {
+      "key": "ui_godEye_title1",
+      "pt": "Proteção do Caminho Celestial",
+      "ch": "天道庇佑",
+      "en": "",
+      "len": 29
+    },
+    {
+      "key": "ui_godEye_title2",
+      "pt": "(Proteção do Caminho Celestial)",
+      "ch": "（天道庇佑）",
+      "en": "",
+      "len": 31
+    },
+    {
+      "key": "ui_godEye_title4",
+      "pt": "(Você pode equipar uma habilidade de besta dominada para usá-la)",
+      "ch": "（当领悟妖兽技能可装配为自己所用）",
+      "en": "",
+      "len": 64
+    },
+    {
+      "key": "ui_godEye_skillCD",
+      "pt": "Recarga de habilidade: <color=#F1FF19><space=-0.2em><voffset=-0.1em><size=130%><sprite name=jinenglengque><size=100%></voffset><space=0.3em> {0}s</color>",
+      "ch": "技能冷却：<color=#F1FF19><space=-0.2em><voffset=-0.1em><size=130%><sprite name=jinenglengque><size=100%></voffset><space=0.3em>{0}秒</color>",
+      "en": "",
+      "len": 153
+    },
+    {
+      "key": "ui_godEye_skillCons",
+      "pt": "Custo de Fundição: <color=#F1FF19><space=-0.2em><voffset=-0.1em><size=130%><sprite name=lingli><size=100%></voffset><space=0.3em> {0} Energia</color>",
+      "ch": "施法消耗：<color=#F1FF19><space=-0.2em><voffset=-0.1em><size=130%><sprite name=lingli><size=100%></voffset><space=0.3em>{0}灵力</color>",
+      "en": "",
+      "len": 149
+    },
+    {
+      "key": "ui_godEye_kqhts",
+      "pt": "Você pode trocar as habilidades de outras Habilidades de Besta que você já compreendeu aqui.",
+      "ch": "可在此切换已领悟的其他妖兽技能",
+      "en": "",
+      "len": 92
+    },
+    {
+      "key": "ui_godEye_xfqr",
+      "pt": "Gastar {0} Pedras Espirituais para reparar o Olho da Providência? Levará {1} mês(es), durante o qual todas as suas funções serão desativadas.",
+      "ch": "是否花费{0}灵石修复昊天眼？修复工作需要耗时{1}个月，期间仍无法使用昊天眼的所有功能",
+      "en": "",
+      "len": 141
+    },
+    {
+      "key": "ui_godEyeList_title",
+      "pt": "Atualize a habilidade da besta para [{0}]",
+      "ch": "妖兽技能提升至【{0}】",
+      "en": "",
+      "len": 41
+    },
+    {
+      "key": "ui_game_biaoqingdonghua",
+      "pt": "Reproduzir Animação de Expressão",
+      "ch": "播放表情动画",
+      "en": "",
+      "len": 32
+    },
+    {
+      "key": "ui_minmap_qilingcailiao",
+      "pt": "Material do Espírito Artefato",
+      "ch": "器灵材料",
+      "en": "",
+      "len": 29
+    },
+    {
+      "key": "ui_haotianyan_jiesuotishi",
+      "pt": "<r>Deve avançar para {0} em qualquer dificuldade ou desbloquear o modo Chaos para selecionar</r>",
+      "ch": "<r>需要在任意难度下突破至{0}或解锁洪荒模式后方可选择</r>",
+      "en": "",
+      "len": 96
+    },
+    {
+      "key": "ui_godEye_bkxf",
+      "pt": "Não é possível reparar no modo Caos.",
+      "ch": "洪荒模式下无法修复",
+      "en": "",
+      "len": 36
+    },
+    {
+      "key": "ui_elderAIOption_biaoti",
+      "pt": "Autoridade de Despacho da Seita",
+      "ch": "宗门调度权限",
+      "en": "",
+      "len": 31
+    },
+    {
+      "key": "ui_elderAIOption_tishi",
+      "pt": "Ajuste a autoridade dos Grandes Anciãos ou Anciãos em sua jurisdição para despachar Discípulos.",
+      "ch": "调整自身管辖范围内的大长老或长老调度弟子的权限",
+      "en": "",
+      "len": 95
+    },
+    {
+      "key": "ui_elderAIOption_optionSky1",
+      "pt": "Grandes Anciãos ou Anciãos dentro da jurisdição (incluindo Ramos) agirão de acordo com a situação da Seita e despacharão automaticamente os Discípulos na Seita.",
+      "ch": "自身管辖范围内（包括分舵）的大长老或长老将会根据宗门情况，自行调度宗门内的弟子。",
+      "en": "",
+      "len": 160
+    },
+    {
+      "key": "ui_elderAIOption_optionSky2",
+      "pt": "Grandes Anciãos ou Anciãos dentro da jurisdição (incluindo Filiais) agirão de acordo com a situação da Seita e solicitarão sua permissão antes de despachar Discípulos na Seita.",
+      "ch": "自身管辖范围内（包括分舵）的大长老或长老将会根据宗门情况，向自身请示后调度宗门内的弟子。",
+      "en": "",
+      "len": 176
+    },
+    {
+      "key": "ui_elderAIOption_optionSky3",
+      "pt": "Os Grandes Anciãos ou Anciãos dentro da jurisdição (incluindo Ramos) não farão nenhuma alteração nos Discípulos da Seita.",
+      "ch": "自身管辖范围内（包括分舵）的大长老或长老将不会对宗门内弟子做任何调整。",
+      "en": "",
+      "len": 121
+    },
+    {
+      "key": "ui_mapBattlePre_notAttack",
+      "pt": "Não é possível entrar no desafio agora. Desistir?",
+      "ch": "目前无法进行挑战，是否退出",
+      "en": "",
+      "len": 49
+    },
+    {
+      "key": "ui_battleDie_htyts",
+      "pt": "O Olho da Providência emite uma estranha energia que envolve você. O espaço ao seu redor se contorce e desmorona, e a luz dourada voltará no tempo antes de você ser gravemente ferido. Você perderá todos os itens que obteve nesta batalha.",
+      "ch": "昊天眼散发出一股奇异能量将你包裹\n四周空间扭曲坍塌 金色光芒将时间倒流至重伤之前\n你将失去在本场战斗中已获得的道具",
+      "en": "",
+      "len": 237
+    },
+    {
+      "key": "ui_battleDie_zmsh",
+      "pt": "Você está prestes a levar um dano fatal.",
+      "ch": "你即将受到致命伤害",
+      "en": "",
+      "len": 40
+    },
+    {
+      "key": "ui_xianfa_wzbxf",
+      "pt": "Nenhuma Arte Celestial equipada",
+      "ch": "未装备仙法",
+      "en": "",
+      "len": 31
+    },
+    {
+      "key": "ui_xianfa_xfwcy",
+      "pt": "Arte Celestial não totalmente carregada",
+      "ch": "仙法未充盈",
+      "en": "",
+      "len": 39
+    },
+    {
+      "key": "ui_immortalHall_PropTitle",
+      "pt": "Selecione um item para sacrifício",
+      "ch": "选择需要供奉给仙人的物品",
+      "en": "",
+      "len": 33
+    },
+    {
+      "key": "ui_fairyLeagueStore_unLock",
+      "pt": "Desbloqueie mediante {0} Contribuição de Batalha",
+      "ch": "累计战功到达{0}解锁",
+      "en": "",
+      "len": 48
+    },
+    {
+      "key": "ui_zhangonghuangongxian",
+      "pt": "Troca por Contribuição da Seita",
+      "ch": "兑换宗门贡献",
+      "en": "",
+      "len": 31
+    },
+    {
+      "key": "setting_chongzaitishi",
+      "pt": "Recarregar o arquivo de salvamento atual? (Qualquer progresso não salvo será perdido)",
+      "ch": "确定重新载入当前所保存的存档吗？（未保存的数据将丢失）",
+      "en": "",
+      "len": 85
+    },
+    {
+      "key": "ui_wingmanChange_select",
+      "pt": "Selecione esta Pena do Nether?",
+      "ch": "是否选择此冥羽",
+      "en": "",
+      "len": 30
+    },
+    {
+      "key": "ui_schoolAuraChange_jinggao",
+      "pt": "Selecione este Reescrever o Destino?",
+      "ch": "是否选择该逆天改命",
+      "en": "",
+      "len": 36
+    },
+    {
+      "key": "ui_gongfaxuanzetishi",
+      "pt": "Selecione uma arte marcial para atualizar",
+      "ch": "请选择要升级的功法。",
+      "en": "",
+      "len": 41
+    },
+    {
+      "key": "ui_gongfashengjitishi",
+      "pt": "Não foi possível obter o afixo nesta atualização. Continue de qualquer maneira?",
+      "ch": "本次升级无法获得词条，是否继续升级？",
+      "en": "",
+      "len": 79
+    },
+    {
+      "key": "ui_gongfaxuanzetishi2",
+      "pt": "Selecione um afixo desta atualização.",
+      "ch": "请选择升级获得的词条。",
+      "en": "",
+      "len": 37
+    },
+    {
+      "key": "ui_schoolAuraChange_end",
+      "pt": "Sect Rewrite Destiny Substituído!",
+      "ch": "宗门逆天改命修改成功！",
+      "en": "",
+      "len": 33
+    },
+    {
+      "key": "ui_gongfashengjititle",
+      "pt": "Selecione um afixo a ser adicionado após a atualização de [{0}] ({1}/1)",
+      "ch": "请选择【{0}】升级后添加的词条（{1}/1）",
+      "en": "",
+      "len": 71
+    },
+    {
+      "key": "ui_fateFeature_wingmanstate0",
+      "pt": "Ataque Automático<color=#16278b> <u>Alternar</u></color>",
+      "ch": "自动攻击<color=#16278b><u>切换</u></color>",
+      "en": "",
+      "len": 56
+    },
+    {
+      "key": "ui_fateFeature_wingmanstate1",
+      "pt": "Ataque manual<color=#16278b> <u>Alternar</u></color>",
+      "ch": "手动攻击<color=#16278b><u>切换</u></color>",
+      "en": "",
+      "len": 52
+    },
+    {
+      "key": "ui_jichujinengcitiao",
+      "pt": "Afixos básicos de habilidades",
+      "ch": "基础技能词条",
+      "en": "",
+      "len": 29
+    },
+    {
+      "key": "ui_shengjijinengcitiao",
+      "pt": "Afixos de habilidade atualizados",
+      "ch": "升级技能词条",
+      "en": "",
+      "len": 32
+    },
+    {
+      "key": "ui_shengjishuoming_des",
+      "pt": "Instrução de atualização: 1. O original<r> afixos</r> da habilidade a ser atualizada permanecerá inalterada, e o novo afixo poderá ser selecionado de um determinado escopo decidido pela raridade do item usado na atualização 2. Se o atualizado<r> Artes marciais</r> é adicionado um novo<r> afixo de artes marciais</r> , a raridade da arte marcial pode aumentar. Novos afixos não podem ser adicionados a uma Arte Marcial quando<r> os slots de afixos estão cheios</r> .",
+      "ch": "升级说明:1.升级技能时会保留原有<r>词条</r>，并根据使用的升级道具品质，提供一定范围的词条进行选择添加\n　　　　 2.若升级的<r>功法</r>新增了<r>功法词条</r>有可能会导致功法品质提升，若功法<r>没有更多的词条栏位</r>，则无法添加词条。",
+      "en": "",
+      "len": 466
+    },
+    {
+      "key": "ui_gouxuanshengjicitiao",
+      "pt": "Selecione {0} afixo(s) de habilidade atualizado(s)",
+      "ch": "勾选{0}个升级技能词条",
+      "en": "",
+      "len": 50
+    },
+    {
+      "key": "ui_xuanzeshengjicitiao",
+      "pt": "Selecione um afixo de habilidade atualizado",
+      "ch": "请选择升级技能词条",
+      "en": "",
+      "len": 43
+    },
+    {
+      "key": "ui_upGradePropCheck",
+      "pt": "Usar {0} para atualizar o reino?",
+      "ch": "是否确定使用{0}升级境界",
+      "en": "",
+      "len": 32
+    },
+    {
+      "key": "ui_noHasSkill_lvup",
+      "pt": "Não inclui no inventário ou aprendeu nenhuma arte marcial que se qualifica para o Upgrade Realm!",
+      "ch": "背包中没有携带或自身已学习任何符合升级境界的功法！",
+      "en": "",
+      "len": 96
+    },
+    {
+      "key": "ui_noHasSkill_lvup1",
+      "pt": "A qualidade deste Livro não pode gerar este Efeito Termo.",
+      "ch": "此宝典的品质无法生成此词条效果。",
+      "en": "",
+      "len": 57
+    },
+    {
+      "key": "ui_noHasSkill_lvup2",
+      "pt": "O número deste termo atingiu seu limite superior.",
+      "ch": "此词条已经达到获取数量上限。",
+      "en": "",
+      "len": 49
+    },
+    {
+      "key": "ui_noHasSkill_lvup3",
+      "pt": "A qualidade desta Arte Marcial é muito baixa para atualizar e gerar este Efeito de Termo.",
+      "ch": "此功法品质过低，无法升级出此词条效果。",
+      "en": "",
+      "len": 89
+    },
+    {
+      "key": "ui_noHasSkill_lvup4",
+      "pt": "Este Termo de Efeito não pode ser atualizado porque não tem prefixo.",
+      "ch": "此词条因没有前置词条，无法升级此词条效果。",
+      "en": "",
+      "len": 68
+    },
+    {
+      "key": "ui_noHasSkill_lvup5",
+      "pt": "Este Termo de Efeito não pode ser atualizado porque existe um termo mutuamente exclusivo.",
+      "ch": "此词条因已有互斥词条，无法升级此词条效果。",
+      "en": "",
+      "len": 89
+    },
+    {
+      "key": "ui_damgeTestFixCustom",
+      "pt": "Alterar estatísticas personalizadas",
+      "ch": "修改自定义",
+      "en": "",
+      "len": 35
+    },
+    {
+      "key": "ui_damgeTestIngoreCondition",
+      "pt": "Remover condições de desencadeamento",
+      "ch": "去除释放条件",
+      "en": "",
+      "len": 36
+    },
+    {
+      "key": "ui_damgeTestFixOK",
+      "pt": "Manequim personalizado alterado",
+      "ch": "成功修改自定义木桩",
+      "en": "",
+      "len": 31
+    },
+    {
+      "key": "ui_battleDie_lyhts",
+      "pt": "Atenção! O Imp bloqueia um ataque crítico iminente contra você! A Cabaça Mítica flutua no ar e um suave feixe de luz emite dela e envolve você. A Cabaça Mítica ativou a Proteção do Caminho Celestial, e vai ser quebrada devido a isso. Você perderá todos os itens que obteve nesta batalha.",
+      "ch": "危险！壶妖为你挡下了致命一击！\n炼妖壶自动祭出，从中飞出一道柔光将你笼罩！\n炼妖壶已发动天道庇佑，这将导致炼妖壶的损坏！\n你将失去在本场战斗中已获得的道具！",
+      "en": "",
+      "len": 287
+    },
+    {
+      "key": "ui_potmonList_lockTeam",
+      "pt": "<size=10%>(Alcance {0} para desbloquear)</size>",
+      "ch": "（达到{0}即可解锁）",
+      "en": "",
+      "len": 47
+    },
+    {
+      "key": "ui_potmonList_checkRecall",
+      "pt": "Chamar a equipe agora? (Recompensa da aventura este mês será perdida)",
+      "ch": "是否立刻召回历练队伍？（本月历练奖励将会损失）",
+      "en": "",
+      "len": 69
+    },
+    {
+      "key": "ui_potmonListWork_title",
+      "pt": "<size=14%>Log de aventura</size>",
+      "ch": "历练日志",
+      "en": "",
+      "len": 32
+    },
+    {
+      "key": "ui_potmonListWork_studyBattleSkill",
+      "pt": "Habilidade de batalha aprendida",
+      "ch": "领悟战斗技能",
+      "en": "",
+      "len": 31
+    },
+    {
+      "key": "ui_potmonListWork_studyFileSkill",
+      "pt": "Habilidade de aventura aprendida",
+      "ch": "领悟历练技能",
+      "en": "",
+      "len": 32
+    },
+    {
+      "key": "ui_potmonListWork_againAsk",
+      "pt": "Enviar a equipe atual para a aventura novamente?",
+      "ch": "是否要让当前编队再次出发历练？",
+      "en": "",
+      "len": 48
+    },
+    {
+      "key": "ui_potmonList_cantBattle",
+      "pt": "Não pode ser atribuído agora.",
+      "ch": "当前状态无法出战。",
+      "en": "",
+      "len": 29
+    },
+    {
+      "key": "ui_potmonList_cantConver",
+      "pt": "Não pode mudar de forma agora.",
+      "ch": "当前状态无法化形",
+      "en": "",
+      "len": 30
+    },
+    {
+      "key": "ui_potmonList_needGradeProp",
+      "pt": "Insuficiente {itemName2823002}. Obtido na aventura do Imp.",
+      "ch": "缺少{itemName2823002}，该道具可于壶妖历练中获得",
+      "en": "",
+      "len": 58
+    },
+    {
+      "key": "ui_potmonList_converCantWork",
+      "pt": "Não pode entrar na aventura agora.",
+      "ch": "当前状态无法进行历练",
+      "en": "",
+      "len": 34
+    },
+    {
+      "key": "ui_potmonList_healthCantWork",
+      "pt": "Ele não pode se juntar à aventura depois de mudar de forma.",
+      "ch": "化形后无法进行历练",
+      "en": "",
+      "len": 59
+    },
+    {
+      "key": "ui_potmonList_workCantWork",
+      "pt": "Não pode mudar de equipe durante as aventuras",
+      "ch": "正在历练中无法更换队伍",
+      "en": "",
+      "len": 45
+    },
+    {
+      "key": "ui_potmonList_battleCantWork",
+      "pt": "Ele não pode se juntar à aventura enquanto estiver guardando.",
+      "ch": "护卫中无法参与历练",
+      "en": "",
+      "len": 61
+    },
+    {
+      "key": "ui_weidaoshoucao",
+      "pt": "Onda de Monstros não surgiu agora",
+      "ch": "未到兽潮开始时间",
+      "en": "",
+      "len": 33
+    },
+    {
+      "key": "ui_xiageyuejingong",
+      "pt": "Irá atacar {0} no próximo mês!",
+      "ch": "下个月将进攻{0}！",
+      "en": "",
+      "len": 30
+    },
+    {
+      "key": "ui_xiageyuediyu",
+      "pt": "Defenderá o ataque de {0} no próximo mês!",
+      "ch": "下个月将抵御{0}的进攻！",
+      "en": "",
+      "len": 41
+    },
+    {
+      "key": "ui_geomancy_wanfashuoming",
+      "pt": "Regras do jogo:<o> Para recuperar a bússola, você pode girar suas partes para conectar todos os elementos em uma linha na direção correspondente de acordo com o diagrama mostrado ao redor da Placa de Pedra Requintada.</o> 1. Clique em cada área do anel para fazê-lo girar 1 ladrilho no sentido horário; 2. Enquanto se movem, outros anéis também podem mover 1-2 ladrilhos na mesma direção ou na direção oposta de acordo com certas regras. 3. Por favor, termine de recuperar os elementos em suas direções dentro do número limitado de passos indicados no centro da bússola.",
+      "ch": "玩法说明：\n<o>参照玲珑石盘周围所示的各元素方位，操作机关旋转，令所有元素在对应的方位上连成一线，即可复原成功</o>\n1.鼠标点击各环状区域可使其发生时针转动1格;\n2.移动的同时，可能会照一定规则使其他圆环同时发生方向相同或相反的圆环移动1-2格。\n3.中心汉字所示数字为剩余步数，请按在限定的步数内调整机关的排布，使所有元素在对应的方位上连成一线，即可复原成功。\n4.风水资质可以增加额外的可操作步数。",
+      "en": "",
+      "len": 570
+    },
+    {
+      "key": "ui_scribbles_wanfashuoming",
+      "pt": "Regras do jogo:<o> Pressione e segure LMB para desenhar o talismã seguindo a sombra dos traços indicados. Depois de terminar o desenho, clique em Concluído para enviar.</o> 1. Você tem 3 tentativas para desenhar um talismã. Se todas as tentativas falhassem, você não obteria um Amuleto utilizável. 2. Você precisa terminar o desenho dentro de um determinado tempo. O círculo dourado fora do cursor é o cronômetro de contagem regressiva e você perderá 1 tentativa se o talismã não for concluído após o tempo acabar. 3. Seu desenho passará por uma checagem após finalizado. Para passar na verificação, o desenho deve abranger todas as tonalidades indicadas e não apresentar traços redundantes que estejam fora delas. 4. Não há problema em liberar o LMB durante o desenho. O talismã pode ser finalizado com vários golpes.",
+      "ch": "玩法说明：\n<o>参照笔迹图形的虚影部分，按住鼠标左键进行描绘，将虚影部分绘制完成，点击按钮提交完成画符</o>\n1.画符共有3次机会，其中通过1次即可获得符箓产出；但3次均为通过画符将会失败，无法获得符箓产出\n2.符箓绘制需要在限定时间内完成，光标外圈的金色圆环即为倒计时标记；超时将损失1次画符机会\n3.提交绘制结果后，会将已绘制部分与虚影部分进行比对计算，虚影均被涂满且未涂出范围外方可判定通过\n4.拖动鼠标绘制的过程可以中断，无需将将整个笔迹图形一笔画完",
+      "en": "",
+      "len": 818
+    },
+    {
+      "key": "ui_scribbles_textRetry",
+      "pt": "Novas tentativas disponíveis: {0}",
+      "ch": "剩余重试次数：{0}",
+      "en": "",
+      "len": 33
+    },
+    {
+      "key": "ui_materialMaxLimitCount",
+      "pt": "A quantidade de habilidades de reino superior equipadas atingiu o limite.",
+      "ch": "当前装备的高境界功法已达上限。",
+      "en": "",
+      "len": 73
+    },
+    {
+      "key": "ui_materialLimitCount",
+      "pt": "Habilidades Equipadas do Reino Superior: {0}",
+      "ch": "当前装备高境界功法{0}",
+      "en": "",
+      "len": 44
+    },
+    {
+      "key": "diffUnlock2",
+      "pt": "<r>Desbloqueie este modo depois de limpar o modo normal</r>",
+      "ch": "<r>普通模式通关后解锁此模式</r>",
+      "en": "",
+      "len": 59
+    },
+    {
+      "key": "diffUnlock3",
+      "pt": "<r>Desbloqueie este modo após concluir o modo difícil</r>",
+      "ch": "<r>困难模式通关后解锁此模式</r>",
+      "en": "",
+      "len": 57
+    },
+    {
+      "key": "diffUnlock4",
+      "pt": "<r>Desbloqueie este modo depois de concluir o modo extremamente difícil</r>",
+      "ch": "<r>极难模式通关后解锁此模式</r>",
+      "en": "",
+      "len": 75
+    },
+    {
+      "key": "diffUnlock5",
+      "pt": "<r>Desbloqueie este modo após concluir o modo infernal</r>",
+      "ch": "<r>地狱模式通关后解锁此模式</r>",
+      "en": "",
+      "len": 58
+    },
+    {
+      "key": "ui_beifen_loadBackUp",
+      "pt": "Deseja definir este arquivo como o arquivo mais recente e carregá-lo?",
+      "ch": "是否把该存档设为最新存档并加载？",
+      "en": "Deseja definir este arquivo como o arquivo mais recente e carregá-lo?",
+      "len": 69
+    },
+    {
+      "key": "ui_propUsebasAttr_tishi",
+      "pt": "Clique no ícone do item para selecionar. Itens que excederem o limite de uso serão devolvidos automaticamente.",
+      "ch": "点击道具图标进行选择，超出使用上限的道具会自动返还。",
+      "en": "Click the item's icon to select. Items that exceed the using cap will be automatically returned.",
+      "len": 110
+    },
+    {
+      "key": "ui_propUsebasAttr_shiyongtishi2",
+      "pt": "Uso em massa bem-sucedido. Itens que não são mais utilizáveis ​​foram ignorados.",
+      "ch": "批量使用成功，已忽略使用失败的道具。",
+      "en": "Bulk use successful. Items that are no longer usable have been ignored.",
+      "len": 80
+    },
+    {
+      "key": "ui_animation_beforend_01",
+      "pt": "O conflito na montanha Tian Yuan chegou ao fim.",
+      "ch": "天元山之事已告一段落。",
+      "en": "The conflict in Tian Yuan Mountain has come to an end.",
+      "len": 47
+    },
+    {
+      "key": "ui_animation_beforend_02",
+      "pt": "Os distúrbios foram finalmente resolvidos...",
+      "ch": "八荒喧嚣，终于尘埃落定…",
+      "en": "The disturbances have finally been settled...",
+      "len": 44
+    },
+    {
+      "key": "ui_animation_beforend_03",
+      "pt": "E sua história faz uma pausa aqui.",
+      "ch": "你在八荒的故事已暂告一段落了。",
+      "en": "And your story pauses here.",
+      "len": 34
+    },
+    {
+      "key": "ui_animation_beforend_04",
+      "pt": "No entanto, o mundo ainda continua. Suas vidas florescem e morrem; seu tempo flui do passado para o futuro...",
+      "ch": "然而，八荒的一切仍在延续。生老病死，枯荣盛衰，流转如常。",
+      "en": "However, the world still goes on. Its lives flourish and die; its time flows from the past to the future...",
+      "len": 109
+    },
+    {
+      "key": "ui_animation_beforend_05",
+      "pt": "... e forma um círculo sem fim, assim como o vasto cosmos.",
+      "ch": "一如这无垠宇宙，往复循环，无休无止…",
+      "en": "... and forms an endless circle, just as the vast cosmos.",
+      "len": 58
+    },
+    {
+      "key": "ui_switch_propSell_caozuotishi",
+      "pt": "Pressione Y para operação rápida",
+      "ch": "按Y可快捷操作",
+      "en": "Press Y for quick operation",
+      "len": 32
+    },
+    {
+      "key": "ui_setting_jianweikong",
+      "pt": "Existem chaves não definidas!",
+      "ch": "存在未设置的按键!",
+      "en": "There are unset keys!",
+      "len": 29
+    }
+  ],
+  "boxesMultiline": [],
+  "ratioExpanded": [
+    {
+      "key": "setting_cuowutishi2",
+      "pt": "Você não pode salvar o jogo enquanto estiver em seu estado atual",
+      "ch": "当前操作下不可保存存档",
+      "en": "",
+      "ratio": "5.8",
+      "ptLen": 64,
+      "chLen": 11
+    },
+    {
+      "key": "setting_tuichutishi",
+      "pt": "O progresso do seu jogo não será salvo se você sair do jogo agora",
+      "ch": "退出游戏将不会储存游戏进度",
+      "en": "",
+      "ratio": "5.0",
+      "ptLen": 65,
+      "chLen": 13
+    },
+    {
+      "key": "setting_bukeshezhi",
+      "pt": "(Personalização não suportada)",
+      "ch": "（不可自定义）",
+      "en": "",
+      "ratio": "4.3",
+      "ptLen": 30,
+      "chLen": 7
+    },
+    {
+      "key": "setting_jianweichongtu",
+      "pt": "Conflito de combinação de teclas detectado. Pressione uma tecla diferente.",
+      "ch": "键位冲突，请重新修改",
+      "en": "",
+      "ratio": "7.4",
+      "ptLen": 74,
+      "chLen": 10
+    },
+    {
+      "key": "diffRoleAttrTips",
+      "pt": "As estatísticas do seu personagem quando ele é criado.",
+      "ch": "影响创建角色时的初始属性。",
+      "en": "",
+      "ratio": "4.2",
+      "ptLen": 54,
+      "chLen": 13
+    },
+    {
+      "key": "diffUnlockDesc2",
+      "pt": "Alcance {0} no modo normal para desbloquear este nível de dificuldade.",
+      "ch": "普通模式下达到{0}可解锁此难度",
+      "en": "",
+      "ratio": "4.4",
+      "ptLen": 70,
+      "chLen": 16
+    },
+    {
+      "key": "diffUnlockDesc3",
+      "pt": "Alcance {0} No modo normal para desbloquear este nível de dificuldade.",
+      "ch": "普通模式下达到{0}可解锁此难度",
+      "en": "",
+      "ratio": "4.4",
+      "ptLen": 70,
+      "chLen": 16
+    },
+    {
+      "key": "diffUnlockDesc4",
+      "pt": "Alcance {0} no modo de pesadelo para desbloquear esse nível de dificuldade.",
+      "ch": "极难模式下达到{0}可解锁此难度",
+      "en": "",
+      "ratio": "4.7",
+      "ptLen": 75,
+      "chLen": 16
+    },
+    {
+      "key": "diff_xuanzenandu",
+      "pt": "Selecione Dificuldade",
+      "ch": "选择难度",
+      "en": "",
+      "ratio": "5.3",
+      "ptLen": 21,
+      "chLen": 4
+    },
+    {
+      "key": "ui_game_qiehuanyuyan1",
+      "pt": "Idioma alterado. Ele entrará em vigor depois que você salvar as configurações e retornar ao menu principal ou reiniciar o jogo.",
+      "ch": "切换语言成功，保存设置后返回主界面或重启游戏生效。",
+      "en": "",
+      "ratio": "5.1",
+      "ptLen": 127,
+      "chLen": 25
+    },
+    {
+      "key": "ui_game_qiehuanyuyan2",
+      "pt": "Idioma alterado. Ele entrará em vigor depois que você salvar as configurações e reiniciar o jogo.",
+      "ch": "切换语言成功，保存设置后重启游戏生效。",
+      "en": "",
+      "ratio": "5.1",
+      "ptLen": 97,
+      "chLen": 19
+    },
+    {
+      "key": "ui_zmdblts_tipsWaitChallenger",
+      "pt": "Esperando o desafiante subir no palco",
+      "ch": "等待挑战者上擂",
+      "en": "",
+      "ratio": "5.3",
+      "ptLen": 37,
+      "chLen": 7
+    },
+    {
+      "key": "ui_zmdblts_textAssignTitle",
+      "pt": "Designe um discípulo para lutar",
+      "ch": "指派弟子上场",
+      "en": "",
+      "ratio": "5.2",
+      "ptLen": 31,
+      "chLen": 6
+    },
+    {
+      "key": "ui_zmdblts_tipsUnitDialogue",
+      "pt": "Pressione E para visualizar as informações",
+      "ch": "按E查看信息",
+      "en": "",
+      "ratio": "7.0",
+      "ptLen": 42,
+      "chLen": 6
+    },
+    {
+      "key": "ui_zmdbjfs_textSelectStud",
+      "pt": "Selecione o(s) discípulo(s)",
+      "ch": "选择弟子",
+      "en": "",
+      "ratio": "6.8",
+      "ptLen": 27,
+      "chLen": 4
+    },
+    {
+      "key": "ui_zmdbjfs_titleIntro",
+      "pt": "Regras da Corrida de Pontos:",
+      "ch": "积分赛规则：",
+      "en": "",
+      "ratio": "4.7",
+      "ptLen": 28,
+      "chLen": 6
+    },
+    {
+      "key": "ui_zmdbjfs_tipsSelectChkOppUnit",
+      "pt": "{0} {1} está considerando os níveis de cultivo de seus discípulos",
+      "ch": "{0}{1}正在思考其弟子修为",
+      "en": "",
+      "ratio": "4.3",
+      "ptLen": 65,
+      "chLen": 15
+    },
+    {
+      "key": "ui_zmdbjg_textBtnCloseExit",
+      "pt": "Sair do Torneio da Seita",
+      "ch": "离开宗门大比",
+      "en": "",
+      "ratio": "4.0",
+      "ptLen": 24,
+      "chLen": 6
+    },
+    {
+      "key": "ui_mibaoge_textBtnSubmit",
+      "pt": "Ative o Trono de Lótus",
+      "ch": "催动莲台",
+      "en": "",
+      "ratio": "5.5",
+      "ptLen": 22,
+      "chLen": 4
+    },
+    {
+      "key": "ui_mibaoge_textRemainsTitle",
+      "pt": "Spirit Stones de propriedade:",
+      "ch": "持有灵石：",
+      "en": "",
+      "ratio": "5.8",
+      "ptLen": 29,
+      "chLen": 5
+    },
+    {
+      "key": "ui_mibaoge_exitCheckContent",
+      "pt": "Você ainda pode ativar o Lotus Throne. Você quer sair?",
+      "ch": "还能催动莲花，是否退出？",
+      "en": "",
+      "ratio": "4.5",
+      "ptLen": 54,
+      "chLen": 12
+    },
+    {
+      "key": "ui_mibaozengsong_textStudentsTitle",
+      "pt": "Discípulos concorrentes",
+      "ch": "参赛弟子",
+      "en": "",
+      "ratio": "5.8",
+      "ptLen": 23,
+      "chLen": 4
+    },
+    {
+      "key": "ui_mibaozengsong_textTreasureTips",
+      "pt": "Arraste o tesouro correspondente ao avatar correspondente do Discípulo para comissionar para dar o tesouro a eles e comissioná-los.",
+      "ch": "拖动相应的秘宝到对应督战弟子头像即可将该秘宝赠与督战弟子",
+      "en": "",
+      "ratio": "4.7",
+      "ptLen": 131,
+      "chLen": 28
+    },
+    {
+      "key": "ui_mibaozengsong_textDuZhan",
+      "pt": "Pode ser comissionado",
+      "ch": "可督战",
+      "en": "",
+      "ratio": "7.0",
+      "ptLen": 21,
+      "chLen": 3
+    },
+    {
+      "key": "ui_mibaozengsong_textBottomTips",
+      "pt": "Dê o tesouro aos Discípulos com autoridade para supervisionar a batalha para que possam lidar melhor com os oponentes.",
+      "ch": "对有督战权限的下属弟子赠送秘宝，以备弟子更好的应对大比",
+      "en": "",
+      "ratio": "4.4",
+      "ptLen": 118,
+      "chLen": 27
+    },
+    {
+      "key": "ui_mibaoge_textSliTips",
+      "pt": "Use Spirit Stones para ativar o Trono de Lótus",
+      "ch": "拉动注入灵石以催动莲台",
+      "en": "",
+      "ratio": "4.2",
+      "ptLen": 46,
+      "chLen": 11
+    },
+    {
+      "key": "ui_zmdblts_givePropsRemainsContent",
+      "pt": "Nem todo o tesouro foi distribuído. O tesouro desaparecerá quando a partida de desafio aberto terminar.",
+      "ch": "秘宝还没全部赠与，擂台赛结束后秘宝将会消失。",
+      "en": "",
+      "ratio": "4.7",
+      "ptLen": 103,
+      "chLen": 22
+    },
+    {
+      "key": "ui_zmdbjfs_restHpRecovery",
+      "pt": "Descanse e recupere a Vida.",
+      "ch": "休整回复体力",
+      "en": "",
+      "ratio": "4.5",
+      "ptLen": 27,
+      "chLen": 6
+    },
+    {
+      "key": "UI_mibaoge_tips",
+      "pt": "Os tesouros podem ser concedidos ao discípulo supervisor na interface Atribuir após o término do Tesouro. Enquanto supervisiona a batalha, você pode comandar o Discípulo para usar o Tesouro no momento certo para obter o efeito. Discípulos gravemente feridos não podem receber tesouros, mas podem usá-lo para se recuperar de ferimentos graves.",
+      "ch": "秘宝可以在秘宝阁结束后的分配界面赐予督战弟子。督战时，可以指挥弟子在合适的时机使用秘宝获得效果。重伤弟子无法接受秘宝，但可以使用恢复重伤的秘宝进行恢复。",
+      "en": "",
+      "ratio": "4.5",
+      "ptLen": 342,
+      "chLen": 76
+    },
+    {
+      "key": "UI_jifensaimianban_tips",
+      "pt": "Após cada rodada da Corrida de Pontos, todos os Discípulos que não estão gravemente feridos recuperam 20% do HP perdido. Após a Corrida de Pontos e antes de entrar na Partida de Desafio Aberto, todos os Discípulos gravemente feridos recuperam 30% do HP máximo.",
+      "ch": "积分赛每轮结束休整后，所有未重伤弟子会恢复已损失生命20%。积分赛结束进入擂台赛前的休整所有为重伤弟子会恢复最大生命30%。",
+      "en": "",
+      "ratio": "4.2",
+      "ptLen": 260,
+      "chLen": 62
+    },
+    {
+      "key": "UI_jifensaibeizhan_tips",
+      "pt": "O Líder da Seita selecionará os Discípulos para lutar nas partidas. O lado derrotado entra em um estado gravemente ferido e não pode ser implantado.",
+      "ch": "宗主会选定出战弟子进行对战，对战失败方会进入重伤状态，无法再次上场。",
+      "en": "",
+      "ratio": "4.4",
+      "ptLen": 148,
+      "chLen": 34
+    },
+    {
+      "key": "ui_zmdblts_optCancelEnterBattle",
+      "pt": "Cancelar subir no palco",
+      "ch": "取消上擂",
+      "en": "",
+      "ratio": "5.8",
+      "ptLen": 23,
+      "chLen": 4
+    },
+    {
+      "key": "ui_zmdbjfs_scoreTextTips",
+      "pt": "Não qualificado para o Open Challenge",
+      "ch": "未获得擂台赛资格",
+      "en": "",
+      "ratio": "4.6",
+      "ptLen": 37,
+      "chLen": 8
+    },
+    {
+      "key": "ui_zmdbjfs_scoreTextBtnOk",
+      "pt": "Retirada do Torneio da Seita",
+      "ch": "退出宗门大比",
+      "en": "",
+      "ratio": "4.7",
+      "ptLen": 28,
+      "chLen": 6
+    },
+    {
+      "key": "ui_zmdbjfs_scoreTextBtnOkPromoted",
+      "pt": "Entre na Partida de Desafio Aberto da Seita",
+      "ch": "进入擂台赛",
+      "en": "",
+      "ratio": "8.6",
+      "ptLen": 43,
+      "chLen": 5
+    },
+    {
+      "key": "ui_zmdbjfs_4",
+      "pt": "A Seita adversária não tem mais Discípulos para colocar em jogo. Sua seita vence esta rodada.",
+      "ch": "对方宗门已无弟子可上场\n本局我方宗门获胜",
+      "en": "",
+      "ratio": "4.7",
+      "ptLen": 93,
+      "chLen": 20
+    },
+    {
+      "key": "ui_zmdbjfs_5",
+      "pt": "Sua Seita não tem mais Discípulos para colocar em jogo. As seitas adversárias vencem esta rodada.",
+      "ch": "我方宗门已无弟子可上场\n本局对方宗门获胜",
+      "en": "",
+      "ratio": "4.8",
+      "ptLen": 97,
+      "chLen": 20
+    },
+    {
+      "key": "ui_zmdbjfs_explain",
+      "pt": "Regras da Corrida de Pontos de Torneio da Seita: 1. A Corrida de Pontos de Torneio da Seita é um sistema round-robin onde você deve vencer três de cinco. O primeiro a conseguir três vitórias vencerá a rodada. 2. O vencedor da rodada anterior selecionará os Discípulos primeiro. Durante a partida, é permitido utilizar os itens da barra de itens e os tesouros obtidos no Tesouro.",
+      "ch": "宗门大比积分赛说明：\n1.宗门大比积分赛采用五局三胜循环赛制，先获得三胜方获得本轮胜利。\n2.上一局获胜方先选择出战弟子。对阵过程中允许使用道具栏上的道具和秘宝阁求取的秘宝。",
+      "en": "",
+      "ratio": "4.3",
+      "ptLen": 378,
+      "chLen": 87
+    },
+    {
+      "key": "ui_zmdblts_mibaotips",
+      "pt": "Clique com o botão esquerdo no Tesouro para comandar os Discípulos no campo de batalha para desbloquear o Tesouro correspondente. Discípulos ganham o efeito Tesouro após usá-lo.",
+      "ch": "左键点击秘宝可以指挥场上弟子释放对应秘宝，弟子使用后会获得秘宝对应效果。",
+      "en": "",
+      "ratio": "4.9",
+      "ptLen": 177,
+      "chLen": 36
+    },
+    {
+      "key": "ui_zmdbjfs_6",
+      "pt": "Ambas as Seitas não têm mais Discípulos para colocar em jogo. A partida está empatada.",
+      "ch": "双方宗门已无弟子可上场，本局平局。",
+      "en": "",
+      "ratio": "5.1",
+      "ptLen": 86,
+      "chLen": 17
+    },
+    {
+      "key": "ui_zmdblts_readyEnterTips",
+      "pt": "Inscreva-se para a próxima rodada do desafio de estágio",
+      "ch": "申请下一轮上擂挑战",
+      "en": "",
+      "ratio": "6.1",
+      "ptLen": 55,
+      "chLen": 9
+    },
+    {
+      "key": "ui_zmdblts_readyEnterTipsCancel",
+      "pt": "Cancelar inscrição de estágio",
+      "ch": "取消上擂申请",
+      "en": "",
+      "ratio": "4.8",
+      "ptLen": 29,
+      "chLen": 6
+    },
+    {
+      "key": "ui_zmdbdj_dragTips",
+      "pt": "Altere a localização do Tesouro pressionando longamente o botão esquerdo do mouse e arrastando o ícone do item.",
+      "ch": "可以通过长按鼠标左键拖动道具图标来调换秘宝位置。",
+      "en": "",
+      "ratio": "4.6",
+      "ptLen": 111,
+      "chLen": 24
+    },
+    {
+      "key": "ui_zmdblts_speedTextTips",
+      "pt": "Clique para ajustar a velocidade de visualização",
+      "ch": "点击调整观看速度",
+      "en": "",
+      "ratio": "6.0",
+      "ptLen": 48,
+      "chLen": 8
+    },
+    {
+      "key": "ui_zmdbphb_btnChestTitle1",
+      "pt": "Recompensa do Primeiro Lugar",
+      "ch": "头筹奖励",
+      "en": "",
+      "ratio": "7.0",
+      "ptLen": 28,
+      "chLen": 4
+    },
+    {
+      "key": "ui_zmdbphb_btnChestTitle2",
+      "pt": "Recompensa do Segundo Lugar",
+      "ch": "次席奖励",
+      "en": "",
+      "ratio": "6.8",
+      "ptLen": 27,
+      "chLen": 4
+    },
+    {
+      "key": "ui_zmdbphb_btnChestTitle3",
+      "pt": "Recompensa do último lugar",
+      "ch": "末席奖励",
+      "en": "",
+      "ratio": "6.5",
+      "ptLen": 26,
+      "chLen": 4
+    },
+    {
+      "key": "ui_zmdbjfs_tipsSelect0001",
+      "pt": "Bons jogadores são necessários para vencer no caos",
+      "ch": "乱中求胜，需用好手",
+      "en": "",
+      "ratio": "5.6",
+      "ptLen": 50,
+      "chLen": 9
+    },
+    {
+      "key": "ui_zmdbjfs_tipsSelect0002",
+      "pt": "Liderar nas pontuações para manter a vantagem",
+      "ch": "比分领先，可作保留",
+      "en": "",
+      "ratio": "5.0",
+      "ptLen": 45,
+      "chLen": 9
+    },
+    {
+      "key": "ui_zmdbjfs_tipsSelect0003",
+      "pt": "Você só pode competir se o adversário for forte",
+      "ch": "对方势强，只可争锋",
+      "en": "",
+      "ratio": "5.2",
+      "ptLen": 47,
+      "chLen": 9
+    },
+    {
+      "key": "ui_zmdbjfs_tipsSelect0004",
+      "pt": "A vitória vem facilmente se o adversário for fraco",
+      "ch": "对方势弱，必能轻取",
+      "en": "",
+      "ratio": "5.6",
+      "ptLen": 50,
+      "chLen": 9
+    },
+    {
+      "key": "ui_zmdbjfs_tipsSelect0005",
+      "pt": "Se o adversário for forte, mostre que você é fraco",
+      "ch": "对方势强，示敌以弱",
+      "en": "",
+      "ratio": "5.6",
+      "ptLen": 50,
+      "chLen": 9
+    },
+    {
+      "key": "ui_zmdbjfs_tipsSelect0006",
+      "pt": "Se o oponente for muito forte, desista para evitar danos",
+      "ch": "对方势强，弃权以避",
+      "en": "",
+      "ratio": "6.2",
+      "ptLen": 56,
+      "chLen": 9
+    },
+    {
+      "key": "ui_zmdbjfs_tipsSelect0007",
+      "pt": "Se o oponente for forte, lute até a morte",
+      "ch": "对方势强，殊死一搏",
+      "en": "",
+      "ratio": "4.6",
+      "ptLen": 41,
+      "chLen": 9
+    },
+    {
+      "key": "ui_zmdbjfs_tipsSelect0008",
+      "pt": "Lute com força total até o final da competição",
+      "ch": "比赛尾声，拼尽全力",
+      "en": "",
+      "ratio": "5.1",
+      "ptLen": 46,
+      "chLen": 9
+    },
+    {
+      "key": "ui_zmdblts_assignTextSelected",
+      "pt": "Preparando-se para a batalha",
+      "ch": "备战中",
+      "en": "",
+      "ratio": "9.3",
+      "ptLen": 28,
+      "chLen": 3
+    },
+    {
+      "key": "ui_taoistSelect_challenge",
+      "pt": "Selecione o título taoísta para desafiar",
+      "ch": "选择要挑战的道号",
+      "en": "",
+      "ratio": "5.0",
+      "ptLen": 40,
+      "chLen": 8
+    },
+    {
+      "key": "ui_cantFindNpc",
+      "pt": "Incapaz de localizar a alma dessa pessoa!",
+      "ch": "无法定位此人元魂！",
+      "en": "",
+      "ratio": "4.6",
+      "ptLen": 41,
+      "chLen": 9
+    },
+    {
+      "key": "ui_haotianyan_fuhuotishi",
+      "pt": "Olho da Providência Ativado - Proteção do Caminho Celestial",
+      "ch": "触发昊天眼天道庇佑",
+      "en": "",
+      "ratio": "6.6",
+      "ptLen": 59,
+      "chLen": 9
+    },
+    {
+      "key": "ui_haotianyan_posui",
+      "pt": "Olho da Providência Despedaçado",
+      "ch": "昊天眼已破碎",
+      "en": "",
+      "ratio": "5.2",
+      "ptLen": 31,
+      "chLen": 6
+    },
+    {
+      "key": "ui_haotianyan_shandang",
+      "pt": "Olho da Providência despedaçado. Salvar foi excluído!",
+      "ch": "昊天眼破碎，存档已删除！",
+      "en": "",
+      "ratio": "4.4",
+      "ptLen": 53,
+      "chLen": 12
+    },
+    {
+      "key": "ui_townFight_daoxingetishi1",
+      "pt": "<g>O Taoist Mind Pavilion cresceu em tamanho e força, e o número de Taoist Fruits recompensado no Immortal Tournament aumentou consequentemente.</g>",
+      "ch": "<g>由于道心阁发展壮大，升仙大会中奖励的道心果有所增加</g>",
+      "en": "",
+      "ratio": "4.6",
+      "ptLen": 148,
+      "chLen": 32
+    },
+    {
+      "key": "ui_townFight_daoxingetishi2",
+      "pt": "<r>O Taoist Mind Pavilion sofreu um revés e, consequentemente, o número de Taoist Fruits recompensado no Immortal Tournament foi reduzido.</g>",
+      "ch": "<r>由于道心阁发展受挫，升仙大会中奖励的道心果有所减少</g>",
+      "en": "",
+      "ratio": "4.4",
+      "ptLen": 142,
+      "chLen": 32
+    },
+    {
+      "key": "ui_skill_ganwujineng",
+      "pt": "Habilidade de Besta Compreendida",
+      "ch": "已领悟的妖兽技能",
+      "en": "",
+      "ratio": "4.0",
+      "ptLen": 32,
+      "chLen": 8
+    },
+    {
+      "key": "ui_skill_jinengtishi",
+      "pt": "Você pode trocar as habilidades de outras Habilidades de Besta que você já compreendeu aqui.",
+      "ch": "可在此切换已领悟的其他妖兽技能",
+      "en": "",
+      "ratio": "6.1",
+      "ptLen": 92,
+      "chLen": 15
+    },
+    {
+      "key": "ui_godEye_title1",
+      "pt": "Proteção do Caminho Celestial",
+      "ch": "天道庇佑",
+      "en": "",
+      "ratio": "7.3",
+      "ptLen": 29,
+      "chLen": 4
+    },
+    {
+      "key": "ui_godEye_title2",
+      "pt": "(Proteção do Caminho Celestial)",
+      "ch": "（天道庇佑）",
+      "en": "",
+      "ratio": "5.2",
+      "ptLen": 31,
+      "chLen": 6
+    },
+    {
+      "key": "ui_godEye_kejinjie",
+      "pt": "Pronto para progredir",
+      "ch": "可进阶",
+      "en": "",
+      "ratio": "7.0",
+      "ptLen": 21,
+      "chLen": 3
+    },
+    {
+      "key": "ui_godEye_kqhts",
+      "pt": "Você pode trocar as habilidades de outras Habilidades de Besta que você já compreendeu aqui.",
+      "ch": "可在此切换已领悟的其他妖兽技能",
+      "en": "",
+      "ratio": "6.1",
+      "ptLen": 92,
+      "chLen": 15
+    },
+    {
+      "key": "ui_godEye_desc",
+      "pt": "Na batalha, Eye of Providence tem uma certa chance de detectar a fraqueza de uma Besta Mítica ou Lorde da Besta Mítica. Destrua sua fraqueza e você dominará a habilidade da besta. Depois de dominá-lo, você pode tocar no botão correspondente do ícone da Besta na página do Artefato para equipar ou trocar a habilidade da besta.",
+      "ch": "昊天眼在战斗中有概率可以识破大妖兽或妖兽王的弱点，将其弱点击破后，即可领悟妖兽技能；领悟成功后，可在神器页面中点击相应的妖兽图标按钮进行妖兽技能的装配或切换",
+      "en": "",
+      "ratio": "4.2",
+      "ptLen": 326,
+      "chLen": 78
+    },
+    {
+      "key": "ui_godEye_reqairtip",
+      "pt": "O custo da Pedra Espiritual para consertar o Olho da Providência aumenta conforme o Reino do personagem ou o número de reparos já feitos aumenta. Demora {0} mês(es) para reparar o Olho da Providência. Enquanto estiver em reparo, a Proteção do Caminho Celestial não pode ser acionada e as habilidades de monstros não podem ser usadas ou dominadas. Ele pode funcionar corretamente novamente assim que o trabalho de reparo for concluído.",
+      "ch": "修复昊天眼需要花费的灵石数量会随角色的境界提升及修复次数增多而不断上涨\n修复昊天眼将耗时{0}个月\n处于修复中状态时，仍暂时无法触发天道庇护且无法使用和领悟怪物技能，直到修复完成为止",
+      "en": "",
+      "ratio": "4.8",
+      "ptLen": 434,
+      "chLen": 91
+    },
+    {
+      "key": "ui_godEye_weizhuangbei",
+      "pt": "Habilidade não equipada",
+      "ch": "技能未装配",
+      "en": "",
+      "ratio": "4.6",
+      "ptLen": 23,
+      "chLen": 5
+    },
+    {
+      "key": "ui_skill_cantUpGradeTips",
+      "pt": "Condições de ruptura não atendidas. Não é possível atualizar o Olho da Providência!",
+      "ch": "未满足突破条件，无法升级昊天眼！",
+      "en": "",
+      "ratio": "5.2",
+      "ptLen": 83,
+      "chLen": 16
+    },
+    {
+      "key": "ui_setting_qilingyuyin",
+      "pt": "Voz do Espírito do Artefato",
+      "ch": "器灵语音",
+      "en": "",
+      "ratio": "6.8",
+      "ptLen": 27,
+      "chLen": 4
+    },
+    {
+      "key": "ui_game_biaoqingdonghua",
+      "pt": "Reproduzir Animação de Expressão",
+      "ch": "播放表情动画",
+      "en": "",
+      "ratio": "5.3",
+      "ptLen": 32,
+      "chLen": 6
+    },
+    {
+      "key": "ui_godEye_jinengmiaoshu",
+      "pt": "Descrição da habilidade:",
+      "ch": "技能描述：",
+      "en": "",
+      "ratio": "4.8",
+      "ptLen": 24,
+      "chLen": 5
+    },
+    {
+      "key": "ui_godEye_jinengtexing",
+      "pt": "Propriedades do afixo:",
+      "ch": "词条属性：",
+      "en": "",
+      "ratio": "4.4",
+      "ptLen": 22,
+      "chLen": 5
+    },
+    {
+      "key": "ui_minmap_qilingcailiao",
+      "pt": "Material do Espírito Artefato",
+      "ch": "器灵材料",
+      "en": "",
+      "ratio": "7.3",
+      "ptLen": 29,
+      "chLen": 4
+    },
+    {
+      "key": "ui_godEye_bkxf",
+      "pt": "Não é possível reparar no modo Caos.",
+      "ch": "洪荒模式下无法修复",
+      "en": "",
+      "ratio": "4.0",
+      "ptLen": 36,
+      "chLen": 9
+    },
+    {
+      "key": "ui_elderAIOption_biaoti",
+      "pt": "Autoridade de Despacho da Seita",
+      "ch": "宗门调度权限",
+      "en": "",
+      "ratio": "5.2",
+      "ptLen": 31,
+      "chLen": 6
+    },
+    {
+      "key": "ui_elderAIOption_tishi",
+      "pt": "Ajuste a autoridade dos Grandes Anciãos ou Anciãos em sua jurisdição para despachar Discípulos.",
+      "ch": "调整自身管辖范围内的大长老或长老调度弟子的权限",
+      "en": "",
+      "ratio": "4.1",
+      "ptLen": 95,
+      "chLen": 23
+    },
+    {
+      "key": "ui_elderAIOption_option2",
+      "pt": "Solicite minha permissão",
+      "ch": "向我请示",
+      "en": "",
+      "ratio": "6.0",
+      "ptLen": 24,
+      "chLen": 4
+    },
+    {
+      "key": "ui_elderAIOption_optionSky1",
+      "pt": "Grandes Anciãos ou Anciãos dentro da jurisdição (incluindo Ramos) agirão de acordo com a situação da Seita e despacharão automaticamente os Discípulos na Seita.",
+      "ch": "自身管辖范围内（包括分舵）的大长老或长老将会根据宗门情况，自行调度宗门内的弟子。",
+      "en": "",
+      "ratio": "4.0",
+      "ptLen": 160,
+      "chLen": 40
+    },
+    {
+      "key": "ui_elderAIOption_optionSky2",
+      "pt": "Grandes Anciãos ou Anciãos dentro da jurisdição (incluindo Filiais) agirão de acordo com a situação da Seita e solicitarão sua permissão antes de despachar Discípulos na Seita.",
+      "ch": "自身管辖范围内（包括分舵）的大长老或长老将会根据宗门情况，向自身请示后调度宗门内的弟子。",
+      "en": "",
+      "ratio": "4.0",
+      "ptLen": 176,
+      "chLen": 44
+    },
+    {
+      "key": "ui_schoolMainLobby_diaoduquanxian",
+      "pt": "Autoridade de Despacho",
+      "ch": "调度权限",
+      "en": "",
+      "ratio": "5.5",
+      "ptLen": 22,
+      "chLen": 4
+    },
+    {
+      "key": "ui_battleDie_htyts",
+      "pt": "O Olho da Providência emite uma estranha energia que envolve você. O espaço ao seu redor se contorce e desmorona, e a luz dourada voltará no tempo antes de você ser gravemente ferido. Você perderá todos os itens que obteve nesta batalha.",
+      "ch": "昊天眼散发出一股奇异能量将你包裹\n四周空间扭曲坍塌 金色光芒将时间倒流至重伤之前\n你将失去在本场战斗中已获得的道具",
+      "en": "",
+      "ratio": "4.2",
+      "ptLen": 237,
+      "chLen": 57
+    },
+    {
+      "key": "ui_battleDie_zmsh",
+      "pt": "Você está prestes a levar um dano fatal.",
+      "ch": "你即将受到致命伤害",
+      "en": "",
+      "ratio": "4.4",
+      "ptLen": 40,
+      "chLen": 9
+    },
+    {
+      "key": "ui_godEyeGradeTips",
+      "pt": "A Ruptura do Reino do Olho da Providência não pode exceder o Reino atual do personagem.",
+      "ch": "昊天眼的境界突破不能超过玩家角色的当前境界",
+      "en": "",
+      "ratio": "4.1",
+      "ptLen": 87,
+      "chLen": 21
+    },
+    {
+      "key": "ui_xianfa_wzbxf",
+      "pt": "Nenhuma Arte Celestial equipada",
+      "ch": "未装备仙法",
+      "en": "",
+      "ratio": "6.2",
+      "ptLen": 31,
+      "chLen": 5
+    },
+    {
+      "key": "ui_xianfa_xfwcy",
+      "pt": "Arte Celestial não totalmente carregada",
+      "ch": "仙法未充盈",
+      "en": "",
+      "ratio": "7.8",
+      "ptLen": 39,
+      "chLen": 5
+    },
+    {
+      "key": "ui_xianfa_xfzbz",
+      "pt": "Preparando Arte Celestial...",
+      "ch": "仙法准备中",
+      "en": "",
+      "ratio": "5.6",
+      "ptLen": 28,
+      "chLen": 5
+    },
+    {
+      "key": "ui_jitan_wenben4",
+      "pt": "Recompensa neste nível",
+      "ch": "本关奖励",
+      "en": "",
+      "ratio": "5.5",
+      "ptLen": 22,
+      "chLen": 4
+    },
+    {
+      "key": "ui_immortalHallCantTranTips",
+      "pt": "Este Santuário não foi infundido com Poder Celestial, incapaz de se teletransportar",
+      "ch": "此仙祠未注入过仙力，无法传送",
+      "en": "",
+      "ratio": "5.9",
+      "ptLen": 83,
+      "chLen": 14
+    },
+    {
+      "key": "ui_battleInfo_wingmanWait",
+      "pt": "Invocando Penas do Nether...",
+      "ch": "召唤冥羽中……",
+      "en": "",
+      "ratio": "4.0",
+      "ptLen": 28,
+      "chLen": 7
+    },
+    {
+      "key": "ui_fairyLeagueStore_unLock",
+      "pt": "Desbloqueie mediante {0} Contribuição de Batalha",
+      "ch": "累计战功到达{0}解锁",
+      "en": "",
+      "ratio": "4.4",
+      "ptLen": 48,
+      "chLen": 11
+    },
+    {
+      "key": "ui_zhangonghuangongxian",
+      "pt": "Troca por Contribuição da Seita",
+      "ch": "兑换宗门贡献",
+      "en": "",
+      "ratio": "5.2",
+      "ptLen": 31,
+      "chLen": 6
+    },
+    {
+      "key": "ui_wingmanChange_Title",
+      "pt": "Selecione Pena do Nether",
+      "ch": "选择冥羽",
+      "en": "",
+      "ratio": "6.0",
+      "ptLen": 24,
+      "chLen": 4
+    },
+    {
+      "key": "ui_wingmanChange_select",
+      "pt": "Selecione esta Pena do Nether?",
+      "ch": "是否选择此冥羽",
+      "en": "",
+      "ratio": "4.3",
+      "ptLen": 30,
+      "chLen": 7
+    },
+    {
+      "key": "ui_UIMartialRealize_CheckPoupTip",
+      "pt": "Cada tentativa de compreensão custará material. Uma vez confirmados, os afixos atuais serão substituídos.",
+      "ch": "每次参悟都会消耗材料，点击确定后将会替换掉已有的词条",
+      "en": "",
+      "ratio": "4.0",
+      "ptLen": 105,
+      "chLen": 26
+    },
+    {
+      "key": "ui_uischoolAuraChange_Tip",
+      "pt": "O Destino Reescrito selecionado substituirá aquele atualmente no Pavilhão Espiritual da sua Seita. Obtenha-o fazendo Breakthrough in the Spirit Pavilion (Rewrite Destiny não está disponível para seitas especiais como Dragon Mountain Hamlet e Sects in Chi You)",
+      "ch": "选择后的逆天改命将替换原本灵阁中的逆天改命，需在灵阁中突破从而获取（御龙山庄等特殊宗门及赤幽州的宗门无逆天改命）",
+      "en": "",
+      "ratio": "4.6",
+      "ptLen": 259,
+      "chLen": 56
+    },
+    {
+      "key": "ui_schoolAuraChange_jinggao",
+      "pt": "Selecione este Reescrever o Destino?",
+      "ch": "是否选择该逆天改命",
+      "en": "",
+      "ratio": "4.0",
+      "ptLen": 36,
+      "chLen": 9
+    },
+    {
+      "key": "ui_gongfaxuanzetishi",
+      "pt": "Selecione uma arte marcial para atualizar",
+      "ch": "请选择要升级的功法。",
+      "en": "",
+      "ratio": "4.1",
+      "ptLen": 41,
+      "chLen": 10
+    },
+    {
+      "key": "ui_gongfashengjitishi",
+      "pt": "Não foi possível obter o afixo nesta atualização. Continue de qualquer maneira?",
+      "ch": "本次升级无法获得词条，是否继续升级？",
+      "en": "",
+      "ratio": "4.4",
+      "ptLen": 79,
+      "chLen": 18
+    },
+    {
+      "key": "ui_propinfo_schoolauraChange1",
+      "pt": "Nenhuma seita se juntou agora",
+      "ch": "当前没有宗门",
+      "en": "",
+      "ratio": "4.8",
+      "ptLen": 29,
+      "chLen": 6
+    },
+    {
+      "key": "ui_propinfo_schoolauraChange2",
+      "pt": "Rewrite Destiny está desabilitado para sua Seita atual",
+      "ch": "所在宗门无法获得逆天改命",
+      "en": "",
+      "ratio": "4.5",
+      "ptLen": 54,
+      "chLen": 12
+    },
+    {
+      "key": "ui_rebornSkillInfo_attacktip",
+      "pt": "Clique com o botão esquerdo para alternar o modo de ataque",
+      "ch": "左键点击即可切换攻击状态",
+      "en": "",
+      "ratio": "4.8",
+      "ptLen": 58,
+      "chLen": 12
+    },
+    {
+      "key": "ui_rebornSkillInfo_change",
+      "pt": "Mudar para outro modo de ataque?",
+      "ch": "是否切换攻击方式",
+      "en": "",
+      "ratio": "4.0",
+      "ptLen": 32,
+      "chLen": 8
+    },
+    {
+      "key": "ui_fateFeature_wingmanstate",
+      "pt": "Status da pena inferior",
+      "ch": "冥羽状态",
+      "en": "",
+      "ratio": "5.8",
+      "ptLen": 23,
+      "chLen": 4
+    },
+    {
+      "key": "ui_shengjijineng",
+      "pt": "Habilidade de atualização",
+      "ch": "升级技能",
+      "en": "",
+      "ratio": "6.3",
+      "ptLen": 25,
+      "chLen": 4
+    },
+    {
+      "key": "ui_jichujinengcitiao",
+      "pt": "Afixos básicos de habilidades",
+      "ch": "基础技能词条",
+      "en": "",
+      "ratio": "4.8",
+      "ptLen": 29,
+      "chLen": 6
+    },
+    {
+      "key": "ui_shengjijinengcitiao",
+      "pt": "Afixos de habilidade atualizados",
+      "ch": "升级技能词条",
+      "en": "",
+      "ratio": "5.3",
+      "ptLen": 32,
+      "chLen": 6
+    },
+    {
+      "key": "ui_gouxuanshengjicitiao",
+      "pt": "Selecione {0} afixo(s) de habilidade atualizado(s)",
+      "ch": "勾选{0}个升级技能词条",
+      "en": "",
+      "ratio": "4.2",
+      "ptLen": 50,
+      "chLen": 12
+    },
+    {
+      "key": "ui_xuanzeshengjicitiao",
+      "pt": "Selecione um afixo de habilidade atualizado",
+      "ch": "请选择升级技能词条",
+      "en": "",
+      "ratio": "4.8",
+      "ptLen": 43,
+      "chLen": 9
+    },
+    {
+      "key": "ui_upGradeUnequipTips",
+      "pt": "Para atualizar a arte marcial, você deve desequipá-la primeiro. Continue de qualquer maneira?",
+      "ch": "升级功法需要先卸下，是否继续？",
+      "en": "",
+      "ratio": "6.2",
+      "ptLen": 93,
+      "chLen": 15
+    },
+    {
+      "key": "ui_noHasSkill_lvup3",
+      "pt": "A qualidade desta Arte Marcial é muito baixa para atualizar e gerar este Efeito de Termo.",
+      "ch": "此功法品质过低，无法升级出此词条效果。",
+      "en": "",
+      "ratio": "4.7",
+      "ptLen": 89,
+      "chLen": 19
+    },
+    {
+      "key": "ui_noHasSkill_lvup5",
+      "pt": "Este Termo de Efeito não pode ser atualizado porque existe um termo mutuamente exclusivo.",
+      "ch": "此词条因已有互斥词条，无法升级此词条效果。",
+      "en": "",
+      "ratio": "4.2",
+      "ptLen": 89,
+      "chLen": 21
+    },
+    {
+      "key": "ui_damgeTestGrade",
+      "pt": "Reino do Pólo de Madeira",
+      "ch": "木桩境界",
+      "en": "",
+      "ratio": "6.0",
+      "ptLen": 24,
+      "chLen": 4
+    },
+    {
+      "key": "ui_damgeTestFixCustom",
+      "pt": "Alterar estatísticas personalizadas",
+      "ch": "修改自定义",
+      "en": "",
+      "ratio": "7.0",
+      "ptLen": 35,
+      "chLen": 5
+    },
+    {
+      "key": "ui_damgeTestIngoreCondition",
+      "pt": "Remover condições de desencadeamento",
+      "ch": "去除释放条件",
+      "en": "",
+      "ratio": "6.0",
+      "ptLen": 36,
+      "chLen": 6
+    },
+    {
+      "key": "ui_damgeTestIngoreCool",
+      "pt": "Sem Recarga de Habilidade",
+      "ch": "技能无冷却",
+      "en": "",
+      "ratio": "5.0",
+      "ptLen": 25,
+      "chLen": 5
+    },
+    {
+      "key": "ui_lianyaohu_posui",
+      "pt": "Cabaça mítica está quebrada",
+      "ch": "炼妖壶破碎",
+      "en": "",
+      "ratio": "5.4",
+      "ptLen": 27,
+      "chLen": 5
+    },
+    {
+      "key": "ui_potmonList_lockTeam",
+      "pt": "<size=10%>(Alcance {0} para desbloquear)</size>",
+      "ch": "（达到{0}即可解锁）",
+      "en": "",
+      "ratio": "4.3",
+      "ptLen": 47,
+      "chLen": 11
+    },
+    {
+      "key": "ui_potmonListWork_title",
+      "pt": "<size=14%>Log de aventura</size>",
+      "ch": "历练日志",
+      "en": "",
+      "ratio": "8.0",
+      "ptLen": 32,
+      "chLen": 4
+    },
+    {
+      "key": "ui_potmonListWork_studyBattleSkill",
+      "pt": "Habilidade de batalha aprendida",
+      "ch": "领悟战斗技能",
+      "en": "",
+      "ratio": "5.2",
+      "ptLen": 31,
+      "chLen": 6
+    },
+    {
+      "key": "ui_potmonListWork_studyFileSkill",
+      "pt": "Habilidade de aventura aprendida",
+      "ch": "领悟历练技能",
+      "en": "",
+      "ratio": "5.3",
+      "ptLen": 32,
+      "chLen": 6
+    },
+    {
+      "key": "ui_potmonList_canUpLevel",
+      "pt": "Pronto para a descoberta",
+      "ch": "可突破",
+      "en": "",
+      "ratio": "8.0",
+      "ptLen": 24,
+      "chLen": 3
+    },
+    {
+      "key": "ui_potmonList_BattleSkills",
+      "pt": "Habilidades de batalha",
+      "ch": "战斗技能",
+      "en": "",
+      "ratio": "5.5",
+      "ptLen": 22,
+      "chLen": 4
+    },
+    {
+      "key": "ui_potmonList_LifeSkills",
+      "pt": "Habilidades de aventura",
+      "ch": "探索技能",
+      "en": "",
+      "ratio": "5.8",
+      "ptLen": 23,
+      "chLen": 4
+    },
+    {
+      "key": "ui_potmonList_DyingTips",
+      "pt": "Pode usar {0} para uma recuperação rápida.",
+      "ch": "可使用{0}快速恢复",
+      "en": "",
+      "ratio": "4.2",
+      "ptLen": 42,
+      "chLen": 10
+    },
+    {
+      "key": "ui_potmonList_CanFurry",
+      "pt": "Pronto para mudar de forma",
+      "ch": "可化形",
+      "en": "",
+      "ratio": "8.7",
+      "ptLen": 26,
+      "chLen": 3
+    },
+    {
+      "key": "ui_potmonList_bagMaxTips",
+      "pt": "Inventário da Imp está cheio",
+      "ch": "壶妖背包已满",
+      "en": "",
+      "ratio": "4.7",
+      "ptLen": 28,
+      "chLen": 6
+    },
+    {
+      "key": "ui_potmonList_cantUpGradeTips",
+      "pt": "Os requisitos de avanço não são cumpridos",
+      "ch": "当前未满足突破条件",
+      "en": "",
+      "ratio": "4.6",
+      "ptLen": 41,
+      "chLen": 9
+    },
+    {
+      "key": "ui_potmonList_healthCantWork",
+      "pt": "Ele não pode se juntar à aventura depois de mudar de forma.",
+      "ch": "化形后无法进行历练",
+      "en": "",
+      "ratio": "6.6",
+      "ptLen": 59,
+      "chLen": 9
+    },
+    {
+      "key": "ui_potmonList_workCantWork",
+      "pt": "Não pode mudar de equipe durante as aventuras",
+      "ch": "正在历练中无法更换队伍",
+      "en": "",
+      "ratio": "4.1",
+      "ptLen": 45,
+      "chLen": 11
+    },
+    {
+      "key": "ui_potmonList_battleCantWork",
+      "pt": "Ele não pode se juntar à aventura enquanto estiver guardando.",
+      "ch": "护卫中无法参与历练",
+      "en": "",
+      "ratio": "6.8",
+      "ptLen": 61,
+      "chLen": 9
+    },
+    {
+      "key": "ui_school_renwu_biaoti4",
+      "pt": "Recompensa por Monstros",
+      "ch": "妖患",
+      "en": "",
+      "ratio": "11.5",
+      "ptLen": 23,
+      "chLen": 2
+    },
+    {
+      "key": "ui_weidaoshoucao",
+      "pt": "Onda de Monstros não surgiu agora",
+      "ch": "未到兽潮开始时间",
+      "en": "",
+      "ratio": "4.1",
+      "ptLen": 33,
+      "chLen": 8
+    },
+    {
+      "key": "ui_rensubuzu",
+      "pt": "Não há pessoas suficientes",
+      "ch": "人数不足",
+      "en": "",
+      "ratio": "6.5",
+      "ptLen": 26,
+      "chLen": 4
+    },
+    {
+      "key": "ui_potmonRefineState",
+      "pt": "   Absorver na Cabaça",
+      "ch": "收入壶中",
+      "en": "",
+      "ratio": "5.3",
+      "ptLen": 21,
+      "chLen": 4
+    },
+    {
+      "key": "ui_minMap_geoMap_title",
+      "pt": "Diagrama de Feng Shui",
+      "ch": "风水图",
+      "en": "",
+      "ratio": "7.0",
+      "ptLen": 21,
+      "chLen": 3
+    },
+    {
+      "key": "ui_minMap_geoMap_cancel",
+      "pt": "Desistir da adivinhação",
+      "ch": "放弃推演",
+      "en": "",
+      "ratio": "5.8",
+      "ptLen": 23,
+      "chLen": 4
+    },
+    {
+      "key": "ui_minMap_geoMap_tipRules",
+      "pt": "Aqui, você pode encontrar pistas para a Veia do Dragão escondida neste mundo. Você pode encontrar mais pistas através da Geomancia perto do local indicado.",
+      "ch": "记录着暗藏在八荒世界中龙脉的线索，可以前往地点通过堪舆进一步寻找线索。",
+      "en": "",
+      "ratio": "4.4",
+      "ptLen": 155,
+      "chLen": 35
+    },
+    {
+      "key": "ui_geomancyGameTip_tishi2",
+      "pt": "Não mostrar novamente",
+      "ch": "不再提示",
+      "en": "",
+      "ratio": "5.3",
+      "ptLen": 21,
+      "chLen": 4
+    },
+    {
+      "key": "ui_myAbility",
+      "pt": "Minhas habilidades mentais",
+      "ch": "我的心法",
+      "en": "",
+      "ratio": "6.5",
+      "ptLen": 26,
+      "chLen": 4
+    },
+    {
+      "key": "ui_materialMaxLimitCount",
+      "pt": "A quantidade de habilidades de reino superior equipadas atingiu o limite.",
+      "ch": "当前装备的高境界功法已达上限。",
+      "en": "",
+      "ratio": "4.9",
+      "ptLen": 73,
+      "chLen": 15
+    },
+    {
+      "key": "diffDescribe3",
+      "pt": "O dano físico do monstro é aumentado ainda mais\nMonstros de elite mais poderosos",
+      "ch": "怪物体力伤害进一步提升\n更多强力的精英怪",
+      "en": "",
+      "ratio": "4.0",
+      "ptLen": 80,
+      "chLen": 20
+    },
+    {
+      "key": "ui_beifen_loadBackUp",
+      "pt": "Deseja definir este arquivo como o arquivo mais recente e carregá-lo?",
+      "ch": "是否把该存档设为最新存档并加载？",
+      "en": "Deseja definir este arquivo como o arquivo mais recente e carregá-lo?",
+      "ratio": "4.3",
+      "ptLen": 69,
+      "chLen": 16
+    },
+    {
+      "key": "ui_zongji",
+      "pt": "Rastreamento detectado",
+      "ch": "发现踪迹",
+      "en": "Trace detected",
+      "ratio": "5.5",
+      "ptLen": 22,
+      "chLen": 4
+    },
+    {
+      "key": "ui_propUsebasAttr_zizhidaoju",
+      "pt": "Itens de estatísticas",
+      "ch": "资质道具",
+      "en": "Stat Items",
+      "ratio": "5.3",
+      "ptLen": 21,
+      "chLen": 4
+    },
+    {
+      "key": "ui_propUsebasAttr_tishi",
+      "pt": "Clique no ícone do item para selecionar. Itens que excederem o limite de uso serão devolvidos automaticamente.",
+      "ch": "点击道具图标进行选择，超出使用上限的道具会自动返还。",
+      "en": "Click the item's icon to select. Items that exceed the using cap will be automatically returned.",
+      "ratio": "4.2",
+      "ptLen": 110,
+      "chLen": 26
+    },
+    {
+      "key": "ui_propUsebasAttr_shiyongtishi2",
+      "pt": "Uso em massa bem-sucedido. Itens que não são mais utilizáveis ​​foram ignorados.",
+      "ch": "批量使用成功，已忽略使用失败的道具。",
+      "en": "Bulk use successful. Items that are no longer usable have been ignored.",
+      "ratio": "4.4",
+      "ptLen": 80,
+      "chLen": 18
+    },
+    {
+      "key": "ui_animation_beforend_01",
+      "pt": "O conflito na montanha Tian Yuan chegou ao fim.",
+      "ch": "天元山之事已告一段落。",
+      "en": "The conflict in Tian Yuan Mountain has come to an end.",
+      "ratio": "4.3",
+      "ptLen": 47,
+      "chLen": 11
+    },
+    {
+      "key": "ui_switch_propSell_caozuotishi",
+      "pt": "Pressione Y para operação rápida",
+      "ch": "按Y可快捷操作",
+      "en": "Press Y for quick operation",
+      "ratio": "4.6",
+      "ptLen": 32,
+      "chLen": 7
+    },
+    {
+      "key": "ui_switch_StorageTips",
+      "pt": "Pressione Y para acesso rápido aos itens",
+      "ch": "按Y可快速存取道具",
+      "en": "Press Y for quick access to items",
+      "ratio": "4.4",
+      "ptLen": 40,
+      "chLen": 9
+    },
+    {
+      "key": "ui_switch_schoolGetSoul_Tip4",
+      "pt": "Pressione Y para lotear a fruta espirituosa e pressione - para esvaziar a fruta espirituosa",
+      "ch": "按下Y批量放入灵果，按-清空放入的灵果",
+      "en": "Press Y to batch the spirit fruit and press - to empty the spirit fruit",
+      "ratio": "4.8",
+      "ptLen": 91,
+      "chLen": 19
+    },
+    {
+      "key": "ui_shentonghun_tips",
+      "pt": "A memória da Alma está quebrada",
+      "ch": "残魂记忆残缺",
+      "en": "The Soul's memory is broken",
+      "ratio": "5.2",
+      "ptLen": 31,
+      "chLen": 6
+    }
+  ]
+}
