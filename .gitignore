@@ -23,3 +23,14 @@ Desktop.ini
 # Node
 node_modules/
 npm-debug.log*
+
+# Compiladores Locais
+tools/roslyn/
+tools/temp_csharp/
+
+# Documentos de Referência e Tutoriais Chineses
+MOD模板例子/
+代码编写教程/
+资源修改教程/
+配置修改教程/
+鬼谷八荒MOD使用指南基础版 1.0/

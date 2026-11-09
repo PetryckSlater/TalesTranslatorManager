@@ -123,6 +123,14 @@ function runBuild() {
     console.log('  BattleSkillPrefixName.json atualizado.');
   }
 
+  // Compilar módulo C# Harmony se disponível
+  try {
+    const compileCSharp = require('./compile-csharp');
+    compileCSharp();
+  } catch (err) {
+    console.warn('  Aviso: Não foi possível compilar módulo C#: ' + err.message);
+  }
+
   // Estatísticas de tamanho de arquivo
   const outLocalPath = path.join(config.publicOutputDir, 'LocalText.json');
   const outRolePath = path.join(config.publicOutputDir, 'RoleLogLocal.json');
