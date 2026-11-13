@@ -29,9 +29,12 @@ function runBuild() {
   // Pastas de destino:
   // 1. Pública (output/ModExcel) - para o GitHub
   // 2. Privada (ModProject_VMCUi0/...) - exclusiva do criador do mod
+  // 3. Debug (ModProject_VMCUi0/debug/Mod_VMCUi0/ModExcel) - para depuração e Steam
   const targetDirs = [config.publicOutputDir];
   if (fs.existsSync(path.join(config.rootDir, 'ModProject_VMCUi0'))) {
     targetDirs.push(config.privateModDir);
+    const debugExcelDir = path.join(config.rootDir, 'ModProject_VMCUi0', 'debug', 'Mod_VMCUi0', 'ModExcel');
+    targetDirs.push(debugExcelDir);
   }
 
   targetDirs.forEach(dir => {

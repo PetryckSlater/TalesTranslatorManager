@@ -69465,21 +69465,21 @@
     "key": "drama_option228311",
     "ch": "救赎宗门",
     "tc": "救贖宗門",
-    "en": "Oi seita"
+    "en": "Salvar a seita"
   },
   {
     "id": "9925",
     "key": "drama_option228312",
     "ch": "保全自身",
     "tc": "保全自身",
-    "en": "Salve sua própria pele"
+    "en": "Preservar a si mesmo"
   },
   {
     "id": "9926",
     "key": "drama_option228321",
     "ch": "隐忍一时，伺机待发",
     "tc": "隱忍一時，伺機待發",
-    "en": "Resistir e esperar por sua chance"
+    "en": "Suportar e aguardar uma oportunidade"
   },
   {
     "id": "9927",
@@ -69493,119 +69493,119 @@
     "key": "drama_option228331",
     "ch": "得饶人处且饶人",
     "tc": "得饒人處且饒人",
-    "en": "Perdoe e esqueça"
+    "en": "Poupar sua vida"
   },
   {
     "id": "9929",
     "key": "drama_option228332",
     "ch": "一斩了之",
     "tc": "一斬了之",
-    "en": "Acabar com a vida deles"
+    "en": "Executá-lo sem hesitar"
   },
   {
     "id": "9930",
     "key": "drama_option228341",
     "ch": "非礼勿视",
     "tc": "非禮勿視",
-    "en": "Tenha alguma decência"
+    "en": "Desviar o olhar por respeito"
   },
   {
     "id": "9931",
     "key": "drama_option228342",
     "ch": "遵从所欲，暗中窥视",
     "tc": "遵從所欲，暗中窺視",
-    "en": "Siga seus desejos e espreite"
+    "en": "Seguir o desejo e espiar em segredo"
   },
   {
     "id": "9932",
     "key": "drama_option228343",
     "ch": "美色当前，岂能驻足？！",
     "tc": "美色當前，豈能駐足？！",
-    "en": "Transcenda seus desejos e vá até eles"
+    "en": "Aproximar-se sem hesitar diante de tal beleza"
   },
   {
     "id": "9933",
     "key": "drama_option228351",
     "ch": "愿意",
     "tc": "願意",
-    "en": "Concordar"
+    "en": "Perdoar e esquecer o rancor"
   },
   {
     "id": "9934",
     "key": "drama_option228352",
     "ch": "不愿",
     "tc": "不願",
-    "en": "Discordo"
+    "en": "Jamais perdoar o inimigo"
   },
   {
     "id": "9935",
     "key": "drama_option228361",
     "ch": "坚持不懈",
     "tc": "堅持不懈",
-    "en": "Perseverar"
+    "en": "Perseverar no cultivo até o fim"
   },
   {
     "id": "9936",
     "key": "drama_option228362",
     "ch": "安享余生",
     "tc": "安享餘生",
-    "en": "Divirta-se"
+    "en": "Desistir e aproveitar os últimos anos"
   },
   {
     "id": "9937",
     "key": "drama_option228371",
     "ch": "愿意",
     "tc": "願意",
-    "en": "Concordar"
+    "en": "Aceitar a amizade"
   },
   {
     "id": "9938",
     "key": "drama_option228372",
     "ch": "不愿",
     "tc": "不願",
-    "en": "Discordo"
+    "en": "Rejeitar a amizade"
   },
   {
     "id": "9939",
     "key": "drama_option228381",
     "ch": "精一技",
     "tc": "精一技",
-    "en": "Uma habilidade"
+    "en": "Dominar uma única arte com maestria"
   },
   {
     "id": "9940",
     "key": "drama_option228382",
     "ch": "修百技",
     "tc": "修百技",
-    "en": "Muitas habilidades"
+    "en": "Aprender cem técnicas para qualquer situação"
   },
   {
     "id": "9941",
     "key": "drama_option228391",
     "ch": "为义",
     "tc": "為義",
-    "en": "Cumpra seu dever mundano e tente derrotá-lo"
+    "en": "Pela justiça: eliminar o mestre pelo bem do mundo"
   },
   {
     "id": "9942",
     "key": "drama_option228392",
     "ch": "为情",
     "tc": "為情",
-    "en": "Fique do lado dele por lealdade"
+    "en": "Pela lealdade: permanecer ao lado do mestre"
   },
   {
     "id": "9943",
     "key": "drama_option228393",
     "ch": "两难，隐遁不理",
     "tc": "兩難，隱遁不理",
-    "en": "Torne-se um eremita e distancie-se do dilema"
+    "en": "Dilema insolúvel: viver como eremita e ignorar"
   },
   {
     "id": "9944",
     "key": "drama_option228394",
     "ch": "为义除害，自裁还情",
     "tc": "為義除害，自裁還情",
-    "en": "Derrote-o e depois suicide-se por quebrar seu dever de lealdade"
+    "en": "Eliminá-lo pela justiça e suicidar-se por lealdade"
   },
   {
     "id": "9945",
@@ -366937,7 +366937,7 @@
     "key": "drama_dialogue2600310",
     "ch": "仙长，这界元石乃八荒地脉石芯增生形成的灵石矿藏。自古即为善于堪舆的修仙者所青睐，并千方百计挖掘获取。",
     "tc": "仙長，這界元石乃八荒地脈石芯增生形成的靈石礦藏。自古即為善於堪輿的修仙者所青睞，並千方百計挖掘獲取。",
-    "en": "Xianchang, esta pedra da essência do mundo é um depósito de pedra espiritual formado pelo crescimento de núcleos de pedra nos Oito Desperdícios. Desde os tempos antigos, tem sido favorecido por cultivadores imortais que são bons em geomancia, e eles tentaram todos os meios para escavá-lo."
+    "en": "Xianchang, esta pedra da essência do mundo é um depósito de pedra espiritual formado pelo crescimento de núcleos de pedra nos Oito Ermos. Desde os tempos antigos, tem sido favorecido por cultivadores imortais que são bons em geomancia, e eles tentaram todos os meios para escavá-lo."
   },
   {
     "id": "52421",
@@ -367000,7 +367000,7 @@
     "key": "drama_dialogue2600351",
     "ch": "仙长，这界元石乃八荒地脉石芯增生形成的灵石矿藏。自古即为善于堪舆的修仙者所青睐，并千方百计挖掘获取。",
     "tc": "仙長，這界元石乃八荒地脈石芯增生形成的靈石礦藏。自古即為善於堪輿的修仙者所青睞，並千方百計挖掘獲取。",
-    "en": "Xianchang, esta pedra da essência do mundo é um depósito de pedra espiritual formado pelo crescimento de núcleos de pedra nos Oito Desperdícios. Desde os tempos antigos, tem sido favorecido por cultivadores imortais que são bons em geomancia, e eles tentaram todos os meios para escavá-lo."
+    "en": "Xianchang, esta pedra da essência do mundo é um depósito de pedra espiritual formado pelo crescimento de núcleos de pedra nos Oito Ermos. Desde os tempos antigos, tem sido favorecido por cultivadores imortais que são bons em geomancia, e eles tentaram todos os meios para escavá-lo."
   },
   {
     "id": "52430",
@@ -367063,7 +367063,7 @@
     "key": "drama_dialogue2600371",
     "ch": "仙长，这界元石乃八荒地脉石芯增生形成的灵石矿藏。自古即为善于堪舆的修仙者所青睐，并千方百计挖掘获取。",
     "tc": "仙長，這界元石乃八荒地脈石芯增生形成的靈石礦藏。自古即為善於堪輿的修仙者所青睞，並千方百計挖掘獲取。",
-    "en": "Xianchang, esta pedra da essência do mundo é um depósito de pedra espiritual formado pelo crescimento de núcleos de pedra nos Oito Desperdícios. Desde os tempos antigos, tem sido favorecido por cultivadores imortais que são bons em geomancia, e eles tentaram todos os meios para escavá-lo."
+    "en": "Xianchang, esta pedra da essência do mundo é um depósito de pedra espiritual formado pelo crescimento de núcleos de pedra nos Oito Ermos. Desde os tempos antigos, tem sido favorecido por cultivadores imortais que são bons em geomancia, e eles tentaram todos os meios para escavá-lo."
   },
   {
     "id": "52439",
@@ -367126,7 +367126,7 @@
     "key": "drama_dialogue2600391",
     "ch": "仙长，这界元石乃八荒地脉石芯增生形成的灵石矿藏。自古即为善于堪舆的修仙者所青睐，并千方百计挖掘获取。",
     "tc": "仙長，這界元石乃八荒地脈石芯增生形成的靈石礦藏。自古即為善於堪輿的修仙者所青睞，並千方百計挖掘獲取。",
-    "en": "Xianchang, esta pedra da essência do mundo é um depósito de pedra espiritual formado pelo crescimento de núcleos de pedra nos Oito Desperdícios. Desde os tempos antigos, tem sido favorecido por cultivadores imortais que são bons em geomancia, e eles tentaram todos os meios para escavá-lo."
+    "en": "Xianchang, esta pedra da essência do mundo é um depósito de pedra espiritual formado pelo crescimento de núcleos de pedra nos Oito Ermos. Desde os tempos antigos, tem sido favorecido por cultivadores imortais que são bons em geomancia, e eles tentaram todos os meios para escavá-lo."
   },
   {
     "id": "52448",
@@ -367189,7 +367189,7 @@
     "key": "drama_dialogue2600411",
     "ch": "仙长，这界元石乃八荒地脉石芯增生形成的灵石矿藏。自古即为善于堪舆的修仙者所青睐，并千方百计挖掘获取。",
     "tc": "仙長，這界元石乃八荒地脈石芯增生形成的靈石礦藏。自古即為善於堪輿的修仙者所青睞，並千方百計挖掘獲取。",
-    "en": "Xianchang, esta pedra da essência do mundo é um depósito de pedra espiritual formado pelo crescimento de núcleos de pedra nos Oito Desperdícios. Desde os tempos antigos, tem sido favorecido por cultivadores imortais que são bons em geomancia, e eles tentaram todos os meios para escavá-lo."
+    "en": "Xianchang, esta pedra da essência do mundo é um depósito de pedra espiritual formado pelo crescimento de núcleos de pedra nos Oito Ermos. Desde os tempos antigos, tem sido favorecido por cultivadores imortais que são bons em geomancia, e eles tentaram todos os meios para escavá-lo."
   },
   {
     "id": "52457",
@@ -367252,7 +367252,7 @@
     "key": "drama_dialogue2600431",
     "ch": "仙长，这界元石乃八荒地脉石芯增生形成的灵石矿藏。自古即为善于堪舆的修仙者所青睐，并千方百计挖掘获取。",
     "tc": "仙長，這界元石乃八荒地脈石芯增生形成的靈石礦藏。自古即為善於堪輿的修仙者所青睞，並千方百計挖掘獲取。",
-    "en": "Xianchang, esta pedra da essência do mundo é um depósito de pedra espiritual formado pelo crescimento de núcleos de pedra nos Oito Desperdícios. Desde os tempos antigos, tem sido favorecido por cultivadores imortais que são bons em geomancia, e eles tentaram todos os meios para escavá-lo."
+    "en": "Xianchang, esta pedra da essência do mundo é um depósito de pedra espiritual formado pelo crescimento de núcleos de pedra nos Oito Ermos. Desde os tempos antigos, tem sido favorecido por cultivadores imortais que são bons em geomancia, e eles tentaram todos os meios para escavá-lo."
   },
   {
     "id": "52466",
@@ -371424,7 +371424,7 @@
     "key": "drama_option25016001",
     "ch": "八荒危险，勿再现身人前",
     "tc": "八荒危險，勿再現身人前",
-    "en": "Oito desperdícios são perigosos, não apareçam na frente dos outros"
+    "en": "Os Oito Ermos são perigosos, não volte a se expor em público"
   },
   {
     "id": "53062",
