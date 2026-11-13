@@ -70,6 +70,9 @@ function runBuild() {
     if (config.modSettings.stripKorean) {
       delete result.kr;
     }
+    if (config.modSettings.stripTraditionalChinese) {
+      delete result.tc;
+    }
 
     return result;
   });
@@ -95,13 +98,17 @@ function runBuild() {
     if (config.modSettings.stripKorean) {
       delete result.kr;
     }
+    if (config.modSettings.stripTraditionalChinese) {
+      delete result.tc;
+    }
 
     return result;
   });
 
-  // Salvar arquivos em todos os diretórios alvo
-  const jsonLocal = JSON.stringify(outputLocal, null, config.modSettings.indent);
-  const jsonRole = JSON.stringify(outputRole, null, config.modSettings.indent);
+  // Salvar arquivos em todos os diretórios alvo (com suporte a minificação de alto desempenho)
+  const indent = config.modSettings.minify ? 0 : (config.modSettings.indent || 0);
+  const jsonLocal = indent > 0 ? JSON.stringify(outputLocal, null, indent) : JSON.stringify(outputLocal);
+  const jsonRole = indent > 0 ? JSON.stringify(outputRole, null, indent) : JSON.stringify(outputRole);
 
   console.log('\nGravando arquivos compilados...');
   targetDirs.forEach(dir => {
@@ -127,7 +134,7 @@ function runBuild() {
       return item;
     });
 
-    const jsonBattle = JSON.stringify(outputBattle, null, config.modSettings.indent);
+    const jsonBattle = indent > 0 ? JSON.stringify(outputBattle, null, indent) : JSON.stringify(outputBattle);
     targetDirs.forEach(dir => {
       fs.writeFileSync(path.join(dir, 'BattleSkillPrefixName.json'), jsonBattle, 'utf8');
     });

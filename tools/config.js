@@ -29,11 +29,13 @@ module.exports = {
 
   // Configurações de otimização do mod
   modSettings: {
-    // Remove o coreano ('kr') para manter arquivos leves e diminuir tempo de carregamento
+    // Remove o coreano ('kr') e chinês tradicional ('tc') para manter arquivos leves e diminuir tempo de carregamento
     stripKorean: true,
+    stripTraditionalChinese: true,
     // Preserva quebras de linha corretas do jogo (\n e \\n)
     normalizeLineEndings: true,
-    // Formatação JSON identada (2 espaços para compatibilidade total com o mod tool)
-    indent: 2
+    // Minificação de JSON para acelerar parsing no boot do jogo
+    minify: true,
+    indent: 0
   }
 };

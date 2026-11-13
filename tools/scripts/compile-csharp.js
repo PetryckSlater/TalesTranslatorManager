@@ -79,7 +79,7 @@ namespace MOD_VMCUi0
                 }
                 harmony = new Harmony("MOD_VMCUi0");
                 harmony.PatchAll(Assembly.GetExecutingAssembly());
-                Debug.Log("[Tales PT-BR] Mod C# ativado: Auto-ajuste de fontes e interface ativo!");
+                Debug.Log("[Tales PT-BR] Mod C# v1.1 ativo: Otimizações de desempenho e interface carregadas com sucesso!");
             }
             catch (Exception ex)
             {
@@ -106,10 +106,12 @@ namespace MOD_VMCUi0
     }
 
     /// <summary>
-    /// Patch em TextMeshPro: Ativa auto-ajuste de tamanho (Auto-Sizing) dinâmico
-    /// EXCLUSIVAMENTE para botões, rótulos e badges curtos de UI que correm risco de corte.
-    /// Trava de segurança: JAMAIS aplica em textos longos, caixas de FAQ ou diálogos roláveis,
-    /// para evitar quebra de layout e sobreposição vertical de parágrafos.
+    /// Patch de alta performance para TextMeshPro:
+    /// Aplica Auto-Sizing EXCLUSIVAMENTE em botões e menus que correm risco de corte.
+    /// TRAVAS RÍGIDAS DE DESEMPENHO:
+    /// - Ignora completamente inventário, mochilas, slots, grades e contadores de itens.
+    /// - Ignora números, durações, moedas e palavras muito curtas.
+    /// - Ignora textos longos (> 90 chars), caixas roláveis, tooltips e parágrafos.
     /// </summary>
     [HarmonyPatch(typeof(TMP_Text), "text", MethodType.Setter)]
     public static class Patch_TMP_Text_SetText
@@ -120,21 +122,46 @@ namespace MOD_VMCUi0
             try
             {
                 string t = __instance.text;
-                // Ignora textos vazios ou textos longos (parágrafos, FAQs, crônicas)
-                if (string.IsNullOrEmpty(t) || t.Length > 120) return;
+                if (string.IsNullOrEmpty(t)) return;
 
-                // Ignora textos que já possuem tags de tamanho explícito ou múltiplas quebras de linha
+                // 1. Pular instantaneamente contadores numéricos ("1", "x99", "Lv.1", moedas)
+                if (t.Length <= 5 || char.IsDigit(t[0])) return;
+
+                // 2. Pular textos médios e longos (parágrafos, FAQs, crônicas, descrições)
+                if (t.Length > 90) return;
+
+                // 3. Pular tags de tamanho explícito ou textos multilinha
                 if (t.Contains("<size") || t.Contains("\\n") || t.Contains("\\\\n")) return;
 
+                // 4. Bloquear execução no inventário / slots de itens / grades (evita travamento ao abrir mochila)
+                string objName = __instance.gameObject.name;
+                if (objName.IndexOf("slot", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    objName.IndexOf("item", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    objName.IndexOf("prop", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    objName.IndexOf("grid", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    objName.IndexOf("cell", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    objName.IndexOf("bag", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    objName.IndexOf("count", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    objName.IndexOf("num", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    objName.IndexOf("icon", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    objName.IndexOf("tip", StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    return;
+                }
+
+                // 5. Aplicar apenas em rótulos e botões reais clicáveis
                 if (!__instance.enableAutoSizing)
                 {
                     float currentSize = __instance.fontSize;
-                    // Aplica apenas em rótulos e botões com fonte intermediária (>= 12)
-                    if (currentSize >= 12f)
+                    if (currentSize >= 13f && currentSize <= 36f)
                     {
-                        __instance.enableAutoSizing = true;
-                        __instance.fontSizeMin = Math.Max(8f, currentSize * 0.70f);
-                        __instance.fontSizeMax = currentSize;
+                        var btn = __instance.GetComponentInParent<UnityEngine.UI.Button>();
+                        if (btn != null)
+                        {
+                            __instance.enableAutoSizing = true;
+                            __instance.fontSizeMin = Math.Max(10f, currentSize * 0.75f);
+                            __instance.fontSizeMax = currentSize;
+                        }
                     }
                 }
             }
