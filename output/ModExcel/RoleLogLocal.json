@@ -15634,7 +15634,7 @@
     "emotionID": "0",
     "ch": "{school|C}中的{post|C}{name|C}是我的{relation|C|B}。",
     "tc": "{school|C}中的{post|C}{name|C}是我的{relation|C|B}。",
-    "en": "{school|C} {posto|C} {name|C} é meu {relation|C|B}."
+    "en": "{school|C} {post|C} {name|C} é meu {relation|C|B}."
   },
   {
     "id": "104632",
@@ -33095,7 +33095,7 @@
     "emotionID": "0",
     "ch": "师父…虽然我知道这么做会让你伤心，但是为了突破至{gradeV|1|B}，我必须要得到{0}！",
     "tc": "師父…雖然我知道這麼做會讓你傷心，但是為了突破至{gradeV|1|B}，我必須要得到{0}！",
-    "en": "Mestre... não quero te ofender, mas tenho que ter esse {0} para avançar para {sérieV|1|B}!"
+    "en": "Mestre... não quero te ofender, mas tenho que ter esse {0} para avançar para {gradeV|1|B}!"
   },
   {
     "id": "105551",
@@ -36743,7 +36743,7 @@
     "emotionID": "1",
     "ch": "{relation|A|B}，我停留在{grade|B}已久。我现在非常需要{0}来突破至{gradeV|1|B}，不知{relation|A|B}能否割爱？",
     "tc": "{relation|A|B}，我停留在{grade|B}已久。我現在非常需要{0}來突破至{gradeV|1|B}，不知{relation|A|B}能否割愛？",
-    "en": "{relation|A|B}, estou preso na {série|B} há muito tempo. Eu realmente preciso desse {0} para avançar para {gradeV|1|B}. Você estaria disposto a se separar dele?"
+    "en": "{relation|A|B}, estou preso na {grade|B} há muito tempo. Eu realmente preciso desse {0} para avançar para {gradeV|1|B}. Você estaria disposto a se separar dele?"
   },
   {
     "id": "105743",
@@ -36857,7 +36857,7 @@
     "emotionID": "1",
     "ch": "徒儿，为师停留在{grade|B}多时，为了突破至{gradeV|1|B}，我正在寻找{0}。我见你竟拥有{0}，能否将{0}赠于我？",
     "tc": "徒兒，為師停留在{grade|B}多時，為了突破至{gradeV|1|B}，我正在尋找{0}。我見你竟擁有{0}，能否將{0}贈於我？",
-    "en": "Discípulo, o Mestre está preso na {série|B} há séculos. Para avançar para {gradeV|1|B}, estou procurando um {0}. Vejo que você já tem um... Posso ficar com ele?"
+    "en": "Discípulo, o Mestre está preso na {grade|B} há séculos. Para avançar para {gradeV|1|B}, estou procurando um {0}. Vejo que você já tem um... Posso ficar com ele?"
   },
   {
     "id": "105749",
@@ -36971,7 +36971,7 @@
     "emotionID": "1",
     "ch": "师父，我现在还太过于弱小，为了突破至{gradeV|1|B}，我正在寻找{0}。不知师父能够将{0}赠于我吗？",
     "tc": "師父，我現在還太過於弱小，為了突破至{gradeV|1|B}，我正在尋找{0}。不知師父能夠將{0}贈於我嗎？",
-    "en": "Mestre, ainda estou muito fraco para avançar para {grade V|1|B}. Eu preciso de um {0}. O que você acha de me dar o seu?"
+    "en": "Mestre, ainda estou muito fraco para avançar para {gradeV|1|B}. Eu preciso de um {0}. O que você acha de me dar o seu?"
   },
   {
     "id": "105755",
@@ -40353,7 +40353,7 @@
     "emotionID": "10",
     "ch": "想不到你竟然是我{school|C}{post|C}{name|C}的{relation|C|A}，但我还是不能饶了你。去死吧！！！",
     "tc": "想不到你竟然是我{school|C}{post|C}{name|C}的{relation|C|A}，但我還是不能饒了你。去死吧！！！",
-    "en": "Ah, então seu {relation|C|A} {name|C} é o {posto|C} da minha {school|C}? Ainda não vai te salvar. MORRER!!!"
+    "en": "Ah, então seu {relation|C|A} {name|C} é o {post|C} da minha {school|C}? Ainda não vai te salvar. MORRER!!!"
   },
   {
     "id": "105933",
@@ -40581,7 +40581,7 @@
     "emotionID": "10",
     "ch": "想不到你竟然是我{school|C}{post|C}{name|C}的{relation|C|A}，但我还是不能饶了你。去死吧！！！",
     "tc": "想不到你竟然是我{school|C}{post|C}{name|C}的{relation|C|A}，但我還是不能饒了你。去死吧！！！",
-    "en": "Ah, então seu {relation|C|A} {name|C} é o {posto|C} da minha {school|C}? Ainda não vai te salvar. MORRER!!!"
+    "en": "Ah, então seu {relation|C|A} {name|C} é o {post|C} da minha {school|C}? Ainda não vai te salvar. MORRER!!!"
   },
   {
     "id": "105945",
@@ -67181,7 +67181,7 @@
     "emotionID": "0",
     "ch": "惭愧，为了突破至{gradeV|1|B}，我一时利益熏心，行此鸡鸣狗盗之事。但事已至此，我必须要得到{0}！",
     "tc": "慚愧，為了突破至{gradeV|1|B}，我一時利益熏心，行此雞鳴狗盜之事。但事已至此，我必須要得到{0}！",
-    "en": "Desculpe, mas meu desespero para avançar para {grade V|1|B} me transformou em um ladrão comum. Mas aqui estamos. Eu tenho que ter esse {0}!"
+    "en": "Desculpe, mas meu desespero para avançar para {gradeV|1|B} me transformou em um ladrão comum. Mas aqui estamos. Eu tenho que ter esse {0}!"
   },
   {
     "id": "107345",
@@ -67200,7 +67200,7 @@
     "emotionID": "14",
     "ch": "{relation|A|B}，惭愧…为了突破至{gradeV|1|B}，我竟被利益熏心行此卑劣之事…虽然实在是有违道义，但还请你将{0}给我！",
     "tc": "{relation|A|B}，慚愧…為了突破至{gradeV|1|B}，我竟被利益熏心行此卑劣之事…雖然實在是有違道義，但還請你將{0}給我！",
-    "en": "{relation|A|B}, desculpe...para avançar para {sérieV|1|B}, eu me pego fazendo coisas que normalmente não faria... Eu sei que é errado, mas me dê aquele {0}? !"
+    "en": "{relation|A|B}, desculpe...para avançar para {gradeV|1|B}, eu me pego fazendo coisas que normalmente não faria... Eu sei que é errado, mas me dê aquele {0}? !"
   },
   {
     "id": "107346",
@@ -67238,7 +67238,7 @@
     "emotionID": "14",
     "ch": "师父，我知道你一定很伤心…为了突破至{gradeV|1|B}，我一时利益熏心，行此鸡鸣狗盗之事。但事已至此，我必须要得到{0}！",
     "tc": "師父，我知道你一定很傷心…為了突破至{gradeV|1|B}，我一時利益熏心，行此雞鳴狗盜之事。但事已至此，我必須要得到{0}！",
-    "en": "Mestre, não quero ofendê-lo... mas meu desespero para avançar para {grade V|1|B} me transformou em um ladrão comum. Mas aqui estamos. Eu tenho que ter esse {0}!"
+    "en": "Mestre, não quero ofendê-lo... mas meu desespero para avançar para {gradeV|1|B} me transformou em um ladrão comum. Mas aqui estamos. Eu tenho que ter esse {0}!"
   },
   {
     "id": "107348",
@@ -67276,7 +67276,7 @@
     "emotionID": "14",
     "ch": "{relation|A|B}，我知道你一定很伤心…为了突破至{gradeV|1|B}，我一时利益熏心，行此鸡鸣狗盗之事。但事已至此，我必须要得到{0}！",
     "tc": "{relation|A|B}，我知道你一定很傷心…為了突破至{gradeV|1|B}，我一時利益熏心，行此雞鳴狗盜之事。但事已至此，我必須要得到{0}！",
-    "en": "{relation|A|B}, não quero ofendê-lo... mas meu desespero para avançar para {grade V|1|B} me transformou em um ladrão comum. Mas aqui estamos. Eu tenho que ter esse {0}!"
+    "en": "{relation|A|B}, não quero ofendê-lo... mas meu desespero para avançar para {gradeV|1|B} me transformou em um ladrão comum. Mas aqui estamos. Eu tenho que ter esse {0}!"
   },
   {
     "id": "107350",
@@ -69290,7 +69290,7 @@
     "emotionID": "0",
     "ch": "道友，我停留在{grade|B}已久…你若是将{0}赠我，助我突破{gradeV|1|B}，来日我必将报答这份恩情！",
     "tc": "道友，我停留在{grade|B}已久…你若是將{0}贈我，助我突破{gradeV|1|B}，來日我必將報答這份恩情！",
-    "en": "Cultivador, estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei avançar para a {sérieV|1|B}. Eu te pago de volta um dia!"
+    "en": "Cultivador, estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei avançar para a {gradeV|1|B}. Eu te pago de volta um dia!"
   },
   {
     "id": "107456",
@@ -69518,7 +69518,7 @@
     "emotionID": "0",
     "ch": "道友，我停留在{grade|B}已久…你若是将{0}赠我，助我突破{gradeV|1|B}，来日我必将报答这份恩情！",
     "tc": "道友，我停留在{grade|B}已久…你若是將{0}贈我，助我突破{gradeV|1|B}，來日我必將報答這份恩情！",
-    "en": "Cultivador, estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei avançar para a {sérieV|1|B}. Eu te pago de volta um dia!"
+    "en": "Cultivador, estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei avançar para a {gradeV|1|B}. Eu te pago de volta um dia!"
   },
   {
     "id": "107468",
@@ -69537,7 +69537,7 @@
     "emotionID": "0",
     "ch": "{relation|A|B}，我停留在{grade|B}已久…我需要你的{0}助我突破至{gradeV|1|B}，你能将{0}给我吗？",
     "tc": "{relation|A|B}，我停留在{grade|B}已久…我需要你的{0}助我突破至{gradeV|1|B}，你能將{0}給我嗎？",
-    "en": "{relation|A|B}, estou preso na {série|B} há muito tempo... Preciso do seu {0} para chegar à {sérieV|1|B}. Posso ficar com ele?"
+    "en": "{relation|A|B}, estou preso na {grade|B} há muito tempo... Preciso do seu {0} para chegar à {gradeV|1|B}. Posso ficar com ele?"
   },
   {
     "id": "107469",
@@ -69575,7 +69575,7 @@
     "emotionID": "15",
     "ch": "师父，我停留在{grade|B}已久…能否将你的{0}送给我？我需要{0}助我突破至{gradeV|1|B}。",
     "tc": "師父，我停留在{grade|B}已久…能否將你的{0}送給我？我需要{0}助我突破至{gradeV|1|B}。",
-    "en": "Mestre, estou preso na {série|B} há muito tempo... Você poderia me dar seu {0}? Eu realmente preciso disso para avançar para {gradeV|1|B}."
+    "en": "Mestre, estou preso na {grade|B} há muito tempo... Você poderia me dar seu {0}? Eu realmente preciso disso para avançar para {gradeV|1|B}."
   },
   {
     "id": "107471",
@@ -69613,7 +69613,7 @@
     "emotionID": "15",
     "ch": "{relation|A|B}，我停留在{grade|B}已久…能否将你的{0}送给我？我需要{0}助我突破至{gradeV|1|B}。",
     "tc": "{relation|A|B}，我停留在{grade|B}已久…能否將你的{0}送給我？我需要{0}助我突破至{gradeV|1|B}。",
-    "en": "{relation|A|B}, estou preso na {série|B} há muito tempo... Você poderia me dar seu {0}? Eu realmente preciso disso para avançar para {gradeV|1|B}."
+    "en": "{relation|A|B}, estou preso na {grade|B} há muito tempo... Você poderia me dar seu {0}? Eu realmente preciso disso para avançar para {gradeV|1|B}."
   },
   {
     "id": "107473",
@@ -69632,7 +69632,7 @@
     "emotionID": "15",
     "ch": "{call|B|A}，我停留在{grade|B}已久…我需要你的{0}助我突破至{gradeV|1|B}，你能将{0}给我吗？",
     "tc": "{call|B|A}，我停留在{grade|B}已久…我需要你的{0}助我突破至{gradeV|1|B}，你能將{0}給我嗎？",
-    "en": "{call|B|A}, estou preso na {série|B} há muito tempo... Preciso do seu {0} para chegar à {sérieV|1|B}. Posso ficar com ele?"
+    "en": "{call|B|A}, estou preso na {grade|B} há muito tempo... Preciso do seu {0} para chegar à {gradeV|1|B}. Posso ficar com ele?"
   },
   {
     "id": "107474",
@@ -69651,7 +69651,7 @@
     "emotionID": "15",
     "ch": "{call|B|A}，我停留在{grade|B}已久…我需要你的{0}助我突破至{gradeV|1|B}，你能将{0}给我吗？",
     "tc": "{call|B|A}，我停留在{grade|B}已久…我需要你的{0}助我突破至{gradeV|1|B}，你能將{0}給我嗎？",
-    "en": "{call|B|A}, estou preso na {série|B} há muito tempo... Preciso do seu {0} para chegar à {sérieV|1|B}. Posso ficar com ele?"
+    "en": "{call|B|A}, estou preso na {grade|B} há muito tempo... Preciso do seu {0} para chegar à {gradeV|1|B}. Posso ficar com ele?"
   },
   {
     "id": "107475",
@@ -70430,7 +70430,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我停留在{grade|B}已久…若是将{0}赠我，助我突破{gradeV|1|B}，相助之恩铭记于心，翌日必当报答！",
     "tc": "{call|B|A}，我停留在{grade|B}已久…若是將{0}贈我，助我突破{gradeV|1|B}，相助之恩銘記於心，翌日必當報答！",
-    "en": "{call|B|A}, estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei passar para a {sérieV|1|B}. Serei eternamente grato a você!"
+    "en": "{call|B|A}, estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei passar para a {gradeV|1|B}. Serei eternamente grato a você!"
   },
   {
     "id": "107516",
@@ -70449,7 +70449,7 @@
     "emotionID": "15",
     "ch": "{call|B|A}，我停留在{grade|B}已久…若是将{0}赠我，助我突破{gradeV|1|B}，相助之恩铭记于心，翌日必当报答！",
     "tc": "{call|B|A}，我停留在{grade|B}已久…若是將{0}贈我，助我突破{gradeV|1|B}，相助之恩銘記於心，翌日必當報答！",
-    "en": "{call|B|A}, estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei passar para a {sérieV|1|B}. Serei eternamente grato a você!"
+    "en": "{call|B|A}, estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei passar para a {gradeV|1|B}. Serei eternamente grato a você!"
   },
   {
     "id": "107517",
@@ -73565,7 +73565,7 @@
     "emotionID": "10",
     "ch": "{call|B|A}，你与我的{relation|X|B}{name|X}究竟有多大的仇怨？无论如何，既然你杀了我的{relation|X|B}，我便要替{gender|X}向你报仇。希望你不要怨我…",
     "tc": "{call|B|A}，你與我的{relation|X|B}{name|X}究竟有多大的仇怨？無論如何，既然你殺了我的{relation|X|B}，我便要替{gender|X}向你報仇。希望你不要怨我…",
-    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2| X}. Sem ressentimentos..."
+    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2|X}. Sem ressentimentos..."
   },
   {
     "id": "107681",
@@ -73774,7 +73774,7 @@
     "emotionID": "10",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "107692",
@@ -73964,7 +73964,7 @@
     "emotionID": "10",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "107702",
@@ -74154,7 +74154,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "107712",
@@ -75085,7 +75085,7 @@
     "emotionID": "10",
     "ch": "{call|B|A}，你与我的{relation|X|B}{name|X}究竟有多大的仇怨？无论如何，既然你杀了我的{relation|X|B}，我便要替{gender|X}向你报仇。希望你不要怨我…",
     "tc": "{call|B|A}，你與我的{relation|X|B}{name|X}究竟有多大的仇怨？無論如何，既然你殺了我的{relation|X|B}，我便要替{gender|X}向你報仇。希望你不要怨我…",
-    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2| X}. Sem ressentimentos..."
+    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2|X}. Sem ressentimentos..."
   },
   {
     "id": "107761",
@@ -75294,7 +75294,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "107772",
@@ -75484,7 +75484,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "107782",
@@ -75674,7 +75674,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "107792",
@@ -76605,7 +76605,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，你与我的{relation|X|B}{name|X}究竟有多大的仇怨？无论如何，既然你杀了我的{relation|X|B}，我便要替{gender|X}向你报仇。希望你不要怨我…",
     "tc": "{call|B|A}，你與我的{relation|X|B}{name|X}究竟有多大的仇怨？無論如何，既然你殺了我的{relation|X|B}，我便要替{gender|X}向你報仇。希望你不要怨我…",
-    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2| X}. Sem ressentimentos..."
+    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2|X}. Sem ressentimentos..."
   },
   {
     "id": "107841",
@@ -76814,7 +76814,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "107852",
@@ -77004,7 +77004,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "107862",
@@ -77194,7 +77194,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "107872",
@@ -78125,7 +78125,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，你与我的{relation|X|B}{name|X}究竟有多大的仇怨？无论如何，既然你杀了我的{relation|X|B}，我便要替{gender|X}向你报仇。希望你不要怨我…",
     "tc": "{call|B|A}，你與我的{relation|X|B}{name|X}究竟有多大的仇怨？無論如何，既然你殺了我的{relation|X|B}，我便要替{gender|X}向你報仇。希望你不要怨我…",
-    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2| X}. Sem ressentimentos..."
+    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2|X}. Sem ressentimentos..."
   },
   {
     "id": "107921",
@@ -78334,7 +78334,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "107932",
@@ -78524,7 +78524,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "107942",
@@ -78714,7 +78714,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "107952",
@@ -79645,7 +79645,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，你与我的{relation|X|B}{name|X}究竟有多大的仇怨？无论如何，既然你杀了我的{relation|X|B}，我便要替{gender|X}向你报仇。希望你不要怨我…",
     "tc": "{call|B|A}，你與我的{relation|X|B}{name|X}究竟有多大的仇怨？無論如何，既然你殺了我的{relation|X|B}，我便要替{gender|X}向你報仇。希望你不要怨我…",
-    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2| X}. Sem ressentimentos..."
+    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2|X}. Sem ressentimentos..."
   },
   {
     "id": "108001",
@@ -79854,7 +79854,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108012",
@@ -80044,7 +80044,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108022",
@@ -80234,7 +80234,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108032",
@@ -81089,7 +81089,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，你与我的{relation|X|B}{name|X}究竟有多大的仇怨？无论如何，既然你杀了我的{relation|X|B}，我便要替{gender|X}向你报仇。希望你不要怨我…",
     "tc": "{call|B|A}，你與我的{relation|X|B}{name|X}究竟有多大的仇怨？無論如何，既然你殺了我的{relation|X|B}，我便要替{gender|X}向你報仇。希望你不要怨我…",
-    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2| X}. Sem ressentimentos..."
+    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2|X}. Sem ressentimentos..."
   },
   {
     "id": "108077",
@@ -81298,7 +81298,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108088",
@@ -81469,7 +81469,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108097",
@@ -81621,7 +81621,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108105",
@@ -82533,7 +82533,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，你与我的{relation|X|B}{name|X}究竟有多大的仇怨？无论如何，既然你杀了我的{relation|X|B}，我便要替{gender|X}向你报仇。希望你不要怨我…",
     "tc": "{call|B|A}，你與我的{relation|X|B}{name|X}究竟有多大的仇怨？無論如何，既然你殺了我的{relation|X|B}，我便要替{gender|X}向你報仇。希望你不要怨我…",
-    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2| X}. Sem ressentimentos..."
+    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2|X}. Sem ressentimentos..."
   },
   {
     "id": "108153",
@@ -82742,7 +82742,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108164",
@@ -82932,7 +82932,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108174",
@@ -83122,7 +83122,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108184",
@@ -84053,7 +84053,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，你与我的{relation|X|B}{name|X}究竟有多大的仇怨？无论如何，既然你杀了我的{relation|X|B}，我便要替{gender|X}向你报仇。希望你不要怨我…",
     "tc": "{call|B|A}，你與我的{relation|X|B}{name|X}究竟有多大的仇怨？無論如何，既然你殺了我的{relation|X|B}，我便要替{gender|X}向你報仇。希望你不要怨我…",
-    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2| X}. Sem ressentimentos..."
+    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2|X}. Sem ressentimentos..."
   },
   {
     "id": "108233",
@@ -84262,7 +84262,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108244",
@@ -84452,7 +84452,7 @@
     "emotionID": "10",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108254",
@@ -84642,7 +84642,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108264",
@@ -85573,7 +85573,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，你与我的{relation|X|B}{name|X}究竟有多大的仇怨？无论如何，既然你杀了我的{relation|X|B}，我便要替{gender|X}向你报仇。希望你不要怨我…",
     "tc": "{call|B|A}，你與我的{relation|X|B}{name|X}究竟有多大的仇怨？無論如何，既然你殺了我的{relation|X|B}，我便要替{gender|X}向你報仇。希望你不要怨我…",
-    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2| X}. Sem ressentimentos..."
+    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2|X}. Sem ressentimentos..."
   },
   {
     "id": "108313",
@@ -85782,7 +85782,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108324",
@@ -85972,7 +85972,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108334",
@@ -86162,7 +86162,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108344",
@@ -87093,7 +87093,7 @@
     "emotionID": "10",
     "ch": "{call|B|A}，你与我的{relation|X|B}{name|X}究竟有多大的仇怨？无论如何，既然你杀了我的{relation|X|B}，我便要替{gender|X}向你报仇。希望你不要怨我…",
     "tc": "{call|B|A}，你與我的{relation|X|B}{name|X}究竟有多大的仇怨？無論如何，既然你殺了我的{relation|X|B}，我便要替{gender|X}向你報仇。希望你不要怨我…",
-    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2| X}. Sem ressentimentos..."
+    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2|X}. Sem ressentimentos..."
   },
   {
     "id": "108393",
@@ -87302,7 +87302,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108404",
@@ -87492,7 +87492,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108414",
@@ -87682,7 +87682,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108424",
@@ -88613,7 +88613,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，你与我的{relation|X|B}{name|X}究竟有多大的仇怨？无论如何，既然你杀了我的{relation|X|B}，我便要替{gender|X}向你报仇。希望你不要怨我…",
     "tc": "{call|B|A}，你與我的{relation|X|B}{name|X}究竟有多大的仇怨？無論如何，既然你殺了我的{relation|X|B}，我便要替{gender|X}向你報仇。希望你不要怨我…",
-    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2| X}. Sem ressentimentos..."
+    "en": "{call|B|A}, o que diabos aconteceu entre você e meu {relation|X|B} {name|X} Seja o que for, você matou {relation|X|B} e eu estou aqui para vingar {gender2|X}. Sem ressentimentos..."
   },
   {
     "id": "108473",
@@ -88822,7 +88822,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108484",
@@ -89012,7 +89012,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你打伤了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你打傷了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você antes, mas você machucou minha {relation|X|B} {name|X} que não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108494",
@@ -89202,7 +89202,7 @@
     "emotionID": "10",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108504",
@@ -89392,7 +89392,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我重要的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我重要的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu favorito {relation|X|B} {name|X} que eu não posso perdoar... Hoje vou vingar {gender2 |X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu favorito {relation|X|B} {name|X} que eu não posso perdoar... Hoje vou vingar {gender2|X}."
   },
   {
     "id": "108514",
@@ -89582,7 +89582,7 @@
     "emotionID": "10",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108524",
@@ -89772,7 +89772,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108534",
@@ -89962,7 +89962,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108544",
@@ -90152,7 +90152,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108554",
@@ -90342,7 +90342,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108564",
@@ -90532,7 +90532,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108574",
@@ -90722,7 +90722,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108584",
@@ -90912,7 +90912,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108594",
@@ -91102,7 +91102,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108604",
@@ -91292,7 +91292,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我一直都不屑于计较你我之间的恩怨。但你杀了我的{relation|X|B}{name|X}，唯独此事我无法忍受…今日我便要替{gender|X}向你报仇。",
     "tc": "{call|B|A}，我一直都不屑於計較你我之間的恩怨。但你殺了我的{relation|X|B}{name|X}，唯獨此事我無法忍受…今日我便要替{gender|X}向你報仇。",
-    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2| X}."
+    "en": "{call|B|A}, eu realmente não me preocupei com você até agora, mas você matou meu {relation|X|B} {name|X} que eu não posso perdoar... Hoje eu vou vingar {gender2|X}."
   },
   {
     "id": "108614",
@@ -91919,7 +91919,7 @@
     "emotionID": "15",
     "ch": "师父，我的行为确实有些卑劣，但我为了顺利突破至{gradeV|1|B}，必须要{0}的帮助…希望你不要怨我。",
     "tc": "師父，我的行為確實有些卑劣，但我為了順利突破至{gradeV|1|B}，必須要{0}的幫助…希望你不要怨我。",
-    "en": "Mestre, odeio descer tão baixo, mas preciso desse {0} para avançar para {grade V|1|B}... Sem ressentimentos."
+    "en": "Mestre, odeio descer tão baixo, mas preciso desse {0} para avançar para {gradeV|1|B}... Sem ressentimentos."
   },
   {
     "id": "108647",
@@ -123231,7 +123231,7 @@
     "emotionID": "1",
     "ch": "想我往日好友都一一进入{school|C}，若非他们时常照拂，我一个散修必定过得很艰难了。",
     "tc": "想我往日好友都一一進入{school|C}，若非他們時常照拂，我一個散修必定過得很艱難了。",
-    "en": "Se aqueles velhos amigos meus que, um por um, matriculados na {school | C} não tivessem cuidado de mim em muitas ocasiões, minha vida como um cultivador desonesto seria realmente difícil."
+    "en": "Se aqueles velhos amigos meus que, um por um, matriculados na {school|C} não tivessem cuidado de mim em muitas ocasiões, minha vida como um cultivador desonesto seria realmente difícil."
   },
   {
     "id": "120520",
@@ -123554,7 +123554,7 @@
     "emotionID": "0",
     "ch": "你{school|A}的{post|C}{name|C}却是我这名散修的{relation|C|B}。",
     "tc": "你{school|A}的{post|C}{name|C}卻是我這名散修的{relation|C|B}。",
-    "en": "O {posto|C} da sua seita {school|A}, {name|C}, é de fato meu {relation|C|B}."
+    "en": "O {post|C} da sua seita {school|A}, {name|C}, é de fato meu {relation|C|B}."
   },
   {
     "id": "120622",
@@ -123801,7 +123801,7 @@
     "emotionID": "1",
     "ch": "我的朋友们都进入{school|C}了，他们都愿意帮助散修，当然你也不例外。",
     "tc": "我的朋友們都進入{school|C}了，他們都願意幫助散修，當然你也不例外。",
-    "en": "Todos os meus amigos se matricularam na {school | C} e estão mais do que dispostos a ajudar os cultivadores desonestos. Naturalmente, você não seria exceção."
+    "en": "Todos os meus amigos se matricularam na {school|C} e estão mais do que dispostos a ajudar os cultivadores desonestos. Naturalmente, você não seria exceção."
   },
   {
     "id": "120720",
@@ -127316,7 +127316,7 @@
     "emotionID": "0",
     "ch": "我随口说话便能道出无数至理，因此一般不轻易开金口。今日看在你是{name|C}的{relation|A|C}的份上,我就勉强跟你说两句吧。",
     "tc": "我隨口說話便能道出無數至理，因此一般不輕易開金口。今日看在你是{name|C}的{relation|A|C}的份上,我就勉強跟你說兩句吧。",
-    "en": "Toda vez que abro minha boca, pérolas de grande sabedoria caem, então não costumo entrar em conversa fiada... Vou falar com você hoje, no entanto, pelo bem de {name|C}, minha {relation|A| C}."
+    "en": "Toda vez que abro minha boca, pérolas de grande sabedoria caem, então não costumo entrar em conversa fiada... Vou falar com você hoje, no entanto, pelo bem de {name|C}, minha {relation|A|C}."
   },
   {
     "id": "123004",
@@ -133453,7 +133453,7 @@
     "emotionID": "0",
     "ch": "逃战之人还有脸皮出现我面前？我可真是瞧不起你。",
     "tc": "逃戰之人還有臉皮出現我面前？我可真是瞧不起你。",
-    "en": "De volta para mais, Chicken Little? Que desperdício de espaço você é."
+    "en": "Desertor covarde, ainda tem a audácia de aparecer diante de mim? Eu te desprezo."
   },
   {
     "id": "123463",
@@ -134631,7 +134631,7 @@
     "emotionID": "10",
     "ch": "逃战之人还有脸皮出现我面前？我可真是瞧不起你。",
     "tc": "逃戰之人還有臉皮出現我面前？我可真是瞧不起你。",
-    "en": "De volta para mais, Chicken Little? Que desperdício de espaço você é."
+    "en": "Desertor covarde, ainda tem a audácia de aparecer diante de mim? Eu te desprezo."
   },
   {
     "id": "125001",
@@ -145784,7 +145784,7 @@
     "emotionID": "14",
     "ch": "{1}杀害了我的{relation|X|B}，等我找到时，已成一具尸骸！奈何我境界不足，恐无法击杀{gender|C}，你可愿意帮我报了此仇？",
     "tc": "{1}殺害了我的{relation|X|B}，等我找到時，已成一具屍骸！奈何我境界不足，恐無法擊殺{gender|C}，你可願意幫我報了此仇？",
-    "en": "{1} matou meu {relation|X|B}. Quando os encontrei, tudo o que restava eram ossos! Infelizmente, não sou realizado o suficiente para matar {gender2}C}. O que você acha de me vingar?"
+    "en": "{1} matou meu {relation|X|B}. Quando os encontrei, tudo o que restava eram ossos! Infelizmente, não sou realizado o suficiente para matar {gender|C}. O que você acha de me vingar?"
   },
   {
     "id": "1101159",
@@ -146905,7 +146905,7 @@
     "emotionID": "14",
     "ch": "我如今停留在{grade|B}了，若能我寻得{1}那便能突破了。",
     "tc": "我如今停留在{grade|B}了，若能我尋得{1}那便能突破了。",
-    "en": "Estou preso na {série|B}. Se você puder me ajudar a encontrar um {1}, poderei avançar!"
+    "en": "Estou preso na {grade|B}. Se você puder me ajudar a encontrar um {1}, poderei avançar!"
   },
   {
     "id": "1101520",
@@ -167482,7 +167482,7 @@
     "emotionID": "0",
     "ch": "你就是{school|A}的{post|A}{name|A}吧？升仙大会将会在{0}后开始，届时要准时来{1}哦。",
     "tc": "你就是{school|A}的{post|A}{name|A}吧？升仙大會將會在{0}後開始，屆時要準時來{1}哦。",
-    "en": "Você deve ser {name|A} o {posto|A} da {school|A}? O Torneio Imortal começará em {0} às {1}. Não se atrase!"
+    "en": "Você deve ser {name|A} o {post|A} da {school|A}? O Torneio Imortal começará em {0} às {1}. Não se atrase!"
   },
   {
     "id": "600014",
@@ -197901,7 +197901,7 @@
     "emotionID": "0",
     "ch": "漫漫仙途，望{call|B|C}珍惜你我鱼水之情，在下来为{call|B|C}遮风挡雨，出价{0}灵石。",
     "tc": "漫漫仙途，望{call|B|C}珍惜你我魚水之情，在下來為{call|B|C}遮風擋雨，出價{0}靈石。",
-    "en": "O caminho para a imortalidade é longo. Vou levá-lo sob minha proteção, {call|B | C}, e podemos aprofundar os laços de nossa afeição. Eu ofereço {0} Pedras Espirituais."
+    "en": "O caminho para a imortalidade é longo. Vou levá-lo sob minha proteção, {call|B|C}, e podemos aprofundar os laços de nossa afeição. Eu ofereço {0} Pedras Espirituais."
   },
   {
     "id": "928079",
@@ -236319,7 +236319,7 @@
     "emotionID": "0",
     "ch": "我乃{school|C}{post|C}。",
     "tc": "我乃{school|C}{post|C}。",
-    "en": "Eu sou o {posto|C} da {school|C}."
+    "en": "Eu sou o {post|C} da {school|C}."
   },
   {
     "id": "7030065",
@@ -241981,7 +241981,7 @@
     "emotionID": "0",
     "ch": "宗主大人，弟子驽钝，如今修为区区{grade|B}，而坐镇于<r>{0}</r>的<r>{1}</r>修为已然达到{grade|C}，我若前往抵敌，宛如飞蛾扑火、以卵击石。若想胜过此人，宗主大人还需派遣<r>{2}</r>的同门出战，弟子身死事小，耽误宗门事大，望宗主三思。",
     "tc": "宗主大人，弟子駑鈍，如今修為區區{grade|B}，而坐鎮於<r>{0}</r>的<r>{1}</r>修為已然達到{grade|C}，我若前往抵敵，宛如飛蛾撲火、以卵擊石。若想勝過此人，宗主大人還需派遣<r>{2}</r>的同門出戰，弟子身死事小，耽誤宗門事大，望宗主三思。",
-    "en": "Líder da Seita, por favor, perdoe minha incompetência para ainda permanecer na {série|B}, mas<r> {1}</r> defendendo<r> {0}</r> já está na {série|C}. Se eu atacasse aquele oponente, seria jogar uma palha contra o vento.<r> {2}</r> seria uma escolha melhor para esta missão. Não temo a morte, mas não quero que meu fracasso atrapalhe seu plano."
+    "en": "Líder da Seita, por favor, perdoe minha incompetência para ainda permanecer na {grade|B}, mas<r> {1}</r> defendendo<r> {0}</r> já está na {grade|C}. Se eu atacasse aquele oponente, seria jogar uma palha contra o vento.<r> {2}</r> seria uma escolha melhor para esta missão. Não temo a morte, mas não quero que meu fracasso atrapalhe seu plano."
   },
   {
     "id": "7060593",
@@ -242019,7 +242019,7 @@
     "emotionID": "0",
     "ch": "宗主大人，弟子驽钝，如今修为区区{grade|B}，而统帅<r>{0}</r>众人的<r>{1}</r>修为已然达到{grade|C}，我若前往抵敌，宛如飞蛾扑火、以卵击石。若想胜过此人，宗主大人还需派遣<r>{2}</r>的同门出战，弟子身死事小，耽误宗门事大，望宗主三思。",
     "tc": "宗主大人，弟子駑鈍，如今修為區區{grade|B}，而統帥<r>{0}</r>眾人的<r>{1}</r>修為已然達到{grade|C}，我若前往抵敵，宛如飛蛾撲火、以卵擊石。若想勝過此人，宗主大人還需派遣<r>{2}</r>的同門出戰，弟子身死事小，耽誤宗門事大，望宗主三思。",
-    "en": "Líder da Seita, por favor, perdoe minha incompetência para ainda permanecer na {série|B}, mas<r> {1}</r> principal<r> {0}</r> já está na {série|C}. Se eu atacasse aquele oponente, seria jogar uma palha contra o vento.<r> {2}</r> seria uma escolha melhor para esta missão. Não temo a morte, mas não quero que meu fracasso atrapalhe seu plano."
+    "en": "Líder da Seita, por favor, perdoe minha incompetência para ainda permanecer na {grade|B}, mas<r> {1}</r> principal<r> {0}</r> já está na {grade|C}. Se eu atacasse aquele oponente, seria jogar uma palha contra o vento.<r> {2}</r> seria uma escolha melhor para esta missão. Não temo a morte, mas não quero que meu fracasso atrapalhe seu plano."
   },
   {
     "id": "7060601",
@@ -263622,7 +263622,7 @@
     "emotionID": "0",
     "ch": "前辈，我停留在{grade|B}已久…你若是将{0}赠我，助我突破{gradeV|1|B}，来日我必将报答这份恩情！",
     "tc": "前輩，我停留在{grade|B}已久…你若是將{0}贈我，助我突破{gradeV|1|B}，來日我必將報答這份恩情！",
-    "en": "Estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei avançar para a {sérieV|1|B}. Eu te pago de volta um dia!"
+    "en": "Estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei avançar para a {gradeV|1|B}. Eu te pago de volta um dia!"
   },
   {
     "id": "8203302",
@@ -263717,7 +263717,7 @@
     "emotionID": "0",
     "ch": "前辈，我停留在{grade|B}已久…你若是将{0}赠我，助我突破{gradeV|1|B}，来日我必将报答这份恩情！",
     "tc": "前輩，我停留在{grade|B}已久…你若是將{0}贈我，助我突破{gradeV|1|B}，來日我必將報答這份恩情！",
-    "en": "Estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei avançar para a {sérieV|1|B}. Eu te pago de volta um dia!"
+    "en": "Estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei avançar para a {gradeV|1|B}. Eu te pago de volta um dia!"
   },
   {
     "id": "8203307",
@@ -263945,7 +263945,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我停留在{grade|B}已久…若是将{0}赠我，助我突破{gradeV|1|B}，相助之恩铭记于心，翌日必当报答！",
     "tc": "{call|B|A}，我停留在{grade|B}已久…若是將{0}贈我，助我突破{gradeV|1|B}，相助之恩銘記於心，翌日必當報答！",
-    "en": "{call|B|A}, estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei passar para a {sérieV|1|B}. Serei eternamente grato a você!"
+    "en": "{call|B|A}, estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei passar para a {gradeV|1|B}. Serei eternamente grato a você!"
   },
   {
     "id": "8203319",
@@ -263964,7 +263964,7 @@
     "emotionID": "15",
     "ch": "{call|B|A}，我停留在{grade|B}已久…若是将{0}赠我，助我突破{gradeV|1|B}，相助之恩铭记于心，翌日必当报答！",
     "tc": "{call|B|A}，我停留在{grade|B}已久…若是將{0}贈我，助我突破{gradeV|1|B}，相助之恩銘記於心，翌日必當報答！",
-    "en": "{call|B|A}, estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei passar para a {sérieV|1|B}. Serei eternamente grato a você!"
+    "en": "{call|B|A}, estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei passar para a {gradeV|1|B}. Serei eternamente grato a você!"
   },
   {
     "id": "8203320",
@@ -264420,7 +264420,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我停留在{grade|B}已久…若是将{0}赠我，助我突破{gradeV|1|B}，相助之恩铭记于心，翌日必当报答！",
     "tc": "{call|B|A}，我停留在{grade|B}已久…若是將{0}贈我，助我突破{gradeV|1|B}，相助之恩銘記於心，翌日必當報答！",
-    "en": "{call|B|A}, estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei passar para a {sérieV|1|B}. Serei eternamente grato a você!"
+    "en": "{call|B|A}, estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei passar para a {gradeV|1|B}. Serei eternamente grato a você!"
   },
   {
     "id": "8203419",
@@ -264439,7 +264439,7 @@
     "emotionID": "15",
     "ch": "{call|B|A}，我停留在{grade|B}已久…若是将{0}赠我，助我突破{gradeV|1|B}，相助之恩铭记于心，翌日必当报答！",
     "tc": "{call|B|A}，我停留在{grade|B}已久…若是將{0}贈我，助我突破{gradeV|1|B}，相助之恩銘記於心，翌日必當報答！",
-    "en": "{call|B|A}, estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei passar para a {sérieV|1|B}. Serei eternamente grato a você!"
+    "en": "{call|B|A}, estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei passar para a {gradeV|1|B}. Serei eternamente grato a você!"
   },
   {
     "id": "8203420",
@@ -264572,7 +264572,7 @@
     "emotionID": "0",
     "ch": "前辈，我停留在{grade|B}已久…你若是将{0}赠我，助我突破{gradeV|1|B}，来日我必将报答这份恩情！",
     "tc": "前輩，我停留在{grade|B}已久…你若是將{0}贈我，助我突破{gradeV|1|B}，來日我必將報答這份恩情！",
-    "en": "Estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei avançar para a {sérieV|1|B}. Eu te pago de volta um dia!"
+    "en": "Estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei avançar para a {gradeV|1|B}. Eu te pago de volta um dia!"
   },
   {
     "id": "8203502",
@@ -264667,7 +264667,7 @@
     "emotionID": "0",
     "ch": "前辈，我停留在{grade|B}已久…你若是将{0}赠我，助我突破{gradeV|1|B}，来日我必将报答这份恩情！",
     "tc": "前輩，我停留在{grade|B}已久…你若是將{0}贈我，助我突破{gradeV|1|B}，來日我必將報答這份恩情！",
-    "en": "Estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei avançar para a {sérieV|1|B}. Eu te pago de volta um dia!"
+    "en": "Estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei avançar para a {gradeV|1|B}. Eu te pago de volta um dia!"
   },
   {
     "id": "8203507",
@@ -264895,7 +264895,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我停留在{grade|B}已久…若是将{0}赠我，助我突破{gradeV|1|B}，相助之恩铭记于心，翌日必当报答！",
     "tc": "{call|B|A}，我停留在{grade|B}已久…若是將{0}贈我，助我突破{gradeV|1|B}，相助之恩銘記於心，翌日必當報答！",
-    "en": "{call|B|A}, estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei passar para a {sérieV|1|B}. Serei eternamente grato a você!"
+    "en": "{call|B|A}, estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei passar para a {gradeV|1|B}. Serei eternamente grato a você!"
   },
   {
     "id": "8203519",
@@ -264914,7 +264914,7 @@
     "emotionID": "15",
     "ch": "{call|B|A}，我停留在{grade|B}已久…若是将{0}赠我，助我突破{gradeV|1|B}，相助之恩铭记于心，翌日必当报答！",
     "tc": "{call|B|A}，我停留在{grade|B}已久…若是將{0}贈我，助我突破{gradeV|1|B}，相助之恩銘記於心，翌日必當報答！",
-    "en": "{call|B|A}, estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei passar para a {sérieV|1|B}. Serei eternamente grato a você!"
+    "en": "{call|B|A}, estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei passar para a {gradeV|1|B}. Serei eternamente grato a você!"
   },
   {
     "id": "8203520",
@@ -265370,7 +265370,7 @@
     "emotionID": "0",
     "ch": "{call|B|A}，我停留在{grade|B}已久…若是将{0}赠我，助我突破{gradeV|1|B}，相助之恩铭记于心，翌日必当报答！",
     "tc": "{call|B|A}，我停留在{grade|B}已久…若是將{0}贈我，助我突破{gradeV|1|B}，相助之恩銘記於心，翌日必當報答！",
-    "en": "{call|B|A}, estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei passar para a {sérieV|1|B}. Serei eternamente grato a você!"
+    "en": "{call|B|A}, estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei passar para a {gradeV|1|B}. Serei eternamente grato a você!"
   },
   {
     "id": "8203619",
@@ -265389,7 +265389,7 @@
     "emotionID": "15",
     "ch": "{call|B|A}，我停留在{grade|B}已久…若是将{0}赠我，助我突破{gradeV|1|B}，相助之恩铭记于心，翌日必当报答！",
     "tc": "{call|B|A}，我停留在{grade|B}已久…若是將{0}贈我，助我突破{gradeV|1|B}，相助之恩銘記於心，翌日必當報答！",
-    "en": "{call|B|A}, estou preso na {série|B} há muito tempo... Se você me der esse {0}, poderei passar para a {sérieV|1|B}. Serei eternamente grato a você!"
+    "en": "{call|B|A}, estou preso na {grade|B} há muito tempo... Se você me der esse {0}, poderei passar para a {gradeV|1|B}. Serei eternamente grato a você!"
   },
   {
     "id": "8203620",
@@ -266605,7 +266605,7 @@
     "emotionID": "0",
     "ch": "今日我{name|B}向你发起挑战，前辈都已{grade|A}，想必有勇气应战吧？",
     "tc": "今日我{name|B}向你發起挑戰，前輩都已{grade|A}，想必有勇氣應戰吧？",
-    "en": "Eu, {name|B}, desafio você hoje. Você já está na {série|A}, então deve ter coragem de lutar, certo?"
+    "en": "Eu, {name|B}, desafio você hoje. Você já está na {grade|A}, então deve ter coragem de lutar, certo?"
   },
   {
     "id": "8203909",
@@ -266624,7 +266624,7 @@
     "emotionID": "10",
     "ch": "今日我{name|B}向你发起挑战，前辈都已{grade|A}，想必有勇气应战吧？",
     "tc": "今日我{name|B}向你發起挑戰，前輩都已{grade|A}，想必有勇氣應戰吧？",
-    "en": "Eu, {name|B}, desafio você hoje. Você já está na {série|A}, então deve ter coragem de lutar, certo?"
+    "en": "Eu, {name|B}, desafio você hoje. Você já está na {grade|A}, então deve ter coragem de lutar, certo?"
   },
   {
     "id": "8203910",
@@ -269987,7 +269987,7 @@
     "emotionID": "0",
     "ch": "天道酬勤，不进则退。{call|B|A}，你如此刻苦，今日能到{grade|A},想必不需多日就能{gradeV|1|A}了！",
     "tc": "天道酬勤，不進則退。{call|B|A}，你如此刻苦，今日能到{grade|A},想必不需多日就能{gradeV|1|A}了！",
-    "en": "O céu recompensa a ação. {call|B|A}, você trabalhou tão duro e conseguiu {grade|A} hoje. Você certamente alcançará {grade V|1|A} em breve!"
+    "en": "O céu recompensa a ação. {call|B|A}, você trabalhou tão duro e conseguiu {grade|A} hoje. Você certamente alcançará {gradeV|1|A} em breve!"
   },
   {
     "id": "8204609",
@@ -279810,7 +279810,7 @@
     "emotionID": "10",
     "ch": "啊啊啊啊，我事后才发现，那{name|C}着实可恶，竟然来偷我东西！",
     "tc": "啊啊啊啊，我事後才發現，那{name|C}著實可惡，竟然來偷我東西！",
-    "en": "Ahhh. Foi só depois que descobri que {name| C} era tão detestável para roubar de mim!"
+    "en": "Ahhh. Foi só depois que descobri que {name|C} era tão detestável para roubar de mim!"
   },
   {
     "id": "8216801",
@@ -286441,7 +286441,7 @@
     "emotionID": "10",
     "ch": "啊啊啊啊，我事后才发现，那{name|C}着实可恶，竟然来偷我东西！",
     "tc": "啊啊啊啊，我事後才發現，那{name|C}著實可惡，竟然來偷我東西！",
-    "en": "Ahhh. Foi só depois que descobri que {name| C} era tão detestável para roubar de mim!"
+    "en": "Ahhh. Foi só depois que descobri que {name|C} era tão detestável para roubar de mim!"
   },
   {
     "id": "8234202",
@@ -300634,7 +300634,7 @@
     "emotionID": "14",
     "ch": "{name|C}，看着我们这么多年感情的份上，放我一马吧。",
     "tc": "{name|C}，看著我們這麼多年感情的份上，放我一馬吧。",
-    "en": "{name| C}, deixe-me ir, pelo bem de nossos anos juntos."
+    "en": "{name|C}, deixe-me ir, pelo bem de nossos anos juntos."
   },
   {
     "id": "8242389",
@@ -302895,7 +302895,7 @@
     "emotionID": "0",
     "ch": "虽说我元魂已碎，但修为还残存不少，若传给你，可让你直接突破到{gradeV|1|A}，并且没有任何后遗症，不影响你未来的修行，你可愿意接受？",
     "tc": "雖說我元魂已碎，但修為還殘存不少，若傳給你，可讓你直接突破到{gradeV|1|A}，並且沒有任何後遺症，不影響你未來的修行，你可願意接受？",
-    "en": "Embora minha alma tenha sido despedaçada, ainda tenho muito cultivo restante. Se eu transferi-lo para você, ele permitirá que você atinja o avanço para {grade V|1|A} imediatamente. Não há efeitos posteriores e isso não afetará seu cultivo futuro. Você aceitará esta oferta?"
+    "en": "Embora minha alma tenha sido despedaçada, ainda tenho muito cultivo restante. Se eu transferi-lo para você, ele permitirá que você atinja o avanço para {gradeV|1|A} imediatamente. Não há efeitos posteriores e isso não afetará seu cultivo futuro. Você aceitará esta oferta?"
   },
   {
     "id": "8242508",
@@ -310856,7 +310856,7 @@
     "emotionID": "0",
     "ch": "{name|C}，你怎在此，笛声之中为何充满悲伤。",
     "tc": "{name|C}，你怎在此，笛聲之中為何充滿悲傷。",
-    "en": "{name| C}, por que você está aqui? Por que você está tocando flauta com tanta tristeza?"
+    "en": "{name|C}, por que você está aqui? Por que você está tocando flauta com tanta tristeza?"
   },
   {
     "id": "8242927",
@@ -316993,7 +316993,7 @@
     "emotionID": "0",
     "ch": "想必你也听到，我元魂已碎，但修为残存不少，若将些许本源灵力和感悟灌注于你，可让你直接突破到{gradeV|1|A}，并且不影响你未来的修行，你可愿意接受？",
     "tc": "想必你也聽到，我元魂已碎，但修為殘存不少，若將些許本源靈力和感悟灌注於你，可讓你直接突破到{gradeV|1|A}，並且不影響你未來的修行，你可願意接受？",
-    "en": "Tenho certeza de que você já ouviu falar que, embora minha Alma Imortal tenha sido destruída, ainda tenho muito cultivo restante. Se eu transferir um pouco da minha energia e percepção originais para você, isso permitirá que você alcance o avanço para {grade V|1|A} imediatamente e não afetará seu cultivo futuro. Você aceitará esta oferta?"
+    "en": "Tenho certeza de que você já ouviu falar que, embora minha Alma Imortal tenha sido destruída, ainda tenho muito cultivo restante. Se eu transferir um pouco da minha energia e percepção originais para você, isso permitirá que você alcance o avanço para {gradeV|1|A} imediatamente e não afetará seu cultivo futuro. Você aceitará esta oferta?"
   },
   {
     "id": "8243250",
@@ -317278,7 +317278,7 @@
     "emotionID": "0",
     "ch": "羽化……我如今方才{grade|A}，前辈为何不直接让羽化好友前来相助……",
     "tc": "羽化……我如今方才{grade|A}，前輩為何不直接讓羽化好友前來相助……",
-    "en": "Reborn…Mas estou apenas na {série|A}. Por que você não pede a seus amigos Reborn para ajudá-lo, Mentor…"
+    "en": "Reborn…Mas estou apenas na {grade|A}. Por que você não pede a seus amigos Reborn para ajudá-lo, Mentor…"
   },
   {
     "id": "8243265",

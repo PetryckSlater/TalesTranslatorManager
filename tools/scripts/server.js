@@ -134,6 +134,13 @@ function getStats() {
     }
   }
 
+  let auditCount = 0;
+  try {
+    const { auditDatabase } = require('./audit-translation');
+    const { issues } = auditDatabase();
+    auditCount = issues.stats.totalIssues;
+  } catch (e) {}
+
   return {
     total,
     translated,
@@ -151,6 +158,7 @@ function getStats() {
     pendingCount: pending.length,
     modifiedCount: modified.length,
     overflowCount,
+    auditCount,
     leaderboard
   };
 }
@@ -212,6 +220,30 @@ function handleApi(req, res, parsedUrl) {
         }
       }
       items.sort((a, b) => b.len - a.len);
+    } else if (type === 'audit' && fs.existsSync(config.databaseFile)) {
+      try {
+        const { auditDatabase } = require('./audit-translation');
+        const { issues } = auditDatabase();
+        const allAudit = [
+          ...issues.corruptedTags.map(x => ({ ...x, auditType: '🏷️ Tag Corrompida' })),
+          ...issues.unclosedBrackets.map(x => ({ ...x, auditType: '⚠️ Colchete Aberto' })),
+          ...issues.bizarreTerms.map(x => ({ ...x, auditType: '👾 Termo Bizarro' })),
+          ...issues.residualChinese.map(x => ({ ...x, auditType: '🈲 Chinês Residual' }))
+        ];
+        for (const item of allAudit) {
+          items.push({
+            file: item.category === 'localText' ? 'LocalText' : 'RoleLogLocal',
+            identifier: item.key,
+            id: item.key,
+            key: item.key,
+            ch: item.ch,
+            pt: item.text,
+            auditType: item.auditType
+          });
+        }
+      } catch (err) {
+        console.error('Falha ao auditar itens', err);
+      }
     }
 
     // Filtro por arquivo
@@ -393,6 +425,36 @@ function handleApi(req, res, parsedUrl) {
     return;
   }
 
+  // 7. Auditoria de Qualidade & Tags
+  if (pathname === '/api/audit' && req.method === 'GET') {
+    try {
+      const { auditDatabase } = require('./audit-translation');
+      const { issues } = auditDatabase();
+      res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+      res.end(JSON.stringify(issues));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
+  // 8. Autocorreção via Painel Web
+  if (pathname === '/api/audit-fix' && req.method === 'POST') {
+    try {
+      const { autoFixDatabase } = require('./audit-translation');
+      const result = autoFixDatabase();
+      delete require.cache[require.resolve('./build')];
+      require('./build');
+      res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+      res.end(JSON.stringify({ success: true, ...result, stats: getStats() }));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
   res.writeHead(404, { 'Content-Type': 'text/plain' });
   res.end('Not Found');
 }
@@ -537,6 +599,7 @@ const HTML_CONTENT = `<!DOCTYPE html>
       <button class="tab-btn" onclick="switchTab('modified')">Modificados no Jogo (<span id="tabCountModified">0</span>)</button>
       <button class="tab-btn" onclick="switchTab('database')">Banco Completo (Pesquisar)</button>
       <button class="tab-btn" onclick="switchTab('overflow')">📏 Textos Longos / UI (<span id="tabCountOverflow">0</span>)</button>
+      <button class="tab-btn" onclick="switchTab('audit')">🔍 Auditoria & Erros (<span id="tabCountAudit">0</span>)</button>
     </div>
 
     <div class="filters-bar">
@@ -630,6 +693,9 @@ const HTML_CONTENT = `<!DOCTYPE html>
         if (document.getElementById('tabCountOverflow')) {
           document.getElementById('tabCountOverflow').innerText = data.overflowCount || 0;
         }
+        if (document.getElementById('tabCountAudit')) {
+          document.getElementById('tabCountAudit').innerText = data.auditCount || 0;
+        }
 
         // Renderizar leaderboard
         let lHtml = '<div style="display: flex; flex-direction: column; gap: 8px;">';
@@ -695,6 +761,16 @@ const HTML_CONTENT = `<!DOCTYPE html>
         }
 
         let html = '';
+        if (currentTab === 'audit') {
+          html += `
+          <div style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <strong style="color: #f87171;">🔍 Auditor de Qualidade & Bizarrices</strong>
+              <p style="margin: 4px 0 0 0; font-size: 0.85rem; color: #94a3b8;">Detecta tags de variáveis quebradas, caracteres chineses esquecidos e termos de tradução automática amadora.</p>
+            </div>
+            <button class="btn btn-primary" onclick="runAuditFix()">⚡ Autocorrigir Erros Conhecidos</button>
+          </div>`;
+        }
         data.items.forEach(item => {
           const id = item.id || '';
           const key = item.key || item.keyID || '';
@@ -718,6 +794,7 @@ const HTML_CONTENT = `<!DOCTYPE html>
                 </div>
                 <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
                   \${currentPt && currentPt.length > 25 && cat.id === 'ui' ? \`<span style="background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; font-weight: 600;">📏 \${currentPt.length} chars (Risco de corte)</span>\` : ''}
+                  \${item.auditType ? \`<span style="background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4); font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; font-weight: 600;">\${item.auditType}</span>\` : ''}
                   \${isChOnly ? '<span style="color: var(--accent-gold); font-weight: 600; font-size: 0.8rem; background: rgba(251,191,36,0.1); padding: 2px 8px; border-radius: 4px; border: 1px solid rgba(251,191,36,0.3);">⚠️ Sem inglês oficial (Traduzindo do Chinês)</span>' : ''}
                   \${currentTab === 'modified' ? '<span style="color: var(--accent-gold); font-weight: 600; font-size: 0.8rem;">⚠️ Texto alterado no update</span>' : ''}
                 </div>
@@ -868,6 +945,23 @@ const HTML_CONTENT = `<!DOCTYPE html>
         }
       } catch (err) {
         alert('Erro ao salvar: ' + err.message);
+      }
+    }
+
+    async function runAuditFix() {
+      if (!confirm('Deseja aplicar as autocorreções automáticas de tags e termos bizarros no banco e recompilar o mod?')) return;
+      try {
+        const res = await fetch('/api/audit-fix', { method: 'POST' });
+        const data = await res.json();
+        if (data.success) {
+          alert(`Sucesso! Foram corrigidas ${data.fixCount} entradas no banco de dados e o mod foi recompilado.`);
+          loadStats();
+          loadItems();
+        } else {
+          alert('Erro: ' + (data.error || 'Falha ao executar correção'));
+        }
+      } catch (err) {
+        alert('Erro de conexão: ' + err.message);
       }
     }
 
