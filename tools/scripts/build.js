@@ -30,11 +30,19 @@ function runBuild() {
   // 1. Pública (output/ModExcel) - para o GitHub
   // 2. Privada (ModProject_VMCUi0/...) - exclusiva do criador do mod
   // 3. Debug (ModProject_VMCUi0/debug/Mod_VMCUi0/ModExcel) - para depuração e Steam
+  // 4. Workshop local ativa (se o usuário estiver jogando via inscrição Steam)
   const targetDirs = [config.publicOutputDir];
   if (fs.existsSync(path.join(config.rootDir, 'ModProject_VMCUi0'))) {
     targetDirs.push(config.privateModDir);
     const debugExcelDir = path.join(config.rootDir, 'ModProject_VMCUi0', 'debug', 'Mod_VMCUi0', 'ModExcel');
     targetDirs.push(debugExcelDir);
+  }
+
+  const workshopDir = 'D:/SteamLibrary/steamapps/workshop/content/1468810/2990310797';
+  if (fs.existsSync(workshopDir)) {
+    const wsExcel1 = path.join(workshopDir, 'ModProject', 'ModExcel');
+    const wsExcel2 = path.join(workshopDir, 'debug', 'Mod_VMCUi0', 'ModExcel');
+    targetDirs.push(wsExcel1, wsExcel2);
   }
 
   targetDirs.forEach(dir => {

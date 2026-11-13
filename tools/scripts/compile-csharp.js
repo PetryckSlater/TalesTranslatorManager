@@ -9,19 +9,35 @@ function compileCSharp() {
   console.log('-----------------------------------------------------');
 
   const csc = path.join(config.rootDir, 'tools', 'roslyn', 'tasks', 'net472', 'csc.exe');
-  const gameDir = 'D:/SteamLibrary/steamapps/common/TOI';
-  const melon = path.join(gameDir, 'MelonLoader');
-  const managed = path.join(melon, 'Managed');
+  
+  // Buscar automaticamente onde o jogo está instalado
+  const possibleGameDirs = [
+    'D:/SteamLibrary/steamapps/common/鬼谷八荒',
+    'D:/SteamLibrary/steamapps/common/TOI',
+    'C:/Program Files (x86)/Steam/steamapps/common/鬼谷八荒',
+    'C:/Program Files/Steam/steamapps/common/鬼谷八荒'
+  ];
+
+  let gameDir = null;
+  for (const d of possibleGameDirs) {
+    if (fs.existsSync(d) && fs.existsSync(path.join(d, 'MelonLoader'))) {
+      gameDir = d;
+      break;
+    }
+  }
 
   if (!fs.existsSync(csc)) {
     console.warn('[Aviso] Compilador Roslyn C# não encontrado. Pulando compilação da DLL.');
     return false;
   }
 
-  if (!fs.existsSync(melon)) {
-    console.warn('[Aviso] Pasta do jogo TOI / MelonLoader não encontrada para referências.');
+  if (!gameDir) {
+    console.warn('[Aviso] Pasta do jogo TOI / 鬼谷八荒 com MelonLoader não encontrada para referências.');
     return false;
   }
+
+  const melon = path.join(gameDir, 'MelonLoader');
+  const managed = path.join(melon, 'Managed');
 
   // Destinos da DLL
   const modCodeDir = path.join(config.rootDir, 'ModProject_VMCUi0', 'ModProject', 'ModCode');
@@ -91,7 +107,9 @@ namespace MOD_VMCUi0
 
     /// <summary>
     /// Patch em TextMeshPro: Ativa auto-ajuste de tamanho (Auto-Sizing) dinâmico
-    /// para impedir que textos em português vazem das caixas ou fiquem cortados.
+    /// EXCLUSIVAMENTE para botões, rótulos e badges curtos de UI que correm risco de corte.
+    /// Trava de segurança: JAMAIS aplica em textos longos, caixas de FAQ ou diálogos roláveis,
+    /// para evitar quebra de layout e sobreposição vertical de parágrafos.
     /// </summary>
     [HarmonyPatch(typeof(TMP_Text), "text", MethodType.Setter)]
     public static class Patch_TMP_Text_SetText
@@ -101,14 +119,21 @@ namespace MOD_VMCUi0
             if (__instance == null) return;
             try
             {
+                string t = __instance.text;
+                // Ignora textos vazios ou textos longos (parágrafos, FAQs, crônicas)
+                if (string.IsNullOrEmpty(t) || t.Length > 120) return;
+
+                // Ignora textos que já possuem tags de tamanho explícito ou múltiplas quebras de linha
+                if (t.Contains("<size") || t.Contains("\\n") || t.Contains("\\\\n")) return;
+
                 if (!__instance.enableAutoSizing)
                 {
                     float currentSize = __instance.fontSize;
-                    // Aplica em fontes de títulos, menus e rótulos
+                    // Aplica apenas em rótulos e botões com fonte intermediária (>= 12)
                     if (currentSize >= 12f)
                     {
                         __instance.enableAutoSizing = true;
-                        __instance.fontSizeMin = Math.Max(8f, currentSize * 0.65f);
+                        __instance.fontSizeMin = Math.Max(8f, currentSize * 0.70f);
                         __instance.fontSizeMax = currentSize;
                     }
                 }
@@ -156,10 +181,24 @@ namespace MOD_VMCUi0
     fs.copyFileSync(targetDllPrivate, targetDllRelease);
     fs.copyFileSync(targetDllPrivate, targetDllPublic);
 
+    // Sincronizar na pasta debug do Mod
     const debugDllDir = path.join(config.rootDir, 'ModProject_VMCUi0', 'debug', 'Mod_VMCUi0', 'ModCode', 'dll');
     if (fs.existsSync(path.join(config.rootDir, 'ModProject_VMCUi0', 'debug', 'Mod_VMCUi0'))) {
       if (!fs.existsSync(debugDllDir)) fs.mkdirSync(debugDllDir, { recursive: true });
       fs.copyFileSync(targetDllPrivate, path.join(debugDllDir, 'MOD_VMCUi0.dll'));
+    }
+
+    // Sincronizar na pasta ativa da Oficina Steam se existir
+    const workshopDir = 'D:/SteamLibrary/steamapps/workshop/content/1468810/2990310797';
+    if (fs.existsSync(workshopDir)) {
+      const wsDll1 = path.join(workshopDir, 'ModProject', 'ModCode', 'dll');
+      const wsDll2 = path.join(workshopDir, 'debug', 'Mod_VMCUi0', 'ModCode', 'dll');
+      const wsDll3 = path.join(workshopDir, 'ModProject', 'ModCode', 'ModMain', 'bin', 'Release');
+      [wsDll1, wsDll2, wsDll3].forEach(d => {
+        if (!fs.existsSync(d)) fs.mkdirSync(d, { recursive: true });
+        fs.copyFileSync(targetDllPrivate, path.join(d, 'MOD_VMCUi0.dll'));
+      });
+      console.log('  ✓ DLL sincronizada diretamente na pasta da Oficina Steam!');
     }
 
     console.log(`  ✓ MOD_VMCUi0.dll gerada com sucesso (${(fs.statSync(targetDllPrivate).size / 1024).toFixed(1)} KB).`);
