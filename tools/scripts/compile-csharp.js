@@ -342,6 +342,36 @@ namespace MOD_VMCUi0
     }
 
     console.log(`  ✓ MOD_VMCUi0.dll gerada com sucesso (${(fs.statSync(targetDllPrivate).size / 1024).toFixed(1)} KB).`);
+
+    // Compilar e instalar o MelonMod nativo TalesPTBR_Loader.dll
+    const loaderSrc = path.join(config.rootDir, 'tools', 'scripts', 'TalesPTBR_Loader.cs');
+    const modsFolder = path.join(gameDir, 'Mods');
+    const targetLoaderDll = path.join(modsFolder, 'TalesPTBR_Loader.dll');
+
+    if (fs.existsSync(loaderSrc) && fs.existsSync(modsFolder)) {
+      const loaderRefs = [
+        path.join(melon, 'MelonLoader.dll'),
+        path.join(melon, '0Harmony.dll'),
+        path.join(managed, 'Il2Cppmscorlib.dll'),
+        path.join(managed, 'UnhollowerBaseLib.dll'),
+        path.join(managed, 'UnityEngine.CoreModule.dll'),
+        path.join(managed, 'UnityEngine.UI.dll'),
+        path.join(managed, 'UnityEngine.InputLegacyModule.dll'),
+        path.join(managed, 'Unity.TextMeshPro.dll'),
+        path.join(managed, 'Assembly-CSharp.dll')
+      ];
+
+      const loaderRefFlags = loaderRefs.map(r => `/r:"${r}"`).join(' ');
+      const loaderCmd = `"${csc}" /target:library /out:"${targetLoaderDll}" /optimize+ ${loaderRefFlags} "${loaderSrc}"`;
+
+      try {
+        execSync(loaderCmd);
+        console.log(`  ✓ TalesPTBR_Loader.dll compilado e instalado em ${targetLoaderDll} (${(fs.statSync(targetLoaderDll).size / 1024).toFixed(1)} KB).`);
+      } catch (loaderErr) {
+        console.warn('Aviso na compilação do TalesPTBR_Loader:', loaderErr.stdout ? loaderErr.stdout.toString() : loaderErr.message);
+      }
+    }
+
     return true;
   } catch (err) {
     console.error('Falha na compilação do C#:', err.stdout ? err.stdout.toString() : err.message);

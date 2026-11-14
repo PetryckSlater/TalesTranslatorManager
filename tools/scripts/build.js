@@ -40,9 +40,10 @@ function runBuild() {
 
   const workshopDir = 'D:/SteamLibrary/steamapps/workshop/content/1468810/2990310797';
   if (fs.existsSync(workshopDir)) {
+    const wsExcel0 = path.join(workshopDir, 'ModExcel');
     const wsExcel1 = path.join(workshopDir, 'ModProject', 'ModExcel');
     const wsExcel2 = path.join(workshopDir, 'debug', 'Mod_VMCUi0', 'ModExcel');
-    targetDirs.push(wsExcel1, wsExcel2);
+    targetDirs.push(wsExcel0, wsExcel1, wsExcel2);
   }
 
   targetDirs.forEach(dir => {
