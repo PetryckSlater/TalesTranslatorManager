@@ -68,7 +68,6 @@ namespace MOD_VMCUi0
     public class ModMain
     {
         private static Harmony harmony;
-        private static bool systemModPatched = false;
 
         public void Init()
         {
@@ -91,52 +90,11 @@ namespace MOD_VMCUi0
                 }
                 catch { }
 
-                // Guardião de compatibilidade em RAM para o mod The System (MOD_yUMKFJ)
-                // Garante que mesmo se a Steam atualizar a DLL do mod, o menu e a tecla 'P' continuam funcionando
-                try
-                {
-                    AppDomain.CurrentDomain.AssemblyLoad += (sender, args) =>
-                    {
-                        try
-                        {
-                            if (args.LoadedAssembly.GetName().Name == "MOD_yUMKFJ")
-                            {
-                                TryPatchTheSystem();
-                            }
-                        }
-                        catch { }
-                    };
-                    TryPatchTheSystem();
-                }
-                catch { }
-
-                Debug.Log("[Tales PT-BR] Mod C# v1.3 ativo: Compatibilidade total com mods da oficina, guardião The System e taxa de quadros destravada!");
+                Debug.Log("[Tales PT-BR] Mod C# v1.4 ativo: Compatibilidade total com mods da oficina, guardião The System e taxa de quadros destravada!");
             }
             catch (Exception ex)
             {
                 Debug.LogError("[Tales PT-BR] Erro ao iniciar patches Harmony: " + ex.ToString());
-            }
-        }
-
-        public static void TryPatchTheSystem()
-        {
-            if (systemModPatched || harmony == null) return;
-            try
-            {
-                Type smc = AccessTools.TypeByName("MOD_yUMKFJ.SystemMenuController");
-                if (smc == null) return;
-
-                MethodInfo target = AccessTools.Method(smc, "Tick");
-                if (target == null) return;
-
-                MethodInfo prefix = AccessTools.Method(typeof(Patch_TheSystem_Tick), "Prefix");
-                harmony.Patch(target, new HarmonyMethod(prefix));
-                systemModPatched = true;
-                Debug.Log("[Tales PT-BR] The System: Guardião de compatibilidade em RAM ativado com sucesso!");
-            }
-            catch (Exception ex)
-            {
-                Debug.LogError("[Tales PT-BR] Erro ao aplicar guardião do The System: " + ex.Message);
             }
         }
 
@@ -148,7 +106,6 @@ namespace MOD_VMCUi0
                 {
                     harmony.UnpatchSelf();
                     harmony = null;
-                    systemModPatched = false;
                     Debug.Log("[Tales PT-BR] Mod C# descarregado.");
                 }
             }
@@ -160,27 +117,53 @@ namespace MOD_VMCUi0
     }
 
     /// <summary>
+    /// Hook no loop principal de câmera do jogo (CameraCtrl.Update):
+    /// Garante que o mod The System receba atualização todo frame e responda à tecla P no mundo.
+    /// </summary>
+    [HarmonyPatch(typeof(CameraCtrl), "Update")]
+    public static class Patch_CameraCtrl_Update
+    {
+        public static void Postfix()
+        {
+            TheSystemWatcher.Tick();
+        }
+    }
+
+    /// <summary>
     /// Guardião de Compatibilidade para o mod The System (MOD_yUMKFJ):
     /// Garante que mesmo se a Steam atualizar a DLL do mod da oficina para uma versão com bug,
     /// a inicialização e a tecla 'P' continuam funcionando sem falhas diretamente em memória RAM.
     /// </summary>
-    public static class Patch_TheSystem_Tick
+    public static class TheSystemWatcher
     {
         private static MethodInfo startActivationMethod;
         private static MethodInfo getActiveStatusMethod;
         private static MethodInfo setActiveStatusMethod;
         private static Type systemStatusType;
+        private static Type systemMenuCtrlType;
         private static FieldInfo visibleField;
         private static MethodInfo setVisibleMethod;
+        private static FieldInfo instanceField;
+        private static MethodInfo tickMethod;
         private static bool reflectionInitialized;
+        private static bool systemFound;
 
-        public static void Prefix(object __instance)
+        public static void Tick()
         {
-            if (__instance == null) return;
             try
             {
                 if (!reflectionInitialized)
                 {
+                    systemMenuCtrlType = AccessTools.TypeByName("MOD_yUMKFJ.SystemMenuController");
+                    if (systemMenuCtrlType != null)
+                    {
+                        instanceField = AccessTools.Field(systemMenuCtrlType, "Instance");
+                        visibleField = AccessTools.Field(systemMenuCtrlType, "visible");
+                        setVisibleMethod = AccessTools.Method(systemMenuCtrlType, "SetVisible", new[] { typeof(bool) });
+                        tickMethod = AccessTools.Method(systemMenuCtrlType, "Tick");
+                        systemFound = true;
+                    }
+
                     Type gi = AccessTools.TypeByName("MOD_yUMKFJ.GameIntegration");
                     if (gi != null) startActivationMethod = AccessTools.Method(gi, "StartActivation");
 
@@ -191,27 +174,25 @@ namespace MOD_VMCUi0
                         setActiveStatusMethod = AccessTools.Method(systemStatusType, "SetActive");
                     }
 
-                    Type smc = AccessTools.TypeByName("MOD_yUMKFJ.SystemMenuController");
-                    if (smc != null)
-                    {
-                        visibleField = AccessTools.Field(smc, "visible");
-                        setVisibleMethod = AccessTools.Method(smc, "SetVisible", new[] { typeof(bool) });
-                    }
                     reflectionInitialized = true;
                 }
 
-                // Auto-ativação contínua quando o personagem está no mundo
-                if (getActiveStatusMethod != null && getActiveStatusMethod.Invoke(null, null) == null)
+                if (!systemFound || instanceField == null) return;
+
+                object instance = instanceField.GetValue(null);
+                if (instance == null) return;
+
+                // Executa o Tick do controlador todo frame
+                if (tickMethod != null)
                 {
-                    if (startActivationMethod != null)
-                    {
-                        startActivationMethod.Invoke(null, null);
-                    }
+                    tickMethod.Invoke(instance, null);
                 }
 
-                // Destrave definitivo da tecla P
+                // Destrave direto ao pressionar P
                 if (UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.P))
                 {
+                    Debug.Log("[Tales PT-BR] Tecla P detectada no mundo! Alternando The System...");
+
                     if (getActiveStatusMethod != null && getActiveStatusMethod.Invoke(null, null) == null)
                     {
                         if (startActivationMethod != null) startActivationMethod.Invoke(null, null);
@@ -224,8 +205,9 @@ namespace MOD_VMCUi0
 
                     if (visibleField != null && setVisibleMethod != null)
                     {
-                        bool curVisible = (bool)visibleField.GetValue(__instance);
-                        setVisibleMethod.Invoke(__instance, new object[] { !curVisible });
+                        bool curVisible = (bool)visibleField.GetValue(instance);
+                        setVisibleMethod.Invoke(instance, new object[] { !curVisible });
+                        Debug.Log("[Tales PT-BR] The System visibilidade alterada para: " + (!curVisible));
                     }
                 }
             }
@@ -348,10 +330,11 @@ namespace MOD_VMCUi0
     // Sincronizar na pasta ativa da Oficina Steam se existir
     const workshopDir = 'D:/SteamLibrary/steamapps/workshop/content/1468810/2990310797';
     if (fs.existsSync(workshopDir)) {
+      const wsDll0 = path.join(workshopDir, 'ModCode', 'dll');
       const wsDll1 = path.join(workshopDir, 'ModProject', 'ModCode', 'dll');
       const wsDll2 = path.join(workshopDir, 'debug', 'Mod_VMCUi0', 'ModCode', 'dll');
       const wsDll3 = path.join(workshopDir, 'ModProject', 'ModCode', 'ModMain', 'bin', 'Release');
-      [wsDll1, wsDll2, wsDll3].forEach(d => {
+      [wsDll0, wsDll1, wsDll2, wsDll3].forEach(d => {
         if (!fs.existsSync(d)) fs.mkdirSync(d, { recursive: true });
         fs.copyFileSync(targetDllPrivate, path.join(d, 'MOD_VMCUi0.dll'));
       });
