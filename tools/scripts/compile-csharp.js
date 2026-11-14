@@ -90,7 +90,7 @@ namespace MOD_VMCUi0
                 }
                 catch { }
 
-                Debug.Log("[Tales PT-BR] Mod C# v1.4 ativo: Compatibilidade total com mods da oficina, guardião The System e taxa de quadros destravada!");
+                Debug.Log("[Tales PT-BR] Mod C# v1.4 ativo: Compatibilidade total com mods da oficina e taxa de quadros destravada!");
             }
             catch (Exception ex)
             {
@@ -113,105 +113,6 @@ namespace MOD_VMCUi0
             {
                 Debug.LogError("[Tales PT-BR] Erro ao descarregar mod: " + ex.Message);
             }
-        }
-    }
-
-    /// <summary>
-    /// Hook no loop principal de câmera do jogo (CameraCtrl.Update):
-    /// Garante que o mod The System receba atualização todo frame e responda à tecla P no mundo.
-    /// </summary>
-    [HarmonyPatch(typeof(CameraCtrl), "Update")]
-    public static class Patch_CameraCtrl_Update
-    {
-        public static void Postfix()
-        {
-            TheSystemWatcher.Tick();
-        }
-    }
-
-    /// <summary>
-    /// Guardião de Compatibilidade para o mod The System (MOD_yUMKFJ):
-    /// Garante que mesmo se a Steam atualizar a DLL do mod da oficina para uma versão com bug,
-    /// a inicialização e a tecla 'P' continuam funcionando sem falhas diretamente em memória RAM.
-    /// </summary>
-    public static class TheSystemWatcher
-    {
-        private static MethodInfo startActivationMethod;
-        private static MethodInfo getActiveStatusMethod;
-        private static MethodInfo setActiveStatusMethod;
-        private static Type systemStatusType;
-        private static Type systemMenuCtrlType;
-        private static FieldInfo visibleField;
-        private static MethodInfo setVisibleMethod;
-        private static FieldInfo instanceField;
-        private static MethodInfo tickMethod;
-        private static bool reflectionInitialized;
-        private static bool systemFound;
-
-        public static void Tick()
-        {
-            try
-            {
-                if (!reflectionInitialized)
-                {
-                    systemMenuCtrlType = AccessTools.TypeByName("MOD_yUMKFJ.SystemMenuController");
-                    if (systemMenuCtrlType != null)
-                    {
-                        instanceField = AccessTools.Field(systemMenuCtrlType, "Instance");
-                        visibleField = AccessTools.Field(systemMenuCtrlType, "visible");
-                        setVisibleMethod = AccessTools.Method(systemMenuCtrlType, "SetVisible", new[] { typeof(bool) });
-                        tickMethod = AccessTools.Method(systemMenuCtrlType, "Tick");
-                        systemFound = true;
-                    }
-
-                    Type gi = AccessTools.TypeByName("MOD_yUMKFJ.GameIntegration");
-                    if (gi != null) startActivationMethod = AccessTools.Method(gi, "StartActivation");
-
-                    systemStatusType = AccessTools.TypeByName("MOD_yUMKFJ.SystemStatus");
-                    if (systemStatusType != null)
-                    {
-                        getActiveStatusMethod = AccessTools.Method(systemStatusType, "GetActiveStatus");
-                        setActiveStatusMethod = AccessTools.Method(systemStatusType, "SetActive");
-                    }
-
-                    reflectionInitialized = true;
-                }
-
-                if (!systemFound || instanceField == null) return;
-
-                object instance = instanceField.GetValue(null);
-                if (instance == null) return;
-
-                // Executa o Tick do controlador todo frame
-                if (tickMethod != null)
-                {
-                    tickMethod.Invoke(instance, null);
-                }
-
-                // Destrave direto ao pressionar P
-                if (UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.P))
-                {
-                    Debug.Log("[Tales PT-BR] Tecla P detectada no mundo! Alternando The System...");
-
-                    if (getActiveStatusMethod != null && getActiveStatusMethod.Invoke(null, null) == null)
-                    {
-                        if (startActivationMethod != null) startActivationMethod.Invoke(null, null);
-                        if (getActiveStatusMethod != null && getActiveStatusMethod.Invoke(null, null) == null && setActiveStatusMethod != null && systemStatusType != null)
-                        {
-                            object newStatus = Activator.CreateInstance(systemStatusType);
-                            setActiveStatusMethod.Invoke(null, new object[] { newStatus });
-                        }
-                    }
-
-                    if (visibleField != null && setVisibleMethod != null)
-                    {
-                        bool curVisible = (bool)visibleField.GetValue(instance);
-                        setVisibleMethod.Invoke(instance, new object[] { !curVisible });
-                        Debug.Log("[Tales PT-BR] The System visibilidade alterada para: " + (!curVisible));
-                    }
-                }
-            }
-            catch { }
         }
     }
 
@@ -354,6 +255,7 @@ namespace MOD_VMCUi0
         path.join(melon, '0Harmony.dll'),
         path.join(managed, 'Il2Cppmscorlib.dll'),
         path.join(managed, 'UnhollowerBaseLib.dll'),
+        path.join(managed, 'UnhollowerRuntimeLib.dll'),
         path.join(managed, 'UnityEngine.CoreModule.dll'),
         path.join(managed, 'UnityEngine.UI.dll'),
         path.join(managed, 'UnityEngine.InputLegacyModule.dll'),

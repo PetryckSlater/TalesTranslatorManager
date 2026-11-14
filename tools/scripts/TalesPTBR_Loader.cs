@@ -7,7 +7,7 @@ using TMPro;
 using UnityEngine;
 using UnhollowerBaseLib;
 
-[assembly: MelonInfo(typeof(TalesPTBR.TalesLoaderMod), "TalesPTBR_Loader", "1.5.0", "TalesPTBR")]
+[assembly: MelonInfo(typeof(TalesPTBR.TalesLoaderMod), "TalesPTBR_Loader", "1.6.0", "TalesPTBR")]
 [assembly: MelonGame("UNKNOWN", "UNKNOWN")]
 
 namespace TalesPTBR
@@ -17,9 +17,9 @@ namespace TalesPTBR
         public override void OnApplicationStart()
         {
             MelonLogger.Msg("=============================================================");
-            MelonLogger.Msg("  [Tales PT-BR] Loader & Performance Guardian v1.5.0 ativo!");
+            MelonLogger.Msg("  [Tales PT-BR] Loader & Performance Guardian v1.6.0 ativo!");
             MelonLogger.Msg("  - Bypass de descriptografia para JSONs em texto claro: ATIVO");
-            MelonLogger.Msg("  - Guardião do mod The System (Tecla P): ATIVO");
+            MelonLogger.Msg("  - Guardião do mod The System (Tecla P no OnUpdate): ATIVO");
             MelonLogger.Msg("  - Destrave de FPS e VSync para Menus: ATIVO");
             MelonLogger.Msg("=============================================================");
 
@@ -45,12 +45,17 @@ namespace TalesPTBR
             }
             catch { }
         }
+
+        public override void OnUpdate()
+        {
+            TheSystemWatcher.OnUpdate();
+        }
     }
 
     /// <summary>
     /// Bypass inteligente de descriptografia:
     /// Evita que JSONs em texto claro (já traduzidos) sejam corrompidos por EncryptTool.DecryptMult.
-    /// Arquivos encriptados legítimos (como tabelas originais do jogo) continuam sendo descriptografados normalmente.
+    /// Arquivos encriptados legítimos continuam sendo descriptografados normalmente.
     /// </summary>
     [HarmonyPatch(typeof(EncryptTool), "DecryptMult", new Type[] { typeof(Il2CppStructArray<byte>), typeof(string) })]
     public static class Patch_DecryptMult_2
@@ -60,13 +65,11 @@ namespace TalesPTBR
             if (bytes != null && bytes.Length > 0)
             {
                 byte b0 = bytes[0];
-                // Verifica caracteres iniciais de JSON válido em UTF-8: '[' (91), '{' (123) ou espaços em branco
                 if (b0 == 0x5B || b0 == 0x7B || b0 == 0x20 || b0 == 0x09 || b0 == 0x0D || b0 == 0x0A)
                 {
                     __result = bytes;
-                    return false; // Pula a descriptografia, pois já é JSON em texto claro!
+                    return false;
                 }
-                // Tratamento especial para UTF-8 BOM (0xEF, 0xBB, 0xBF)
                 if (b0 == 0xEF && bytes.Length >= 3 && bytes[1] == 0xBB && bytes[2] == 0xBF)
                 {
                     __result = bytes;
@@ -101,91 +104,214 @@ namespace TalesPTBR
     }
 
     /// <summary>
-    /// Hook no loop principal de câmera do jogo (CameraCtrl.Update):
-    /// Garante que o mod The System receba atualização todo frame e responda à tecla P no mundo.
-    /// </summary>
-    [HarmonyPatch(typeof(CameraCtrl), "Update")]
-    public static class Patch_CameraCtrl_Update
-    {
-        public static void Postfix()
-        {
-            TheSystemWatcher.Tick();
-        }
-    }
-
-    /// <summary>
     /// Guardião de Compatibilidade para o mod The System (MOD_yUMKFJ):
-    /// Garante que a tecla 'P' continue abrindo o painel sem conflito de ciclo.
+    /// Roda diretamente no OnUpdate do MelonMod (loop nativo da engine, a cada frame),
+    /// garantindo que a tecla 'P' funcione em qualquer lugar do jogo (mapa, cidade, seita, combate, etc.).
     /// </summary>
     public static class TheSystemWatcher
     {
-        private static MethodInfo startActivationMethod;
-        private static MethodInfo getActiveStatusMethod;
-        private static MethodInfo setActiveStatusMethod;
-        private static Type systemStatusType;
         private static Type systemMenuCtrlType;
+        private static FieldInfo instanceField;
         private static FieldInfo visibleField;
         private static MethodInfo setVisibleMethod;
-        private static FieldInfo instanceField;
+        private static MethodInfo buildUiMethod;
+        private static FieldInfo uiBuiltField;
         private static MethodInfo tickMethod;
-        private static bool reflectionInitialized;
-        private static bool systemFound;
+        private static Type modMainType;
+        private static FieldInfo modMainCtrlField;
+        private static MethodInfo ensureCtrlMethod;
+        private static Type gameIntegType;
+        private static MethodInfo startActivationMethod;
+        private static Type systemStatusType;
+        private static MethodInfo getActiveStatusMethod;
+        private static MethodInfo setActiveStatusMethod;
+        private static bool bound = false;
+        private static float lastSearchTime = 0f;
 
-        public static void Tick()
+        public static void OnUpdate()
         {
             try
             {
-                if (!reflectionInitialized)
+                if (!bound)
                 {
-                    systemMenuCtrlType = AccessTools.TypeByName("MOD_yUMKFJ.SystemMenuController");
-                    if (systemMenuCtrlType != null)
+                    // Tenta vincular periodicamente a cada 1 segundo se ainda não encontrou
+                    if (Time.unscaledTime - lastSearchTime > 1.0f)
                     {
-                        instanceField = AccessTools.Field(systemMenuCtrlType, "Instance");
-                        visibleField = AccessTools.Field(systemMenuCtrlType, "visible");
-                        setVisibleMethod = AccessTools.Method(systemMenuCtrlType, "SetVisible", new[] { typeof(bool) });
-                        tickMethod = AccessTools.Method(systemMenuCtrlType, "Tick");
-                        systemFound = true;
+                        lastSearchTime = Time.unscaledTime;
+                        TryBind();
                     }
-
-                    Type gi = AccessTools.TypeByName("MOD_yUMKFJ.GameIntegration");
-                    if (gi != null) startActivationMethod = AccessTools.Method(gi, "StartActivation");
-
-                    systemStatusType = AccessTools.TypeByName("MOD_yUMKFJ.SystemStatus");
-                    if (systemStatusType != null)
-                    {
-                        getActiveStatusMethod = AccessTools.Method(systemStatusType, "GetActiveStatus");
-                        setActiveStatusMethod = AccessTools.Method(systemStatusType, "SetActive");
-                    }
-
-                    reflectionInitialized = true;
                 }
 
-                if (!systemFound || instanceField == null) return;
-
-                object instance = instanceField.GetValue(null);
-                if (instance == null) return;
-
-                if (tickMethod != null)
-                {
-                    tickMethod.Invoke(instance, null);
-                }
-
+                // Se o jogador pressionar P:
                 if (UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.P))
                 {
-                    if (getActiveStatusMethod != null && getActiveStatusMethod.Invoke(null, null) == null)
+                    MelonLogger.Msg("[TalesPTBR] Tecla P detectada no OnUpdate!");
+                    if (!bound)
                     {
-                        if (startActivationMethod != null) startActivationMethod.Invoke(null, null);
-                        if (getActiveStatusMethod != null && getActiveStatusMethod.Invoke(null, null) == null && setActiveStatusMethod != null && systemStatusType != null)
-                        {
-                            object newStatus = Activator.CreateInstance(systemStatusType);
-                            setActiveStatusMethod.Invoke(null, new object[] { newStatus });
-                        }
+                        TryBind();
                     }
 
+                    if (!bound)
+                    {
+                        MelonLogger.Warning("[TalesPTBR] Mod The System ainda não carregado.");
+                        return;
+                    }
+
+                    object ctrlInstance = GetControllerInstance();
+                    if (ctrlInstance == null)
+                    {
+                        MelonLogger.Warning("[TalesPTBR] Instância do SystemMenuController não encontrada.");
+                        return;
+                    }
+
+                    // 1. Garante ativação do sistema
+                    EnsureActive(ctrlInstance);
+
+                    // 2. Garante construção da interface
+                    EnsureUi(ctrlInstance);
+
+                    // 3. Alterna visibilidade
                     if (visibleField != null && setVisibleMethod != null)
                     {
-                        bool curVisible = (bool)visibleField.GetValue(instance);
-                        setVisibleMethod.Invoke(instance, new object[] { !curVisible });
+                        bool curVisible = (bool)visibleField.GetValue(ctrlInstance);
+                        bool newVisible = !curVisible;
+                        setVisibleMethod.Invoke(ctrlInstance, new object[] { newVisible });
+                        MelonLogger.Msg("[TalesPTBR] The System visibilidade alterada com sucesso para: " + newVisible);
+                    }
+                }
+                else
+                {
+                    // Se P NÃO foi pressionado neste frame, executa o Tick do controlador para manter timers e animações
+                    if (bound)
+                    {
+                        object ctrlInstance = GetControllerInstance();
+                        if (ctrlInstance != null && tickMethod != null)
+                        {
+                            tickMethod.Invoke(ctrlInstance, null);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MelonLogger.Error("[TalesPTBR] Erro no OnUpdate do The System: " + ex.Message);
+            }
+        }
+
+        private static void TryBind()
+        {
+            try
+            {
+                foreach (var asm in AppDomain.CurrentDomain.GetAssemblies())
+                {
+                    if (asm.GetName().Name == "MOD_yUMKFJ")
+                    {
+                        systemMenuCtrlType = asm.GetType("MOD_yUMKFJ.SystemMenuController");
+                        modMainType = asm.GetType("MOD_yUMKFJ.ModMain");
+                        gameIntegType = asm.GetType("MOD_yUMKFJ.GameIntegration");
+                        systemStatusType = asm.GetType("MOD_yUMKFJ.SystemStatus");
+
+                        if (systemMenuCtrlType != null)
+                        {
+                            instanceField = AccessTools.Field(systemMenuCtrlType, "Instance");
+                            visibleField = AccessTools.Field(systemMenuCtrlType, "visible");
+                            setVisibleMethod = AccessTools.Method(systemMenuCtrlType, "SetVisible", new[] { typeof(bool) });
+                            buildUiMethod = AccessTools.Method(systemMenuCtrlType, "BuildUI");
+                            uiBuiltField = AccessTools.Field(systemMenuCtrlType, "uiBuilt");
+                            tickMethod = AccessTools.Method(systemMenuCtrlType, "Tick");
+                        }
+
+                        if (modMainType != null)
+                        {
+                            modMainCtrlField = AccessTools.Field(modMainType, "controller");
+                            ensureCtrlMethod = AccessTools.Method(modMainType, "EnsureController");
+                        }
+
+                        if (gameIntegType != null)
+                        {
+                            startActivationMethod = AccessTools.Method(gameIntegType, "StartActivation");
+                        }
+
+                        if (systemStatusType != null)
+                        {
+                            getActiveStatusMethod = AccessTools.Method(systemStatusType, "GetActiveStatus");
+                            setActiveStatusMethod = AccessTools.Method(systemStatusType, "SetActive");
+                        }
+
+                        if (systemMenuCtrlType != null && setVisibleMethod != null)
+                        {
+                            bound = true;
+                            MelonLogger.Msg("[TalesPTBR] The System vinculado com sucesso ao guardião OnUpdate!");
+                        }
+                        break;
+                    }
+                }
+            }
+            catch { }
+        }
+
+        private static object GetControllerInstance()
+        {
+            object inst = null;
+            if (instanceField != null)
+            {
+                inst = instanceField.GetValue(null);
+            }
+            if (inst == null && modMainCtrlField != null)
+            {
+                inst = modMainCtrlField.GetValue(null);
+            }
+            if (inst == null && ensureCtrlMethod != null)
+            {
+                try { ensureCtrlMethod.Invoke(null, null); } catch { }
+                if (instanceField != null) inst = instanceField.GetValue(null);
+                if (inst == null && modMainCtrlField != null) inst = modMainCtrlField.GetValue(null);
+            }
+            if (inst == null)
+            {
+                try
+                {
+                    var root = g.root;
+                    if (root != null && systemMenuCtrlType != null)
+                    {
+                        inst = root.GetComponent(UnhollowerRuntimeLib.Il2CppType.From(systemMenuCtrlType));
+                    }
+                }
+                catch { }
+            }
+            return inst;
+        }
+
+        private static void EnsureActive(object ctrl)
+        {
+            try
+            {
+                if (getActiveStatusMethod != null && getActiveStatusMethod.Invoke(null, null) == null)
+                {
+                    if (startActivationMethod != null)
+                    {
+                        startActivationMethod.Invoke(null, null);
+                    }
+                    if (getActiveStatusMethod != null && getActiveStatusMethod.Invoke(null, null) == null && setActiveStatusMethod != null && systemStatusType != null)
+                    {
+                        object newStatus = Activator.CreateInstance(systemStatusType);
+                        setActiveStatusMethod.Invoke(null, new object[] { newStatus });
+                    }
+                }
+            }
+            catch { }
+        }
+
+        private static void EnsureUi(object ctrl)
+        {
+            try
+            {
+                if (uiBuiltField != null && buildUiMethod != null)
+                {
+                    bool uiBuilt = (bool)uiBuiltField.GetValue(ctrl);
+                    if (!uiBuilt)
+                    {
+                        buildUiMethod.Invoke(ctrl, null);
                     }
                 }
             }
