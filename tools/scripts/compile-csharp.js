@@ -80,6 +80,16 @@ namespace MOD_VMCUi0
                 }
                 harmony = new Harmony("MOD_VMCUi0");
                 harmony.PatchAll(Assembly.GetExecutingAssembly());
+
+                // Desbloqueia taxa de quadros e desativa gargalo de VSync em menus
+                try
+                {
+                    QualitySettings.vSyncCount = 0;
+                    Application.targetFrameRate = 144;
+                    Application.runInBackground = true;
+                }
+                catch { }
+
                 Debug.Log("[Tales PT-BR] Mod C# v1.1 ativo: Otimizações de desempenho e interface carregadas com sucesso!");
             }
             catch (Exception ex)
