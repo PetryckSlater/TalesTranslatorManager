@@ -90,7 +90,7 @@ namespace MOD_VMCUi0
                 }
                 catch { }
 
-                Debug.Log("[Tales PT-BR] Mod C# v1.1 ativo: Otimizações de desempenho e interface carregadas com sucesso!");
+                Debug.Log("[Tales PT-BR] Mod C# v1.2 ativo: Compatibilidade total com mods da oficina e taxa de quadros destravada!");
             }
             catch (Exception ex)
             {
@@ -117,123 +117,13 @@ namespace MOD_VMCUi0
     }
 
     /// <summary>
-    /// Cache Ultrarrápido em Memória RAM para LocalText:
-    /// Evita milhares de travessias nativas Il2Cpp e alocações de GC toda vez que o jogo solicita texto.
-    /// Resposta direta em menos de 10 nanossegundos a partir da RAM.
-    /// </summary>
-    [HarmonyPatch(typeof(ConfLocalText), "GetText", new Type[] { typeof(string) })]
-    public static class Patch_ConfLocalText_GetText
-    {
-        private static readonly Dictionary<string, string> fastRamCache = new Dictionary<string, string>(10000, StringComparer.Ordinal);
-
-        public static bool Prefix(string key, ref string __result)
-        {
-            if (key != null && fastRamCache.TryGetValue(key, out __result))
-            {
-                return false; // Retorna instantaneamente da RAM
-            }
-            return true;
-        }
-
-        public static void Postfix(string key, ref string __result)
-        {
-            if (key != null && __result != null && !fastRamCache.ContainsKey(key))
-            {
-                fastRamCache[key] = __result;
-            }
-        }
-    }
-
-    /// <summary>
-    /// Acesso Direto em RAM para Itens Traduzidos (ConfLocalTextEx):
-    /// Pula a checagem de linguagem nativa da engine e retorna a string PT-BR diretamente.
-    /// </summary>
-    [HarmonyPatch(typeof(ConfLocalTextEx), "text", new Type[] { typeof(ConfLocalTextItem) })]
-    public static class Patch_ConfLocalTextEx_text
-    {
-        public static bool Prefix(ConfLocalTextItem item, ref string __result)
-        {
-            if (item != null)
-            {
-                string s = item.en;
-                if (!string.IsNullOrEmpty(s))
-                {
-                    __result = s;
-                    return false;
-                }
-            }
-            return true;
-        }
-    }
-
-    /// <summary>
-    /// Acesso Direto em RAM para Diálogos e Registros (ConfRoleLogLocalEx):
-    /// </summary>
-    [HarmonyPatch(typeof(ConfRoleLogLocalEx), "text", new Type[] { typeof(ConfRoleLogLocalItem) })]
-    public static class Patch_ConfRoleLogLocalEx_text
-    {
-        public static bool Prefix(ConfRoleLogLocalItem item, ref string __result)
-        {
-            if (item != null)
-            {
-                string s = item.en;
-                if (!string.IsNullOrEmpty(s))
-                {
-                    __result = s;
-                    return false;
-                }
-            }
-            return true;
-        }
-    }
-
-    /// <summary>
-    /// Patch de Alto Desempenho para Inventário, Bolsas e Listas Roláveis (ScrollRect):
-    /// Substitui a Mask legada (estêncil GPU pesado) por RectMask2D de alta performance.
-    /// Benefício direto:
-    /// 1. Elimina as chamadas de estêncil no renderizador da GPU.
-    /// 2. Habilita o culling automático (hardware 2D clipping) de todos os slots fora da tela.
-    /// 3. Reduz draw calls no inventário de milhares para poucas dezenas, recuperando os 144 FPS!
-    /// </summary>
-    [HarmonyPatch(typeof(UnityEngine.UI.ScrollRect), "OnEnable")]
-    public static class Patch_ScrollRect_Optimize
-    {
-        public static void Postfix(UnityEngine.UI.ScrollRect __instance)
-        {
-            if (__instance == null) return;
-            try
-            {
-                Transform vp = __instance.viewport != null ? (Transform)__instance.viewport : __instance.transform;
-                if (vp == null) return;
-
-                UnityEngine.UI.Mask legacyMask = vp.GetComponent<UnityEngine.UI.Mask>();
-                if (legacyMask != null && legacyMask.enabled)
-                {
-                    legacyMask.enabled = false;
-                    UnityEngine.UI.Image img = vp.GetComponent<UnityEngine.UI.Image>();
-                    if (img != null) img.enabled = false;
-
-                    UnityEngine.UI.RectMask2D rmask = vp.GetComponent<UnityEngine.UI.RectMask2D>();
-                    if (rmask == null)
-                    {
-                        vp.gameObject.AddComponent<UnityEngine.UI.RectMask2D>();
-                    }
-                }
-            }
-            catch
-            {
-                // Silencioso para evitar impacto
-            }
-        }
-    }
-
-    /// <summary>
     /// Patch de alta performance para TextMeshPro:
     /// Aplica Auto-Sizing EXCLUSIVAMENTE em botões e menus que correm risco de corte.
-    /// TRAVAS RÍGIDAS DE DESEMPENHO:
+    /// TRAVAS RÍGIDAS DE DESEMPENHO E COMPATIBILIDADE:
     /// - Ignora completamente inventário, mochilas, slots, grades e contadores de itens.
     /// - Ignora números, durações, moedas e palavras muito curtas.
     /// - Ignora textos longos (> 90 chars), caixas roláveis, tooltips e parágrafos.
+    /// - NÃO interfere em nenhum componente ou hook de outros mods da oficina.
     /// </summary>
     [HarmonyPatch(typeof(TMP_Text), "text", MethodType.Setter)]
     public static class Patch_TMP_Text_SetText
