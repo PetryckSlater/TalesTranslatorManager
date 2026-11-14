@@ -68,6 +68,7 @@ namespace MOD_VMCUi0
     public class ModMain
     {
         private static Harmony harmony;
+        private static bool systemModPatched = false;
 
         public void Init()
         {
@@ -90,11 +91,52 @@ namespace MOD_VMCUi0
                 }
                 catch { }
 
-                Debug.Log("[Tales PT-BR] Mod C# v1.2 ativo: Compatibilidade total com mods da oficina e taxa de quadros destravada!");
+                // Guardião de compatibilidade em RAM para o mod The System (MOD_yUMKFJ)
+                // Garante que mesmo se a Steam atualizar a DLL do mod, o menu e a tecla 'P' continuam funcionando
+                try
+                {
+                    AppDomain.CurrentDomain.AssemblyLoad += (sender, args) =>
+                    {
+                        try
+                        {
+                            if (args.LoadedAssembly.GetName().Name == "MOD_yUMKFJ")
+                            {
+                                TryPatchTheSystem();
+                            }
+                        }
+                        catch { }
+                    };
+                    TryPatchTheSystem();
+                }
+                catch { }
+
+                Debug.Log("[Tales PT-BR] Mod C# v1.3 ativo: Compatibilidade total com mods da oficina, guardião The System e taxa de quadros destravada!");
             }
             catch (Exception ex)
             {
                 Debug.LogError("[Tales PT-BR] Erro ao iniciar patches Harmony: " + ex.ToString());
+            }
+        }
+
+        public static void TryPatchTheSystem()
+        {
+            if (systemModPatched || harmony == null) return;
+            try
+            {
+                Type smc = AccessTools.TypeByName("MOD_yUMKFJ.SystemMenuController");
+                if (smc == null) return;
+
+                MethodInfo target = AccessTools.Method(smc, "Tick");
+                if (target == null) return;
+
+                MethodInfo prefix = AccessTools.Method(typeof(Patch_TheSystem_Tick), "Prefix");
+                harmony.Patch(target, new HarmonyMethod(prefix));
+                systemModPatched = true;
+                Debug.Log("[Tales PT-BR] The System: Guardião de compatibilidade em RAM ativado com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("[Tales PT-BR] Erro ao aplicar guardião do The System: " + ex.Message);
             }
         }
 
@@ -106,6 +148,7 @@ namespace MOD_VMCUi0
                 {
                     harmony.UnpatchSelf();
                     harmony = null;
+                    systemModPatched = false;
                     Debug.Log("[Tales PT-BR] Mod C# descarregado.");
                 }
             }
@@ -113,6 +156,80 @@ namespace MOD_VMCUi0
             {
                 Debug.LogError("[Tales PT-BR] Erro ao descarregar mod: " + ex.Message);
             }
+        }
+    }
+
+    /// <summary>
+    /// Guardião de Compatibilidade para o mod The System (MOD_yUMKFJ):
+    /// Garante que mesmo se a Steam atualizar a DLL do mod da oficina para uma versão com bug,
+    /// a inicialização e a tecla 'P' continuam funcionando sem falhas diretamente em memória RAM.
+    /// </summary>
+    public static class Patch_TheSystem_Tick
+    {
+        private static MethodInfo startActivationMethod;
+        private static MethodInfo getActiveStatusMethod;
+        private static MethodInfo setActiveStatusMethod;
+        private static Type systemStatusType;
+        private static FieldInfo visibleField;
+        private static MethodInfo setVisibleMethod;
+        private static bool reflectionInitialized;
+
+        public static void Prefix(object __instance)
+        {
+            if (__instance == null) return;
+            try
+            {
+                if (!reflectionInitialized)
+                {
+                    Type gi = AccessTools.TypeByName("MOD_yUMKFJ.GameIntegration");
+                    if (gi != null) startActivationMethod = AccessTools.Method(gi, "StartActivation");
+
+                    systemStatusType = AccessTools.TypeByName("MOD_yUMKFJ.SystemStatus");
+                    if (systemStatusType != null)
+                    {
+                        getActiveStatusMethod = AccessTools.Method(systemStatusType, "GetActiveStatus");
+                        setActiveStatusMethod = AccessTools.Method(systemStatusType, "SetActive");
+                    }
+
+                    Type smc = AccessTools.TypeByName("MOD_yUMKFJ.SystemMenuController");
+                    if (smc != null)
+                    {
+                        visibleField = AccessTools.Field(smc, "visible");
+                        setVisibleMethod = AccessTools.Method(smc, "SetVisible", new[] { typeof(bool) });
+                    }
+                    reflectionInitialized = true;
+                }
+
+                // Auto-ativação contínua quando o personagem está no mundo
+                if (getActiveStatusMethod != null && getActiveStatusMethod.Invoke(null, null) == null)
+                {
+                    if (startActivationMethod != null)
+                    {
+                        startActivationMethod.Invoke(null, null);
+                    }
+                }
+
+                // Destrave definitivo da tecla P
+                if (UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.P))
+                {
+                    if (getActiveStatusMethod != null && getActiveStatusMethod.Invoke(null, null) == null)
+                    {
+                        if (startActivationMethod != null) startActivationMethod.Invoke(null, null);
+                        if (getActiveStatusMethod != null && getActiveStatusMethod.Invoke(null, null) == null && setActiveStatusMethod != null && systemStatusType != null)
+                        {
+                            object newStatus = Activator.CreateInstance(systemStatusType);
+                            setActiveStatusMethod.Invoke(null, new object[] { newStatus });
+                        }
+                    }
+
+                    if (visibleField != null && setVisibleMethod != null)
+                    {
+                        bool curVisible = (bool)visibleField.GetValue(__instance);
+                        setVisibleMethod.Invoke(__instance, new object[] { !curVisible });
+                    }
+                }
+            }
+            catch { }
         }
     }
 
@@ -199,6 +316,7 @@ namespace MOD_VMCUi0
     path.join(managed, 'UnhollowerBaseLib.dll'),
     path.join(managed, 'Unity.TextMeshPro.dll'),
     path.join(managed, 'UnityEngine.CoreModule.dll'),
+    path.join(managed, 'UnityEngine.InputLegacyModule.dll'),
     path.join(managed, 'UnityEngine.UI.dll'),
     path.join(managed, 'UnityEngine.TextCoreModule.dll'),
     path.join(managed, 'UnityEngine.TextRenderingModule.dll'),
