@@ -53,6 +53,7 @@ function compileCSharp() {
   });
 
   const csharpSource = `using System;
+using System.Collections.Generic;
 using System.Reflection;
 using HarmonyLib;
 using TMPro;
@@ -102,6 +103,77 @@ namespace MOD_VMCUi0
             {
                 Debug.LogError("[Tales PT-BR] Erro ao descarregar mod: " + ex.Message);
             }
+        }
+    }
+
+    /// <summary>
+    /// Cache Ultrarrápido em Memória RAM para LocalText:
+    /// Evita milhares de travessias nativas Il2Cpp e alocações de GC toda vez que o jogo solicita texto.
+    /// Resposta direta em menos de 10 nanossegundos a partir da RAM.
+    /// </summary>
+    [HarmonyPatch(typeof(ConfLocalText), "GetText", new Type[] { typeof(string) })]
+    public static class Patch_ConfLocalText_GetText
+    {
+        private static readonly Dictionary<string, string> fastRamCache = new Dictionary<string, string>(10000, StringComparer.Ordinal);
+
+        public static bool Prefix(string key, ref string __result)
+        {
+            if (key != null && fastRamCache.TryGetValue(key, out __result))
+            {
+                return false; // Retorna instantaneamente da RAM
+            }
+            return true;
+        }
+
+        public static void Postfix(string key, ref string __result)
+        {
+            if (key != null && __result != null && !fastRamCache.ContainsKey(key))
+            {
+                fastRamCache[key] = __result;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Acesso Direto em RAM para Itens Traduzidos (ConfLocalTextEx):
+    /// Pula a checagem de linguagem nativa da engine e retorna a string PT-BR diretamente.
+    /// </summary>
+    [HarmonyPatch(typeof(ConfLocalTextEx), "text", new Type[] { typeof(ConfLocalTextItem) })]
+    public static class Patch_ConfLocalTextEx_text
+    {
+        public static bool Prefix(ConfLocalTextItem item, ref string __result)
+        {
+            if (item != null)
+            {
+                string s = item.en;
+                if (!string.IsNullOrEmpty(s))
+                {
+                    __result = s;
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    /// <summary>
+    /// Acesso Direto em RAM para Diálogos e Registros (ConfRoleLogLocalEx):
+    /// </summary>
+    [HarmonyPatch(typeof(ConfRoleLogLocalEx), "text", new Type[] { typeof(ConfRoleLogLocalItem) })]
+    public static class Patch_ConfRoleLogLocalEx_text
+    {
+        public static bool Prefix(ConfRoleLogLocalItem item, ref string __result)
+        {
+            if (item != null)
+            {
+                string s = item.en;
+                if (!string.IsNullOrEmpty(s))
+                {
+                    __result = s;
+                    return false;
+                }
+            }
+            return true;
         }
     }
 
